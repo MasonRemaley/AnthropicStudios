@@ -3,7 +3,6 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-redirect_from: "/projects"
 ---
 
 We're currently building a narrative puzzle game _Monsters and Sprites_ (working title) in which the player has to navigate a world in which they can only interact with objects while their character matches the item's color.
