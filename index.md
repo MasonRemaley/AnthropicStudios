@@ -16,7 +16,7 @@ The original prototype pictured below was built in nine days using in house tech
 
 Programming and game design by [Mason Remaley](https://twitter.com/masonremaley), visual art by [Carolyn Whitmeyer](https://www.facebook.com/NyloracArt/), narrative design by [Evan Morris](https://twitter.com/evan_cmm), and music by [Colin Quinn](mailto:colinquinnwork@gmail.com).
 
-Subscribe to our mailing list below to stay up to date, or follow us on [Twitter](https://twitter.com/anthropicst) or [Instagram](https://www.instagram.com/anthropicstudios/).
+Subscribe to our mailing list below to stay up to date, or follow us on [Twitter](https://twitter.com/anthropicst), [Instagram](https://www.instagram.com/anthropicstudios/), or [Facebook](https://www.facebook.com/AnthropicStudios/).
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
