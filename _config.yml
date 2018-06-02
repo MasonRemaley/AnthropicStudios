@@ -19,6 +19,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.anthropicstudios.com" # the base hostname & protocol for your site, e.g. http://example.com
 enforce_ssl: "www.anthropicstudios.com"
 twitter_username: AnthropicSt
+facebook_username: AnthropicStudios
 # github_username: MasonRemaley # None of my cool stuff is public yet so no reason to link people here
 instagram_username: AnthropicStudios
 show_excerpts: true
