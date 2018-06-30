@@ -26,11 +26,7 @@ show_excerpts: true
 permalink: /:year/:month/:day/:title/
 
 header_pages:
-  - about.md
-
-collections:
-  projects:
-    output: true
+  - blog.md
 
 # Build settings
 markdown: kramdown
@@ -50,3 +46,11 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+authors:
+  mason:
+    name: Mason Remaley
+    social: //twitter.com/MasonRemaley
+  carolyn:
+    name: Carolyn Whitmeyer
+    social: //www.instagram.com/nylorac0__o/
