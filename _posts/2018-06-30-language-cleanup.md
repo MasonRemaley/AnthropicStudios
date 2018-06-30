@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Engine and Language Cleanup"
+title: "Scripting Language Cleanup"
 date: 2018-06-30
 categories: monsters-and-sprites language engine
 author: mason
