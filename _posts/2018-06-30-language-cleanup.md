@@ -5,7 +5,6 @@ date: 2018-06-30
 categories: monsters-and-sprites language engine
 author: mason
 excerpt_separator: <!--more-->
-twitter: https://twitter.com/AnthropicSt/status/1010568311690743808
 ---
 
 When we built the original [Monsters and Sprites](/monsters-and-sprites) demo, we only had 9 days to get it working before the [Playcrafting](https://playcrafting.com/){:target="_blank"} expo we had signed up for, so we had to cut a lot of corners. Since then I've been doing bug fixes and working on a lot of miscellaneous [engine](masonremaley.com/projects/game-engine/)/[language](masonremaley.com/projects/scripting-language/) features that I either couldn't get done in time for the demo, or didn't realize were important until I started building it.

@@ -5,6 +5,7 @@ date: 2018-06-30
 categories: monsters-and-sprites art
 author: carolyn
 excerpt_separator: <!--more-->
+twitter: https://twitter.com/AnthropicSt/status/1013200248834023425
 ---
 
 Artists Ally is a bi-monthly segment which provides a behind the scenes glance into the artistic process for [Monsters and Sprites (M&S)](/monsters-and-sprites).
