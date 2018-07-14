@@ -24,11 +24,15 @@ So far, I am happy about the existing color palette for [M&S](/monsters-and-spri
 
 For instance, when pale pink is the most prominent color, the world becomes a bit bubble-gummy and light. 
 
+<a href="/assets/monsters-and-sprites/artists-alley-1/0.5.jpg"><img src="/assets/monsters-and-sprites/artists-alley-1/0.5.jpg"/></a>
+
 <a href="/assets/monsters-and-sprites/artists-alley-1/1.png"><img src="/assets/monsters-and-sprites/artists-alley-1/1.png"/></a>
 
 While oranges, and deep purple dominating the scene brings to mind more mysterious deep feelings.
 
 <a href="/assets/monsters-and-sprites/artists-alley-1/2.png"><img src="/assets/monsters-and-sprites/artists-alley-1/2.png"/></a>
+
+<a href="/assets/monsters-and-sprites/artists-alley-1/2.5.jpg"><img src="/assets/monsters-and-sprites/artists-alley-1/2.5.jpg"/></a>
 
 <!--more-->
 
