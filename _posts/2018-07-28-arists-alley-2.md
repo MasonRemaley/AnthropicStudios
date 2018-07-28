@@ -5,9 +5,8 @@ date: 2018-06-30
 categories: monsters-and-sprites art
 author: carolyn
 excerpt_separator: <!--more-->
+twitter: https://twitter.com/AnthropicSt/status/1023253105176178688
 ---
-
-<!-- TODO: Add twitter link! -->
 
 These past two weeks I have been drawing inspiration from other side scroller games in order to develop a style unique to [Monsters and Sprites](/monsters-and-sprites)! 
 
