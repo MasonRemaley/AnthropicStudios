@@ -7,37 +7,33 @@ title: Press Kit
 <!-- TODO: Print this for the expo? Have business cards with new game name/logo if time or no? -->
 <!-- names:
 
-- Monsters That Walk The Earth
-- Way of Rhea [ray-uh]
-- Rhea's Own [ray-uh]
-
-
 -->
 
 <!-- TODO: Make this a column? -->
 # Fact Sheet
 
+- **Title:** Way of Rhea
 - **Developer:** [Anthropic Studios](https://anthropicstudios.com){:target="_blank"}
 - **Release Date:** TBD
 - **Platforms:** macOS, Windows, Linux
-- **Website:** [anthropicstudios.com/monsters-and-sprites](https://anthropicstudios.com/monsters-and-sprites){:target="_blank"}
+- **Website:** [anthropicstudios.com/way-of-rhea](https://anthropicstudios.com/way-of-rhea){:target="_blank"}
 - **Press Contact:** [mason.remaley@gmail.com](mailto:mason.remaley@gmail.com)
 - **Social:** [Twitter](https://twitter.com/anthropicst){:target="_blank"}, [Facebook](https://www.facebook.com/AnthropicStudios/){:target="_blank"}, [Instagram](http://instagram.com/anthropicstudios){:target="_blank"}
 
 # Description
 
-*Monsters and Sprites* (working title) is an upcoming game narrative driven puzzle side scroller about the space humans takes up in the world. In the game, the player can only interact with objects in the world that match their color, and must find orbs of various colors and use them at opportune moments to make their way through the world.
+*Way of Rhea* is an upcoming narrative driven puzzle side scroller about the space humans take up in the world. In the game, the player can only interact with objects in the world that match their color, and therefore must use the magical colored orbs scattered throughout the world to change to the colors at the right times.
 
-Anthropic Studios is a small indie studio founded in 2018 with collaborators working out of Santa Cruz, NYC, DC, and PA. All of Anthropic's games are built in an in-house engine and scripting language built on top of the fairly new [Rust programming language](https://www.rust-lang.org/en-US/){:target="_blank"}.
+Anthropic Studios is a small indie studio founded in 2018 with collaborators working out of SC, NYC, DC, and PA. Anthropic's games are built in an in-house engine and scripting language built on top of the [Rust programming language](https://www.rust-lang.org/en-US/){:target="_blank"}.
 
 
 # History
 
-In April of 2018, inspired by a Bennett Foddy talk, [Mason Remaley](https://masonremaley.com){:target="_blank"} decided to gather a few people to complete a challenge: build a playable game in a week. He had been working on a game engine and scripting language in his spare time, and figured this would be a good first official game to build with it.
+In April of 2018, inspired by a Bennett Foddy talk, [Mason Remaley](https://masonremaley.com){:target="_blank"} decided to gather a few people to complete a challenge: build a playable game in a week. He had been working on a game engine and scripting language in his spare time, and figured it was about time to build a real game on top of it.
 
-Soon after, he got [Carolyn Whitmeyer](https://www.instagram.com/nylorac0__o/){:target="_blank"} on board as an artist and [Colin Quinn](mailto:colinquinnwork@gmail.com) to write some music, and they signed up to demo their game at [Playcrafting](https://www.playcrafting.com/){:target="_blank"}'s Spring Play expo--however, the game didn't yet exist. Over the next 9 days they came up with the idea for the game, and put it together, finishing just in time for the expo.
+Soon afterwards, he got [Carolyn Whitmeyer](https://www.instagram.com/nylorac0__o/){:target="_blank"} on board as an artist and [Colin Quinn](mailto:colinquinnwork@gmail.com) agreed to write some music. Together, they signed up to demo their game at [Playcrafting](https://www.playcrafting.com/){:target="_blank"}'s Spring Play expo, with one catch--the game didn't actually  yet exist. Over the next 9 days they came up with the idea for the game, and put it together, finishing just in time for the expo.
 
-They had initially planned to repeat this exercise a few more times after the expo was over, but they liked what they had created so much that they decided to instead continue work on the game they had already build. [Evan Morris](https://twitter.com/evan_cmm){:target="_blank"} who had previously helped out a bit officially joined the project as a narrative designer, and [Nick Romero](https://soundcloud.com/stonedape){:target="_blank"} as a sound designer.
+They had initially planned to repeat this exercise a few more times after the expo was over, but they liked what they had created so much that they decided to instead continue work on the game they had already build. [Evan Morris](https://twitter.com/evan_cmm){:target="_blank"} who had previously helped out a bit officially joined the project as a narrative designer, and [Nick Romero](https://soundcloud.com/stonedape){:target="_blank"} as a sound designer. The game was then renamed from its working title *Monsters and Sprites* to *Way of Rhea*.
 
 
 # Videos
@@ -70,28 +66,33 @@ They had initially planned to repeat this exercise a few more times after the ex
 
 # Selected Articles
 
-"Finally, Monsters and Sprites is a puzzle game that reminds me a bit of Hue, but unlike Hue, lays everything out in front of you, choosing to double down on a sense of whimsy as opposed to a sense of minimalist mystery.  While Monsters and Sprites is still very much early in development, I love the idea of tying color to the mechanics of a puzzle in a game. It’s a tried and true mechanic that has been used on everything from Red Doors to Blue Keys, but Indie games continue to reinvent this and re-imagine it in many ways." - Jacob Wood, [Indie Hangover](http://www.indiehangover.com/the-road-to-play-nyc-looking-good/){:target="_blank"}
+"Finally, [Way of Rhea] is a puzzle game that reminds me a bit of Hue, but unlike Hue, lays everything out in front of you, choosing to double down on a sense of whimsy as opposed to a sense of minimalist mystery.  While [Way of Rhea] is still very much early in development, I love the idea of tying color to the mechanics of a puzzle in a game. It’s a tried and true mechanic that has been used on everything from Red Doors to Blue Keys, but Indie games continue to reinvent this and re-imagine it in many ways." - Jacob Wood, [Indie Hangover](http://www.indiehangover.com/the-road-to-play-nyc-looking-good/){:target="_blank"}
 
 
-# Team & Repeating Collaborators
+# Team
 
-[Mason Remaley](masonremaley.com){:target="_blank"}
-Designer, Programmer
+<!-- TODO: Fill out! But check with people -->
+<!-- TODO: Mine should include game engine/scripting language -->
 
-Mason Remaley is the founder of Anthropic Studios. He previously worked on Windows 10 Network Security at Microsoft, internal tools at Google, and in addition to working on Anthropic projects is currently working at CTRL-labs on a neural interface with a Unity SDK.
+**[Mason Remaley](https://masonremaley.com){:target="_blank"} - Designer, Programmer**
 
-[Carolyn Whitmeyer](instagram.com/nylorac0__o){:target="_blank"}
-Artwork
+Mason Remaley is the founder of Anthropic Studios. He previously worked on Windows 10 at Microsoft, internal tools at Google, and in addition to working on Anthropic projects is currently working at CTRL-labs on a neural interface with a Unity SDK.
 
+Alongside all that he's spent most of his free time over the last 5 years writing game engines and a compiler that work together to allow editing games without ever having to restart them, *Way of Rhea* is built on top of the latest iteration of these projects.
 
-[Evan Morris](https://twitter.com/evan_cmm){:target="_blank"}
-Narrative Design
+**[Carolyn Whitmeyer](https://instagram.com/nylorac0__o){:target="_blank"} - Visual Artist**
 
-[Nick Romero](https://soundcloud.com/stonedape){:target="_blank"}
-Sound design
+Carolyn Whitmeyer is the artist for *Way of Rhea*, she has a bachelor's degree in biology as well as a master's degree in medical visualization. She says her studies are motivated by her lifelong interest in art and nature.
 
-[Colin Quinn](colinquinnwork@gmail.com)
-Music
+She currently works at the American Institutes for Resarch as a production assistant, and spends her spare time working with Anthropic and improving her art skills.
+
+**[Evan Morris](https://twitter.com/evan_cmm){:target="_blank"} - Narrative Design**
+
+Evan Morris is the narrative designer for *Way of Rhea*. He's also a huge fan of exoplanets, and is currently working on a PhD in astrophysics.
+
+**[Nick Romero](https://soundcloud.com/stonedape){:target="_blank"} - Sound Designer**
+
+**[Colin Quinn](mailto:colinquinnwork@gmail.com) - Musician**
 
 # FAQ
 

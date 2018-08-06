@@ -3,10 +3,12 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-redirect_from: "/monsters-and-sprites"
+redirect_from:
+  - /monsters-and-sprites
+  - /way-of-rhea
 ---
 
-We're currently building a narrative puzzle game _Monsters and Sprites_ (working title) in which the player has to navigate a world in which they can only interact with objects while their character matches the item's color.
+We're currently building a narrative driven puzzle game _Way of Rhea_. In the game, the player navigates a world in which they can only interact with objects while their character matches the object's color.
 
 The original prototype pictured below was built in nine days using in house tech for a [Playcrafting](https://playcrafting.com/) expo, [here's the original devlog on Twitter](https://twitter.com/masonremaley/status/988634973245669377).
 
