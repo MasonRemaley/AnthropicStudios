@@ -84,11 +84,11 @@ Alongside all that he's spent most of his free time over the last 5 years writin
 
 Carolyn Whitmeyer is the artist for *Way of Rhea*, she has a bachelor's degree in biology as well as a master's degree in medical visualization. She says her studies are motivated by her lifelong interest in art and nature.
 
-She currently works at the American Institutes for Resarch as a production assistant, and spends her spare time working with Anthropic and improving her art skills.
+She currently works at the American Institutes for Research as a production assistant, and spends her spare time working with Anthropic and improving her art skills.
 
 **[Evan Morris](https://twitter.com/evan_cmm){:target="_blank"} - Narrative Design**
 
-Evan Morris is the narrative designer for *Way of Rhea*. He's also a huge fan of exoplanets, and is currently working on a PhD in astrophysics.
+Evan Morris is the narrative designer for *Way of Rhea*. He's currently working on a PhD in astrophysics.
 
 **[Nick Romero](https://soundcloud.com/stonedape){:target="_blank"} - Sound Design**
 
