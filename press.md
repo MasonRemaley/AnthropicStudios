@@ -74,13 +74,13 @@ They had initially planned to repeat this exercise a few more times after the ex
 <!-- TODO: Fill out! But check with people -->
 <!-- TODO: Mine should include game engine/scripting language -->
 
-**[Mason Remaley](https://masonremaley.com){:target="_blank"} - Designer, Programmer**
+**[Mason Remaley](https://masonremaley.com){:target="_blank"} - Design, Programming**
 
 Mason Remaley is the founder of Anthropic Studios. He previously worked on Windows 10 at Microsoft, internal tools at Google, and in addition to working on Anthropic projects is currently working at CTRL-labs on a neural interface with a Unity SDK.
 
 Alongside all that he's spent most of his free time over the last 5 years writing game engines and a compiler that work together to allow editing games without ever having to restart them, *Way of Rhea* is built on top of the latest iteration of these projects.
 
-**[Carolyn Whitmeyer](https://instagram.com/nylorac0__o){:target="_blank"} - Visual Artist**
+**[Carolyn Whitmeyer](https://instagram.com/nylorac0__o){:target="_blank"} - Visual Artwork**
 
 Carolyn Whitmeyer is the artist for *Way of Rhea*, she has a bachelor's degree in biology as well as a master's degree in medical visualization. She says her studies are motivated by her lifelong interest in art and nature.
 
@@ -90,9 +90,9 @@ She currently works at the American Institutes for Resarch as a production assis
 
 Evan Morris is the narrative designer for *Way of Rhea*. He's also a huge fan of exoplanets, and is currently working on a PhD in astrophysics.
 
-**[Nick Romero](https://soundcloud.com/stonedape){:target="_blank"} - Sound Designer**
+**[Nick Romero](https://soundcloud.com/stonedape){:target="_blank"} - Sound Design**
 
-**[Colin Quinn](mailto:colinquinnwork@gmail.com) - Musician**
+**[Colin Quinn](mailto:colinquinnwork@gmail.com) - Music**
 
 # FAQ
 
