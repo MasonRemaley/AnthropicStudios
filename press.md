@@ -3,13 +3,7 @@ layout: page
 title: Press Kit
 ---
 
-<!-- TODO: Some kind of photo at the top? -->
-<!-- TODO: Print this for the expo? Have business cards with new game name/logo if time or no? -->
-<!-- names:
-
--->
-
-<!-- TODO: Make this a column? -->
+<!-- TODO: Logo -->
 # Fact Sheet
 
 - **Title:** Way of Rhea
@@ -38,14 +32,11 @@ They had initially planned to repeat this exercise a few more times after the ex
 
 # Videos
 
-<!-- TODO: New trailer? -->
 <video width="100%" controls>
   <source src="/assets/monsters-and-sprites/trailer.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-<!-- TODO: Caption the photo of me? -->
-<!-- TODO: Add some of the concept art? -->
 # Images
 <table>
   <tr>
@@ -70,9 +61,6 @@ They had initially planned to repeat this exercise a few more times after the ex
 
 
 # Team
-
-<!-- TODO: Fill out! But check with people -->
-<!-- TODO: Mine should include game engine/scripting language -->
 
 **[Mason Remaley](https://masonremaley.com){:target="_blank"} - Design, Programming**
 
@@ -107,7 +95,3 @@ We're still too early in development to make any promises. :)
 **Why aren't you using XXX engine?**
 
 Fast iteration time is incredibly important to us. Our engine was built from the ground up to support instantly hot swapping out changes without ever having to reload the game.
-
-<!-- TODO: Attach demo? Should make something that statically links sdl mixer...not as important for play nyc since people can try it in person -->
-<!-- TODO: Permissions/disclaimer ("The last thing on the list here is to give permission to the media to use all of the above content. You want to make sure that legally they can use all of your content, even for commercial use. Also make sure that you simply remove your liability and allow them to use all of your materials at their own risk") -->
-<!-- TODO: Fix old mirror of game page on masonremaley.com -->
