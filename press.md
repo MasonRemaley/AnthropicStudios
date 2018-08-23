@@ -57,6 +57,8 @@ They had initially planned to repeat this exercise a few more times after the ex
 
 # Selected Articles
 
+"Though the demo only lasted about five or ten minutes, it was enough for me to get a good glimpse into the world of Way of Rhea, and now I’m looking forward to going back when the game releases." - Courtney Ehrenhofler, [Tech Raptor](https://techraptor.net/content/way-of-rhea-puzzle-sidescroller){:target="_blank"}
+
 "Finally, [Way of Rhea] is a puzzle game that reminds me a bit of Hue, but unlike Hue, lays everything out in front of you, choosing to double down on a sense of whimsy as opposed to a sense of minimalist mystery.  While [Way of Rhea] is still very much early in development, I love the idea of tying color to the mechanics of a puzzle in a game. It’s a tried and true mechanic that has been used on everything from Red Doors to Blue Keys, but Indie games continue to reinvent this and re-imagine it in many ways." - Jacob Wood, [Indie Hangover](http://www.indiehangover.com/the-road-to-play-nyc-looking-good/){:target="_blank"}
 
 
