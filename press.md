@@ -9,7 +9,7 @@ title: Press Kit
 - **Title:** Way of Rhea
 - **Developer:** [Anthropic Studios](https://anthropicstudios.com){:target="_blank"}
 - **Release Date:** TBD
-- **Platforms:** macOS, Windows, Linux
+- **Platforms:** macOS, Windows
 - **Website:** [anthropicstudios.com/way-of-rhea](https://anthropicstudios.com/way-of-rhea){:target="_blank"}
 - **Press Contact:** [mason.remaley@gmail.com](mailto:mason.remaley@gmail.com)
 - **Social:** [Twitter](https://twitter.com/anthropicst){:target="_blank"}, [Facebook](https://www.facebook.com/AnthropicStudios/){:target="_blank"}, [Instagram](http://instagram.com/anthropicstudios){:target="_blank"}
@@ -88,7 +88,7 @@ Evan Morris is the narrative designer for *Way of Rhea*. He's currently working 
 
 **Will the game support mobile platforms?**
 
-Currently only macOS, Windows, and Linux support is planned. It's possible that after the initial release a port to mobile operating systems would be considered if there's sufficient interest.
+Currently only macOS and Windows support is planned. Other platforms may be considered after the initial release if there's sufficient interest.
 
 **When will it be released?**
 
