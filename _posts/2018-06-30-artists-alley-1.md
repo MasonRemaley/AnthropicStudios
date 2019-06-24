@@ -2,7 +2,7 @@
 layout: post
 title: "Artists' Alley #1: Abstract Palettes and Environment"
 date: 2018-06-30
-categories: monsters-and-sprites art
+categories: monsters-and-sprites way-of-rhea art
 author: carolyn
 excerpt_separator: <!--more-->
 twitter: https://twitter.com/AnthropicSt/status/1013200248834023425
