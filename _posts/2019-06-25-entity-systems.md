@@ -5,8 +5,7 @@ date: 2019-06-05
 categories: monsters-and-sprites way-of-rhea engine
 author: mason
 excerpt_separator: <!--more-->
-<!-- TODO: Update! -->
-twitter: https://twitter.com/AnthropicSt/
+twitter: https://twitter.com/masonremaley/status/1143655586740838400
 ---
 
 I posted [this poll](https://twitter.com/masonremaley/status/1135083247598047232) on Twitter few weeks ago:
