@@ -56,7 +56,7 @@ On the other hand, if you have a gameplay idea not anticipated by the system, yo
 
 <figure>
   <a href="http://www.insidemacgames.com/features/view.php?ID=312#"><img src="/assets/monsters-and-sprites/entity-systems/dim3-inside-mac-games.jpg"></a>
-  <figcaption>dim3 was the first 3d engine I ever used, described by its creator as a "game without content". The game had a number of pre-baked object types (lights, scenery items, etc), and the option to introduce new objects via scripts. Screenshot taken from <a href="http://www.insidemacgames.com/features/view.php?ID=312#">Inside Mac Games</a> as I couldn't find a copy of the editor.</figcaption>
+  <figcaption>dim3 was the first 3d engine I ever used, described by its creator Brian Barnes as a "game without content". The game had a number of pre-baked object types (lights, scenery items, etc), and the option to introduce new objects via scripts. Screenshot taken from <a href="http://www.insidemacgames.com/features/view.php?ID=312#">Inside Mac Games</a> as I couldn't find a copy of the editor.</figcaption>
 </figure>
 
 
