@@ -43,7 +43,7 @@ It was going to be difficult to add things like physics puzzles to the game if t
 
 <!--more-->
 
-## Two Approaches
+## Common Approaches
 
 In my mind, most entity systems fall into one of the following categories:
 - Decked out versions of the ad hoc approach, well tuned to the needs of a specific game or game type. For lack of a better term I'll refer to this as the static approach.
