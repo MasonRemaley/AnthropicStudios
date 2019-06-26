@@ -16,11 +16,11 @@ I posted [this poll](https://twitter.com/masonremaley/status/1135083247598047232
 
 Entity systems won by a long shot, so that's what I'm going to be writing about today.
 
-In particular, I'm going to outline the process that lead me to [Way of Rhea](https://www.anthropicstudios.com/way-of-rhea)'s current entity system. Hopefully this writeup will helpful, or at least interesting. :)
+In particular, I'm going to outline the process that lead me to [Way of Rhea](https://www.anthropicstudios.com/way-of-rhea)'s current entity system. _Way of Rhea_ is being built in a [custom engine](https://www.masonremaley.com/projects/game-engine/) and [scripting language](https://www.masonremaley.com/projects/scripting-language/) written in [Rust](https://www.rust-lang.org/), but the ideas described should still be applicable elsewhere. Hopefully this writeup will be found helpful, or at least interesting. :)
 
 ## The Ad Hoc Approach
 
-Way of Rhea's [initial prototype](https://twitter.com/masonremaley/status/988634973245669377) didn't have an explicit entity system&mdash;I wanted to get something playable on the screen ASAP to validate that the game idea was worth spending time on. Each time I wanted to introduce a new entity type, I just made a new struct, and an ad hoc decision on where to store it.
+_Way of Rhea_'s [initial prototype](https://twitter.com/masonremaley/status/988634973245669377) didn't have an explicit entity system&mdash;I wanted to get something playable on the screen ASAP to validate that the game idea was worth spending time on. Each time I wanted to introduce a new entity type, I just made a new struct, and an ad hoc decision on where to store it.
 
 This approach is severely undervalued. Letting yourself be inconsistent during the early stages of a project has two big advantages:
 - It lets you prototype just the thing you're actually trying to build.
@@ -93,7 +93,7 @@ Don't need:
 
 The single bullet under the "don't need" category changes things. **Most of these systems get built specifically to allow dynamic changes.** If you're working on a large team, you don't want the designers to have to call in a programmer every time they want to try something new, but that isn't an issue on a small indie team where the designer is the programmer.
 
-Taking all this into account, I came up with a fairly straightforward&mdash;but still flexible&mdash;approach that satisfies the requirements at hand. I'm going to copy and paste bits and pieces from the _Way of Rhea_ source to explain it. The actual game logic is written in [my scripting language](https://www.masonremaley.com/projects/scripting-language/), but the syntax is very similar to [Rust](https://www.rust-lang.org/) which my engine, compiler, and VM are written in.
+Taking all this into account, I came up with a fairly straightforward&mdash;but still flexible&mdash;approach that satisfies the requirements at hand. I'm going to copy and paste bits and pieces from the _Way of Rhea_ source to explain it. As mentioned previously, the actual game logic is written in [my scripting language](https://www.masonremaley.com/projects/scripting-language/), but the syntax is very similar to [Rust](https://www.rust-lang.org/) which my engine, compiler, and VM are written in.
 
 Here's the current declaration of `Entity`:
 ```rs
