@@ -24,7 +24,10 @@ layout: default
     Feel free to leave comments
 
     {% if page.twitter %}
-      <a href="{{page.twitter}}">on twitter</a>
+      <a href="{{page.twitter}}">on Twitter,</a>
+      {% if page.reddit %}
+        <a href="{{page.reddit}}">Reddit, </a>
+      {% endif %}
     {% else %}
       <a href="//twitter.com/{{site.twitter_username}}">on twitter</a>
     {% endif %}

@@ -6,6 +6,7 @@ categories: monsters-and-sprites way-of-rhea engine
 author: mason
 excerpt_separator: <!--more-->
 twitter: https://twitter.com/masonremaley/status/1143655586740838400
+reddit: https://www.reddit.com/r/rust_gamedev/comments/c5lwi5/way_of_rheas_entity_system/
 ---
 
 I posted [this poll](https://twitter.com/masonremaley/status/1135083247598047232) on Twitter few weeks ago:
