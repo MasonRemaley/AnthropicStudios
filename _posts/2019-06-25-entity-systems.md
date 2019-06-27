@@ -110,7 +110,7 @@ pub enum Entity {
 }
 ```
 
-*The `enum` keyword represents a [sum type](https://en.wikipedia.org/wiki/Sum_type){:target="_blank"}, equivalent to a tagged union in C.*
+*Similarly to in Rust the `enum` keyword in my scripting language represents a [sum type](https://en.wikipedia.org/wiki/Sum_type){:target="_blank"}, equivalent to a tagged union in C.*
 
 Each entity must be one of these 8 variants. The variants are baked into the system, but it's trivial to add another and hot swap it in.
 
