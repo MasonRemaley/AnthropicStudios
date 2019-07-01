@@ -177,6 +177,6 @@ The physics simulation, once implemented, will use this pattern as well: when it
   <figcaption>The level editor has been updated to take advantage of the entity system. The component getters are used to draw controls for all component types that exist on at least one of the selected entities.</figcaption>
 </figure>
 
-There are a few other subtitles around spatial partitioning and serialization, but this is the general idea behind the system. I haven't lived with it for very long yet, so if I discover anything interesting about it down the line I'll try to write up another post.
+There are a few other subtleties around spatial partitioning and serialization, but this is the general idea behind the system. I haven't lived with it for very long yet, so if I discover anything interesting about it down the line I'll try to write up another post.
 
 Thanks for reading this far!
