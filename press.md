@@ -4,7 +4,6 @@ title: Press Kit
 ---
 
 <!-- TODO: Logo -->
-<!-- TODO: steam link -->
 # Fact Sheet
 
 - **Title:** Way of Rhea
@@ -32,7 +31,6 @@ Soon afterwards, he got [Carolyn Whitmeyer](https://www.instagram.com/nylorac0__
 They had initially planned to repeat this exercise a few more times after the expo was over, but they liked what they had created so much that they decided to instead continue work on the game they had already built. [Evan Morris](https://twitter.com/evan_cmm){:target="_blank"} who had previously helped out a bit officially joined the project as a narrative designer, and [Nick Romero](https://soundcloud.com/stonedape){:target="_blank"} as a sound designer. The game was then renamed from its working title *Monsters and Sprites* to *Way of Rhea*.
 
 
-<!-- TODO: delete unused photos/renumber -->
 # Images
 <table>
   <tr>
