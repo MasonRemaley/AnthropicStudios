@@ -78,7 +78,7 @@ Mason Remaley is leading the project. He previously worked on Windows 10 at Micr
 Prior to his work on _Way of Rhea_, he wrote both a game engine and a compiler in the [Rust programming language](https://www.rust-lang.org/){:target="_blank"} that work together to allow editing games—code and all—in game, without ever having to restart or exit the game. *Way of Rhea* is built on top of the current iteration of this engine.
 <br><br>
 
-**[Carolyn Whitmeyer](https://instagram.com/nylorac0__o){:target="_blank"} - Visual Artwork**
+**[Carolyn Whitmeyer](https://www.instagram.com/nylorac0_o/){:target="_blank"} - Visual Artwork**
 
 Carolyn Whitmeyer is the artist for *Way of Rhea*, she has a bachelor's degree in biology as well as a master's degree in medical visualization. She says her studies are motivated by her lifelong interest in art and nature.
 
