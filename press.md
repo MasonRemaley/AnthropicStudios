@@ -34,7 +34,7 @@ They had initially planned to repeat this exercise a few more times after the ex
 # Images
 <table>
   <tr>
-    <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/animated.gif" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/animated.gif"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/animated-rev-1.gif" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/animated-rev-1.gif"/></a></th>
     <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/1.png" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/1.png"/></a></th>
   </tr>
   <tr>
@@ -42,12 +42,12 @@ They had initially planned to repeat this exercise a few more times after the ex
     <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/3.png" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/3.png"/></a></th>
   </tr>
   <tr>
-    <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/4.png" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/4.png"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/4-rev-1.png" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/4-rev-1.png"/></a></th>
     <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/5.png" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/5.png"/></a></th>
   </tr>
   <tr>
     <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/7.png" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/7.png"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/6.png" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/6.png"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/6-rev-1.png" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/6-rev-1.png"/></a></th>
   </tr>
   <tr>
     <th><a href="/assets/monsters-and-sprites/demo-and-play-2.jpg" target="_blank"><img height="200px" src="/assets/monsters-and-sprites/demo-and-play-2.jpg"/></a></th>
