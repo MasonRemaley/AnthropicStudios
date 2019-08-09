@@ -10,7 +10,7 @@ title: Press Kit
 - **Developer:** [Anthropic Studios](https://anthropicstudios.com){:target="_blank"}
 - **Release Date:** TBD
 - **Platforms:** macOS, Windows
-- **Store Pages:** <a href="https://store.steampowered.com/app/1110620/Way_of_Rhea">This Steam link will work starting 12pm EDT 8/9/19.</a>
+- **Store Pages:** <a href="https://store.steampowered.com/app/1110620/Way_of_Rhea">Steam</a>
 - **Website:** [anthropicstudios.com/way-of-rhea](https://anthropicstudios.com/way-of-rhea){:target="_blank"}
 - **Press Contact:** [mason.remaley@gmail.com](mailto:mason.remaley@gmail.com)
 - **Social:** [Twitter](https://twitter.com/anthropicst){:target="_blank"}, [Facebook](https://www.facebook.com/AnthropicStudios/){:target="_blank"}, [Instagram](http://instagram.com/anthropicstudios){:target="_blank"}
@@ -30,6 +30,8 @@ Soon afterwards, he got [Carolyn Whitmeyer](https://www.instagram.com/nylorac0__
 
 They had initially planned to repeat this exercise a few more times after the expo was over, but they liked what they had created so much that they decided to instead continue work on the game they had already built. [Evan Morris](https://twitter.com/evan_cmm){:target="_blank"} who had previously helped out a bit officially joined the project as a narrative designer, and [Nick Romero](https://soundcloud.com/stonedape){:target="_blank"} as a sound designer. The game was then renamed from its working title *Monsters and Sprites* to *Way of Rhea*.
 
+# Videos
+<iframe width="646" height="363.375" src="https://www.youtube.com/embed/VIzqlI-gbAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Images
 <table>
