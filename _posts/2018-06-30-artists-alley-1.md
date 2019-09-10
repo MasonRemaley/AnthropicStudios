@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 twitter: https://twitter.com/AnthropicSt/status/1013200248834023425
 ---
 
-Artists Ally is a bi-monthly segment which provides a behind the scenes glance into the artistic process for [[Way of Rhea (WoR)]](/way-of-rhea).
+Artists Alley is a segment which provides a behind the scenes glance into the artistic process for [[Way of Rhea (WoR)]](/way-of-rhea).
 
 This segment is essentially a journal that helps me keep organized and focused. Additionally, I hope these updates will provide insight to other newbie gaming artists, game developers who are working with artists, and curious individuals.
 
