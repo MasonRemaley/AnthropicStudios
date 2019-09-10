@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 twitter: https://twitter.com/AnthropicSt/status/1023253105176178688
 ---
 
-These past two weeks I have been drawing inspiration from other side scroller games in order to develop a style unique to [Monsters and Sprites](/monsters-and-sprites)! 
+These past two weeks I have been drawing inspiration from other side scroller games in order to develop a style unique to [[Way of Rhea]](/way-of-rhea)! 
 
 I have found Braid to be a particularly good source of guidance because it is a successful game with an inspiring art style. The art for Braid is both as encapsulating as it is functional. Additionally, this is the first serious game I’ve worked on, so it helps that Braid’s artist, David Hellman has a [SUPER amazing process blog of his own out](http://www.davidhellman.net/blog/the-art-of-braid-index){:target="_blank"}. I’ve been using this blog as guidance for how to approach our project here at Anthropic Studios. 
 
