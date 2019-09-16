@@ -56,6 +56,7 @@ They had initially planned to repeat this exercise a few more times after the ex
     <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/6-rev-1.png" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/6-rev-1.png"/></a></th>
   </tr>
   <tr>
+    <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/booth.jpg" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/booth.jpg"/></a></th>
     <th><a href="/assets/monsters-and-sprites/demo-and-play-2.jpg" target="_blank"><img height="200px" src="/assets/monsters-and-sprites/demo-and-play-2.jpg"/></a></th>
   </tr>
 </table>
