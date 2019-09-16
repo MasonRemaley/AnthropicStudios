@@ -6,10 +6,10 @@ title: Press Kit
 <!-- TODO: Logo -->
 # Fact Sheet
 
-- **Title:** Way of Rhea
+- **Title:** *Way of Rhea*
 - **Developer:** [Anthropic Studios](https://anthropicstudios.com){:target="_blank"}
 - **Release Date:** TBD
-- **Platforms:** macOS, Windows
+- **Platforms:** Initial release for macOS and Windows
 - **Store Pages:** <a href="https://store.steampowered.com/app/1110620/Way_of_Rhea">Steam</a>
 - **Website:** [anthropicstudios.com/way-of-rhea](https://anthropicstudios.com/way-of-rhea){:target="_blank"}
 - **Press Contact:** [mason.remaley@gmail.com](mailto:mason.remaley@gmail.com)
@@ -19,7 +19,7 @@ title: Press Kit
 
 *Way of Rhea* is an upcoming narrative driven puzzle side scroller about the space humans take up in the world. In the game, you can only interact with objects in the world that match your current color, and therefore must use the color changing orbs and teleporters scattered throughout the world to navigate its puzzles.
 
-Anthropic Studios is a small indie studio founded in 2018 with collaborators working out of SC, NYC, DC, and PA. Anthropic's games are built in an in-house engine and scripting language built on top of the [Rust programming language](https://www.rust-lang.org/en-US/){:target="_blank"}.
+Anthropic Studios is a small indie studio founded in 2018 with collaborators working out of SC, NYC, DC, and PA.
 
 
 # History
@@ -30,8 +30,12 @@ Soon afterwards, he got [Carolyn Whitmeyer](https://www.instagram.com/nylorac0__
 
 They had initially planned to repeat this exercise a few more times after the expo was over, but they liked what they had created so much that they decided to instead continue work on the game they had already built. [Evan Morris](https://twitter.com/evan_cmm){:target="_blank"} who had previously helped out a bit officially joined the project as a narrative designer, and [Nick Romero](https://soundcloud.com/stonedape){:target="_blank"} as a sound designer. The game was then renamed from its working title *Monsters and Sprites* to *Way of Rhea*.
 
+# Technology
+*Way of Rhea* is being built in a custom game engine and scripting language built by  [Mason Remaley](https://twitter.com/masonremaley){:target="_blank"} in the [Rust programming language](https://www.rust-lang.org/en-US/){:target="_blank"}. The engine supports hot swapping of all assets and scripts—in other words, the game can be edited while it is running. The engine also makes it easy to efficiently render the game's large non-repeating parallaxing backgrounds.
+
 # Videos
 <iframe width="646" height="363.375" src="https://www.youtube.com/embed/VIzqlI-gbAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Contact us if you'd like a copy you can more easily download.](mailto:mason.remaley@gmail.com)
 
 # Images
 <table>
@@ -56,9 +60,6 @@ They had initially planned to repeat this exercise a few more times after the ex
   </tr>
 </table>
 
-# Videos
-A trailer will be released on 8/9/19, [contact us if you'd like an advance copy.](mailto:mason.remaley@gmail.com)
-
 # Demos
 The game is not yet publicly available, [contact us if you'd like to know which expos we'll be showing at, or a copy of our current expo demo to review.](mailto:mason.remaley@gmail.com)
 
@@ -75,9 +76,8 @@ The game is not yet publicly available, [contact us if you'd like to know which 
 
 **[Mason Remaley](https://twitter.com/masonremaley){:target="_blank"} - Design, Programming**
 
-Mason Remaley is leading the project. He previously worked on Windows 10 at Microsoft, internal tools at Google, and was tech lead for the Apps and SDK teams at CTRL-labs.
+Mason Remaley is leading the project. He previously worked on Windows 10 at Microsoft, internal tools at Google, and was tech lead for the Apps and SDK teams at CTRL-labs. Outside of Way of Rhea, he co-organizes the UCSC Silicon Valley Indie Playtest Night, and teaches the UCSC grad class on C++ game programming as well as the undergrad class on Unity.
 
-Prior to his work on _Way of Rhea_, he wrote both a game engine and a compiler in the [Rust programming language](https://www.rust-lang.org/){:target="_blank"} that work together to allow editing games—code and all—in game, without ever having to restart or exit the game. *Way of Rhea* is built on top of the current iteration of this engine.
 <br><br>
 
 **[Carolyn Whitmeyer](https://www.instagram.com/nylorac0_o/){:target="_blank"} - Visual Artwork**
