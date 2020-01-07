@@ -12,9 +12,9 @@ redirect_from:
 
 <table style="max-width:646px;display:block;">
   <tr>
-    <th width="215.3333"><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/animated-rev-1.gif" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/animated-rev-1.gif"/></a></th>
-    <th width="215.3333"><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/7.png" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/7.png"/></a></th>
-    <th width="215.3333"><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/6-rev-1.png" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/6-rev-1.png"/></a></th>
+    <th width="215.3333"><a href="/assets/monsters-and-sprites/press-kit/animated-rev-2.gif" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/animated-rev-2.gif"/></a></th>
+    <th width="215.3333"><a href="/assets/monsters-and-sprites/press-kit/7-rev-1.png" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/7-rev-1.png"/></a></th>
+    <th width="215.3333"><a href="/assets/monsters-and-sprites/press-kit/6-rev-2.png" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/6-rev-2.png"/></a></th>
   </tr>
 </table>
 
