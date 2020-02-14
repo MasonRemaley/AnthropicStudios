@@ -68,7 +68,7 @@ This is the current trailer, unfortunately it's a little out of date compared to
 
 
 # Demos
-The game is not yet publicly available, [contact us if you'd like a Steam key](mailto:mason.remaley@gmail.com)
+The game is not yet publicly available, [contact us if you'd like a Steam key.](mailto:mason.remaley@gmail.com)
 
 <!-- TODO: Graphics package containing character cutouts/such, fonts, logo and icon, etc -->
 
