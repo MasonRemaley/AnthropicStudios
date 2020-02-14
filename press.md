@@ -74,36 +74,33 @@ The game is not yet publicly available, [contact us if you'd like a Steam key](m
 
 # Selected Articles
 
-"Though the demo only lasted about five or ten minutes, it was enough for me to get a good glimpse into the world of Way of Rhea, and now I’m looking forward to going back when the game releases." - Courtney Ehrenhofler, [Tech Raptor](https://techraptor.net/content/way-of-rhea-puzzle-sidescroller){:target="_blank"}
+"The first thing that caught my eye was the game’s redesigned artwork. Not that I wasn’t a fan of the old style, but the new backgrounds I fell in love with immediately. It lends a whimsical feel that meshes well with the character design and the general concept of the game. Mason Remaley, designer and programmer of Way of Rhea, explained that artist Carolyn Whitmeyer had repainted all of the backgrounds and revamped the artwork in the span of a month, which was, quite frankly, shocking and impressive." [Tech Raptor (2019)](https://techraptor.net/gaming/previews/play-nyc-2019-way-of-rhea){:target="_blank"}
 
-"Finally, [Way of Rhea] is a puzzle game that reminds me a bit of Hue, but unlike Hue, lays everything out in front of you, choosing to double down on a sense of whimsy as opposed to a sense of minimalist mystery.  While [Way of Rhea] is still very much early in development, I love the idea of tying color to the mechanics of a puzzle in a game. It’s a tried and true mechanic that has been used on everything from Red Doors to Blue Keys, but Indie games continue to reinvent this and re-imagine it in many ways." - Jacob Wood, [Indie Hangover](http://www.indiehangover.com/the-road-to-play-nyc-looking-good/){:target="_blank"}
+"Though the demo only lasted about five or ten minutes, it was enough for me to get a good glimpse into the world of Way of Rhea, and now I’m looking forward to going back when the game releases." - Courtney Ehrenhofler, [Tech Raptor (2018)](https://techraptor.net/content/way-of-rhea-puzzle-sidescroller){:target="_blank"}
+
+"Finally, [Way of Rhea] is a puzzle game that reminds me a bit of Hue, but unlike Hue, lays everything out in front of you, choosing to double down on a sense of whimsy as opposed to a sense of minimalist mystery.  While [Way of Rhea] is still very much early in development, I love the idea of tying color to the mechanics of a puzzle in a game. It’s a tried and true mechanic that has been used on everything from Red Doors to Blue Keys, but Indie games continue to reinvent this and re-imagine it in many ways." - Jacob Wood, [Indie Hangover (2018)](http://www.indiehangover.com/the-road-to-play-nyc-looking-good/){:target="_blank"}
 
 
 # Team
 
 **[Mason Remaley](https://twitter.com/masonremaley){:target="_blank"} - Design, Programming**
 
-Mason Remaley is leading the project. He previously worked on Windows 10 at Microsoft, internal tools at Google, and was tech lead for the Apps and SDK teams at CTRL-labs. Outside of Way of Rhea, he co-organizes the UCSC Silicon Valley Indie Playtest Night, and occasionally teaches grad and undergrad classes on game development.
+Mason Remaley is leading the project. He previously worked on Windows 10 at Microsoft, internal tools at Google, and was tech lead for the Apps and SDK teams at [CTRL-labs](https://www.wired.com/story/brain-machine-interface-isnt-sci-fi-anymore/){:target="_blank"} which was eventually aquired by Oculus. Outside of Way of Rhea, he co-organizes the [UCSC Silicon Valley Indie Playtest Night](https://www.meetup.com/Indie-Game-Developers-of-Silicon-Valley/){:target="_blank"}, and occasionally teaches grad and undergrad classes on game development.
 
-<br><br>
 
 **[Carolyn Whitmeyer](https://www.instagram.com/cw_visuals_insta/){:target="_blank"} - Visual Artwork**
 
 Carolyn Whitmeyer is the artist for *Way of Rhea*, she has a bachelor's degree in biology as well as a master's degree in medical visualization. Her studies are motivated by her lifelong interest in art and nature.
 
 She's currently a Production Assistant at the American Institutes for Research as a production assistant, and spends her spare time working with Anthropic and improving her art skills.
-<br><br>
 
 **[Evan Morris](https://twitter.com/evan_cmm){:target="_blank"} - Narrative Design**
 
 Evan Morris is the narrative designer for *Way of Rhea*. He's currently working on a PhD in astrophysics.
-<br><br>
 
 **[Nick Romero](https://soundcloud.com/stonedape){:target="_blank"} - Sound Design, Music**
-<br><br>
 
 **[Colin Quinn](mailto:colinquinnwork@gmail.com) - Music**
-<br><br>
 
 # Events (Non Exhaustive)
 
