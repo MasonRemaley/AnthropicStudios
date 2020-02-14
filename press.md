@@ -53,11 +53,11 @@ They had initially planned to repeat this exercise a few more times after the ex
   </tr>
   <tr>
     <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/booth.jpg" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/booth.jpg"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/press-kit/magfest-2020-booth.jpg" target="_blank"><img height="200px" src="/assets/monsters-and-sprites/press-kit/magfest-2020-booth.jpg"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/magfest-2020-booth.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/magfest-2020-booth.jpg"/></a></th>
   </tr>
   <tr>
     <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/magfest-2020-players.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/magfest-2020-players.jpg"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/press-kit/magfest-2020-mask.jpg" target="_blank"><img height="200px" src="/assets/monsters-and-sprites/press-kit/magfest-2020-mask.jpg"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/magfest-2020-mask.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/magfest-2020-mask.jpg"/></a></th>
   </tr>
 </table>
 
