@@ -33,6 +33,10 @@ They had initially planned to repeat this exercise a few more times after the ex
 # Technology
 *Way of Rhea* is being built in a custom game engine and scripting language built by  [Mason Remaley](https://twitter.com/masonremaley){:target="_blank"} in the [Rust programming language](https://www.rust-lang.org/en-US/){:target="_blank"}. The engine supports hot swapping of all assets and scripts—in other words, the game can be edited while it is running. The engine also makes it easy to efficiently render the game's large non-repeating parallaxing backgrounds.
 
+# Videos
+<iframe width="646" height="363.375" src="https://www.youtube.com/embed/_Yl4KO6cnWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Contact us if you'd like a copy you can more easily download.](mailto:mason.remaley@gmail.com)
+
 # Images
 <table>
   <tr>
@@ -60,11 +64,6 @@ They had initially planned to repeat this exercise a few more times after the ex
     <th><a href="/assets/monsters-and-sprites/press-kit/magfest-2020-mask.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/magfest-2020-mask.jpg"/></a></th>
   </tr>
 </table>
-
-# Videos
-This is the current trailer, unfortunately it's a little out of date compared to the screenshots! We've since replaced the main character.
-<iframe width="646" height="363.375" src="https://www.youtube.com/embed/VIzqlI-gbAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-[Contact us if you'd like a copy you can more easily download.](mailto:mason.remaley@gmail.com)
 
 
 # Demos
