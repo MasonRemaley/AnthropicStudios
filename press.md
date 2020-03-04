@@ -128,6 +128,7 @@ Evan Morris is the narrative designer for *Way of Rhea*. He's currently working 
   - [Handmade Seattle](https://www.handmade-seattle.com/){:target="_blank"} Improv Show & Tell Talk @ Seattle Center Armory
   - Talk + Demo @ [42](https://www.42.us.org/){:target="_blank"}
   - [UCSC's Monthly Playtest Nights](https://www.meetup.com/Indie-Game-Developers-of-Silicon-Valley){:target="_blank"} (Mason co-hosts these, so we're at most of them...)
+  - [PREGAMER: Pax East Edition (2020)](https://www.eventbrite.com/e/pregamer-pax-east-edition-tickets-87148881651#)
 - Upcoming:
   - [PAX East 2020](https://east.paxsite.com/){:target="_blank"} via [PAXRising](https://east.paxsite.com/rising){:target="_blank"}
   - [PlayNYC](https://www.play-nyc.com/){:target="_blank"} 2020 (as part of [GUMBO](https://www.gumbo.nyc/){:target="_blank"})
@@ -138,7 +139,7 @@ Evan Morris is the narrative designer for *Way of Rhea*. He's currently working 
 
 **Will the game support mobile platforms?**
 
-Currently only macOS and Windows support is planned. Other platforms may be considered after the initial release if there's sufficient interest.
+Currently only Windows support is planned. We have a macOS build as well, but Apple's new code signing policy makes releasing it difficult. Other platforms may be considered after the initial release if there's sufficient interest.
 
 **When will it be released?**
 
