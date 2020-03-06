@@ -8,7 +8,7 @@ redirect_from:
   - /way-of-rhea
 ---
 
-<iframe width="646" height="363.375" src="https://www.youtube.com/embed/VIzqlI-gbAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="646" height="363.375" src="https://www.youtube.com/watch?v=eVrbZss_B3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <table style="max-width:646px;display:block;">
   <tr>
