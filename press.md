@@ -17,7 +17,12 @@ title: Press Kit
 
 # Description
 
-*Way of Rhea* is an upcoming narrative driven puzzle side scroller about the space humans take up in the world. In the game, you can only interact with objects in the world that match your current color, and therefore must use the color changing orbs and teleporters scattered throughout the world to navigate its puzzles.
+*Way of Rhea* is a puzzle platformer that begins with two simple rules:
+
+- You can only interact with items in the world that match your current color
+- You can use the color changing orbs scattered throughout the world to change colors
+
+As the game progresses, classic mechanics you've seen in other games are reintroduced—as well as some new ones. With each new mechanic, you're challenged to take advantage of its interaction with the original two rules and any other mechanics you've already mastered to solve the puzzle at hand. 
 
 Anthropic Studios is a small indie studio founded in 2018 with collaborators working out of California, New York City, Washington DC, and Pennsylvania.
 
@@ -91,7 +96,7 @@ Mason Remaley is leading the project. He previously worked on Windows 10 at Micr
 
 Carolyn Whitmeyer is the artist for *Way of Rhea*, she has a bachelor's degree in biology as well as a master's degree in medical visualization. Her studies are motivated by her lifelong interest in art and nature.
 
-She's currently a Production Assistant at the American Institutes for Research as a production assistant, and spends her spare time working with Anthropic and improving her art skills.
+She's currently a Production Assistant at the American Institutes for Research, and spends her spare time working with Anthropic and improving her art skills.
 
 **[Evan Morris](https://twitter.com/evan_cmm){:target="_blank"} - Narrative Design**
 
