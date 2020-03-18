@@ -22,7 +22,9 @@ title: Press Kit
 - You can only interact with items in the world that match your current color
 - You can use the color changing orbs scattered throughout the world to change colors
 
-As the game progresses, classic mechanics you've seen in other games are reintroduced—as well as some new ones. With each new mechanic, you're challenged to take advantage of its interaction with the original two rules and any other mechanics you've already mastered to solve the puzzle at hand. 
+As the game progresses, classic mechanics you've seen in other games are reintroduced—as well as some new ones. With each new mechanic, you're challenged to take advantage of its interaction with the mechanics you've already mastered to solve the puzzle at hand.
+
+While the game's puzzles are challenging, the game itself is forgiving—a flexible undo/redo system lets you quickly explore possible solutions, and correct any mistakes you made along the way. *Solving the puzzles is difficult, executing on the solutions is easy. You won't find difficult platforming challenges in this game.*
 
 Anthropic Studios is a small indie studio founded in 2018 with collaborators working out of California, New York City, Washington DC, and Pennsylvania.
 
