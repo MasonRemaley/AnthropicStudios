@@ -13,7 +13,7 @@ With Santa Cruz officially in lockdown due to COVID-19, I've been at home a lot 
 
 ## Symmetric Matrices
 
-[Wikipedia](https://en.wikipedia.org/wiki/Symmetric_matrix) defines symmetric matrices as "a square matrix that is equal to its transpose." In other words, a symmetric matrix has symmetry along its diagonal.
+[Wikipedia](https://en.wikipedia.org/wiki/Symmetric_matrix) defines a symmetric matrix as "a square matrix that is equal to its transpose." In other words, a symmetric matrix has symmetry along its diagonal such that `m[row][col] == m[col][row]`.
 
 Why should you care about symmetric matrices?
 
