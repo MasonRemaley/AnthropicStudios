@@ -41,7 +41,23 @@ They had initially planned to repeat this exercise a few more times after the ex
 *Way of Rhea* is being built in a custom game engine and scripting language built by  [Mason Remaley](https://twitter.com/masonremaley){:target="_blank"} in the [Rust programming language](https://www.rust-lang.org/en-US/){:target="_blank"}. The engine supports hot swapping of all assets and scripts—in other words, the game can be edited while it is running. The engine also makes it easy to efficiently render the game's large non-repeating parallaxing backgrounds.
 
 # Videos
-<iframe width="646" height="363.375" src="https://www.youtube.com/embed/eVrbZss_B3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<style type="text/css">
+    #trailer-embed iframe{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    #trailer-embed {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 51%;
+    }
+</style>
+<div id="trailer-embed"><iframe src="https://www.youtube.com/embed/eVrbZss_B3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 [Contact us if you'd like a copy you can more easily download.](mailto:mason.remaley@gmail.com)
 
 # Images

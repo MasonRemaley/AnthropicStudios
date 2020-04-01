@@ -20,7 +20,7 @@ I dunno, you read the title and chose to click on this blog post, you tell me. *
 
 The layer system essentially lets me define a number of layers rigid bodies can be placed on, and then for each layer-layer pair set a boolean that indicates whether or not collisions can occur between the two layers:
 
-<table>
+<table style="display: table; font-size: 85%">
   <tr>
     <th><i>Layers</i></th>
     <th>Default</th>
@@ -71,7 +71,7 @@ Well, as you probably guessed since I'm writing this blog post about it, it turn
 
 Consider the following numbering scheme, left to right top to bottom:
 
-<table style="width:auto">
+<table style="width:auto; display: table">
   <tr style="background-color: white">
     <th></th><th>0</th><th>1</th><th>2</th><th>3</th>
   </tr>
@@ -92,7 +92,7 @@ Consider the following numbering scheme, left to right top to bottom:
 Our goal is to define a function that maps each row and column to the number in the corresponding cell. If the cell is unoccupied, we want to look at the cell opposite the diagonal from it (e.g. with the row and column swapped.)
 
 For example, say that we want to calculate the index of **x**, at (2, 1). We can see above that this maps to 4, which is also the number of cells that occur prior to x in our ordering:
-<table style="width:auto">
+<table style="width:auto; display: table">
   <tr style="background-color: white">
     <th></th><th>0</th><th>1</th><th>2</th><th>3</th>
   </tr>
@@ -113,8 +113,33 @@ For example, say that we want to calculate the index of **x**, at (2, 1). We can
 Above, I've highlighted the shape formed by the cells that come before **x** in our ordering. If we can come up with a formula for the area of that shape, we have a solution. It's a bit of an odd shape, so let's break it into two simpler pieces:
 - The cells on **x**'s row leading up to it
 - The triangle formed by the cells above **x**
-<div style="display:table">
-  <table style="display:inline-block; width:auto;">
+<style type="text/css">
+  #table-addition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #table-addition table {
+    width: auto;
+    font-size: 50%;
+    margin: 0;
+  }
+
+  #table-addition span {
+    height: 100%;
+    margin: 2em;
+  }
+
+  @media only screen and (max-width: 800px) {
+    #table-addition {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<div id="table-addition">
+  <table>
     <tr style="background-color: white">
       <th></th><th>0</th><th>1</th><th>2</th><th>3</th>
     </tr>
@@ -132,9 +157,9 @@ Above, I've highlighted the shape formed by the cells that come before **x** in 
     </tr>
   </table>
 
-  <span style="display:table-cell; vertical-align:middle; padding: 2em">+</span>
+  <span>+</span>
 
-  <table style="width:auto; display:inline-block;">
+  <table>
     <tr style="background-color: white">
       <th></th><th>0</th><th>1</th><th>2</th><th>3</th>
     </tr>
@@ -152,9 +177,9 @@ Above, I've highlighted the shape formed by the cells that come before **x** in 
     </tr>
   </table>
 
-  <span style="display:table-cell; vertical-align:middle; padding: 2em">=</span>
+  <span>=</span>
 
-  <table style="width:auto; display:inline-block">
+  <table>
     <tr style="background-color: white">
       <th></th><th>0</th><th>1</th><th>2</th><th>3</th>
     </tr>
@@ -172,6 +197,7 @@ Above, I've highlighted the shape formed by the cells that come before **x** in 
     </tr>
   </table>
 </div>
+<br>
 
 The number of cells leading up to **x** on the same row as it is easy--that's just equal to **x**'s column, which we're given.
 
@@ -182,7 +208,7 @@ The triangle is a little trickier. Notice that regardless of the dimensions, it 
 Well, it turns out that this is called a [triangle number](https://en.wikipedia.org/wiki/Triangular_number). We could go try to dig through that Wikipedia link to see if it has the equation...but where's the fun in that? Let's derive it.
 
 If we look at an example equilateral triangle, we're always going to take up half of the square it fits inside...sort of:
-<table style="width:auto;">
+<table style="width:auto; display: table">
   <tr style="background-color: white">
     <td style="background:#aaa;color:rgba(0, 0, 0, 0)">0</td><td></td><td></td>
   </tr>
