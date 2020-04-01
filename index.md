@@ -89,7 +89,7 @@ redirect_from:
             <div style="font-size:80%">2019</div>
         </div>
     </div>
-    <div class="laurel-outer">
+    <div class="laurel-outer" id="foo">
         <div class="laurel-inner">
             <div style="font-size:80%">Official Selection</div>
             <div><b>Play NYC</b></div>
