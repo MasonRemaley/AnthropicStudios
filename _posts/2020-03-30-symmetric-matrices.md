@@ -19,9 +19,27 @@ Why should you care about symmetric matrices?
 
 I dunno, you read the title and chose to click on this blog post, you tell me. **I'm** interested in symmetric matrices because this morning, as part of a puzzle I was working on, I added a layer system to Way of Rhea's physics engine.
 
-The layer system essentially lets me define a number of layers rigid bodies can be placed on, and then for each layer-layer pair set a boolean that indicates whether or not collisions can occur between the two layers:
+The layer system essentially lets me define a number of layers rigid bodies can be placed on, and then for each layer-layer pair set a boolean that indicates whether or not collisions can occur between the two layers.
 
-<table style="display: table; font-size: 85%">
+<figure style="position: relative">
+  <a href="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png">
+    <img style="min-width: 100%; max-width: 100%; width: 100%" src="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png">
+    <figcaption style="
+      position: absolute;
+      bottom: 0;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+    ">
+      <div style="margin: 5px">
+        The pink orb should not collide with the player, but it should collide with the ground.
+      </div>
+    </figcaption>
+  </a>
+</figure>
+
+
+<table style="display: table; font-size: 80%">
   <tr>
     <th><i>Layers</i></th>
     <th>Default</th>
