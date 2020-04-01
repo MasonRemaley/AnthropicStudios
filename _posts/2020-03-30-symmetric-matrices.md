@@ -5,7 +5,8 @@ date: 2020-03-30
 tags: way-of-rhea tech
 author: mason
 excerpt_separator: <!--more-->
-<!-- TODO: add reddit and twitter links -->
+twitter: https://twitter.com/masonremaley/status/1245205608774520833
+reddit: https://www.reddit.com/r/gamedev/comments/fst8i3/symmetric_matrices_triangle_numbers/
 ---
 
 With Santa Cruz officially in lockdown due to COVID-19, I've been at home a lot working on [Way of Rhea](/way-of-rhea). Since I'm left without any excuse for not posting, here's a neat proof I happened across while working on some new puzzles. :)
