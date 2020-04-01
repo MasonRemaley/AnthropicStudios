@@ -13,13 +13,13 @@ With Santa Cruz officially in lockdown due to COVID-19, I've been at home a lot 
 
 ## Symmetric Matrices
 
-[Wikipedia](https://en.wikipedia.org/wiki/Symmetric_matrix) defines a symmetric matrix as "a square matrix that is equal to its transpose." In other words, a symmetric matrix has symmetry along its diagonal such that `m[row][col] == m[col][row]`.
+[Wikipedia](https://en.wikipedia.org/wiki/Symmetric_matrix) defines a symmetric matrix as "a square matrix that is equal to its transpose." In other words, a symmetric matrix has symmetry along its diagonal such that `m[row][col]` always equals `m[col][row]`.
 
 Why should you care about symmetric matrices?
 
 I dunno, you read the title and chose to click on this blog post, you tell me. **I'm** interested in symmetric matrices because this morning, as part of a puzzle I was working on, I added a layer system to Way of Rhea's physics engine.
 
-The layer system essentially lets me define a number of layers rigid bodies can be placed on, and then for each layer-layer pair set a boolean that indicates whether or not collisions can occur between the two layers.
+The layer system essentially lets me define a number of layers rigid bodies can be placed on, and then for each layer-layer pair set a boolean that indicates whether or not collisions can occur between those two layers.
 
 <figure style="position: relative">
   <a href="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png">
