@@ -8,10 +8,6 @@ excerpt_separator: <!--more-->
 <!-- TODO: add reddit and twitter links -->
 ---
 
-<!-- TODO: resolve all TODOs and make sure this actually works in game before posting, and then share places -->
-<!-- TODO: link target? -->
-<!-- TODO: post on reddit, twitter, gamastura, etc, AND figure out mailing list stuff! probably manually categorize, and then send out email letting people change it. add mailing list plug to the blog post and default check that option here but not other places!! maybe also share to gumbo? did kyle share stuff somewhere in there? discords? idk. -->
-
 With Santa Cruz officially in lockdown due to COVID-19, I've been at home a lot working on [Way of Rhea](/way-of-rhea). Since I'm left without any excuse for not posting, here's a neat proof I happened across while working on some new puzzles. :)
 
 ## Symmetric Matrices
@@ -23,8 +19,6 @@ Why should you care about symmetric matrices?
 I dunno, you read the title and chose to click on this blog post, you tell me. **I'm** interested in symmetric matrices because this morning, as part of a puzzle I was working on, I added a layer system to Way of Rhea's physics engine.
 
 The layer system essentially lets me define a number of layers rigid bodies can be placed on, and then for each layer-layer pair set a boolean that indicates whether or not collisions can occur between the two layers:
-<!-- TODO: add in game picture? -->
-<!-- TODO: turn off character-character collision? orb orb collision? -->
 
 <table>
   <tr>
