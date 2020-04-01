@@ -1,31 +1,31 @@
 <style type="text/css">
-    #signup {
-        background-color: #75a;
-        color: white;
-        font-weight: bold;
-        width: 646px;
-        height: 2.5em;
-        text-align: center;
-        display: table;
-        border-radius: 5px;
-        text-decoration: none;
-    }
+	#signup {
+		background-color: #75a;
+		color: white;
+		font-weight: bold;
+		width: 646px;
+		height: 2.5em;
+		text-align: center;
+		display: table;
+		border-radius: 5px;
+		text-decoration: none;
+	}
 
-    #signup:hover {
-        background-color: #a5a;
-    }
+	#signup:hover {
+		background-color: #a5a;
+	}
 
-    #signup span {
-        display: table-cell;
-        vertical-align: middle;
-    }
+	#signup span {
+		display: table-cell;
+		vertical-align: middle;
+	}
 </style>
 {% if post.tags contains "tech" %}
-    <a href="/newsletter/signup/tech" id="signup">
-        <span>Newsletter Signup</span>
-    </a>
+	<a href="/newsletter/signup/tech" id="signup">
+		<span>Newsletter Signup</span>
+	</a>
 {% else %}
-    <a href="/newsletter/signup/" id="signup">
-        <span>Newsletter Signup</span>
-    </a>
+	<a href="/newsletter/signup/" id="signup">
+		<span>Newsletter Signup</span>
+	</a>
 {% endif %}
