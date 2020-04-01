@@ -2,7 +2,7 @@
 layout: post
 title: "Scripting Language Cleanup"
 date: 2018-06-30
-categories: monsters-and-sprites way-of-rhea language engine
+tags: way-of-rhea tech
 author: mason
 excerpt_separator: <!--more-->
 twitter: https://twitter.com/AnthropicSt/status/1013202971998539776

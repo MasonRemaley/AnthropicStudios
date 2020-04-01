@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<h1 class="post-list-heading">
+  {% if page.tag == nil %}
+    {{ page.title }}
+  {% else %}
+    Posts Tagged with "{{ page.tag }}"
+  {% endif %}
+</h1> 
+{% assign posts = site.posts | sort: 'order' %}
+<ul class="post-list">
+  {% for post in posts %}
+    {% if page.tag == nil or post.tags contains page.tag %}
+      <li>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {% if site.show_excerpts %}
+          {% include post-meta.html %}
+          {{ post.excerpt }}
+          <a href="{{ post.url | relative_url }}">Read more...</a>
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

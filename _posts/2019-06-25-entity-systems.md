@@ -2,7 +2,7 @@
 layout: post
 title: "Way of Rhea's Entity System"
 date: 2019-06-05
-categories: monsters-and-sprites way-of-rhea engine
+tags: way-of-rhea tech
 author: mason
 excerpt_separator: <!--more-->
 twitter: https://twitter.com/masonremaley/status/1143655586740838400
