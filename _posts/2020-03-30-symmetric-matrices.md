@@ -226,7 +226,7 @@ The triangle is a little trickier. Notice that regardless of the dimensions, it 
 
 Well, it turns out that this is called a [triangle number](https://en.wikipedia.org/wiki/Triangular_number). We could go try to dig through that Wikipedia link to see if it has the equation...but where's the fun in that? Let's derive it.
 
-If we look at an example equilateral triangle, we're always going to take up half of the square it fits inside...sort of:
+If we look at an example equilateral triangle, it's easy to see that we'll always take up half of the square it fits inside...sort of:
 <table style="width:auto; display: table">
   <tr style="background-color: white">
     <td style="background:#aaa;color:rgba(0, 0, 0, 0)">0</td><td></td><td></td>
@@ -266,7 +266,7 @@ Now that we have an equation, we can simplify it!
 n * (n + 1) / 2
 ```
 
-And there you have it, the equation for a triangle number!
+And there you have it, the equation for a triangle number! Feel free to plug in some numbers to see for yourself that it works.
 
 ## Putting it all together
 
