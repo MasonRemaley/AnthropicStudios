@@ -63,6 +63,14 @@ redirect_from:
         vertical-align: middle;
         font-size: 200%;
     }
+
+    @media only screen and (max-width: 800px) {
+      .laurel-outer {
+        /*width: 10em;
+        height: 5.5em;*/
+        font-size: 50.0%;
+      }
+    }
 </style>
 
 <div class="laurels">
