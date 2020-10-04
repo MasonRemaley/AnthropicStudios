@@ -5,7 +5,7 @@ date: 2020-10-4
 tags: marketing
 author: mason
 excerpt_separator: <!--more-->
-<!-- twitter: https://twitter.com/masonremaley/status/1245205608774520833 -->
+twitter: https://twitter.com/masonremaley/status/1312803634833510400
 <!-- reddit: https://www.reddit.com/r/gamedev/comments/fst8i3/symmetric_matrices_triangle_numbers/ -->
 ---
 
