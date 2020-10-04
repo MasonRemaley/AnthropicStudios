@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 <!-- reddit: https://www.reddit.com/r/gamedev/comments/fst8i3/symmetric_matrices_triangle_numbers/ -->
 ---
 
-I recently attended the [Steam Q&A](https://www.eventbrite.ca/e/qa-session-with-steam-tickets-117008295963){:target="_blank"} hosted by [GamePlay Space](https://gameplayspace.com/){:target="_blank"}, and I took a bunch of notes for myself. A feww friends asked about the event, so I figured I'd just upload my notes somewhere I can share.
+I recently attended the [Steam Q&A](https://www.eventbrite.ca/e/qa-session-with-steam-tickets-117008295963){:target="_blank"} hosted by [GamePlay Space](https://gameplayspace.com/){:target="_blank"}, and I took a bunch of notes for myself. A few friends asked about the event, so I figured I'd just upload my notes somewhere I can share.
 
 If you'd prefer to read a summary over the raw notes, Chris Zukowski put together some takeaways in his article *["What does Valve say you should do to sell your game on Steam?"](http://howtomarketagame.com/2020/09/20/what-steam-says-you-should-do/){:target="_blank"}*, and Simon Carless wrote some of his thoughts up in *["The 'mysterious' Steam algorithm - not that scary?"](https://gamediscoverability.substack.com/p/the-mysterious-steam-algorithm-not){:target="_blank"}*.
 
