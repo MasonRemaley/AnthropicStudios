@@ -13,7 +13,7 @@ title: Press Kit
 - **Store Pages:** <a href="https://store.steampowered.com/app/1110620/Way_of_Rhea">Steam</a>
 - **Website:** [anthropicstudios.com/way-of-rhea](https://anthropicstudios.com/way-of-rhea){:target="_blank"}
 - **Press Contact:** [mason.remaley@gmail.com](mailto:mason.remaley@gmail.com)
-- **Social:** [Twitter](https://twitter.com/anthropicst){:target="_blank"}, [Facebook](https://www.facebook.com/AnthropicStudios/){:target="_blank"}, [Instagram](http://instagram.com/anthropicstudios){:target="_blank"}
+- **Social:** [Twitter](https://twitter.com/anthropicst){:target="_blank"}, [Facebook](https://www.facebook.com/AnthropicStudios/){:target="_blank"}, [Instagram](http://instagram.com/anthropicstudios){:target="_blank"}, [Discord](https://discord.gg/JGeVt5XwPP)
 
 # Description
 

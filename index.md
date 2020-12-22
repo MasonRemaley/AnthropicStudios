@@ -36,7 +36,20 @@ redirect_from:
 
 <iframe src="https://store.steampowered.com/widget/1110620/?t=Way%20of%20Rhea%20is%20an%20upcoming%20puzzle%20platformer%20that%20takes%20place%20in%20a%20world%20where%20you%20can%20only%20interact%20with%20objects%20that%20match%20your%20current%20color.%20" frameborder="0" width="100%" height="190"></iframe>
 
+
+<div class="discord"><a href="https://discord.gg/JGeVt5XwPP" target="_blank"><img src="https://discord.com/api/guilds/787767251884310548/widget.png?style=banner4" alt="Join the Anthropic Studios Discord server!"/></a></div>
+
+
 <style type="text/css">
+    .discord {
+        text-align: center;
+        margin: 1em;
+    }
+    .discord img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .laurels {
         display: box;
         text-align: center;
