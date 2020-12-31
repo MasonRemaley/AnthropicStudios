@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.anthropicstudios.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.anthropicstudios.com/" rel="alternate" type="text/html" /><updated>2020-12-31T12:16:56-05:00</updated><id>https://www.anthropicstudios.com/feed.xml</id><title type="html">Anthropic Studios</title><entry><title type="html">Notes from the Q&amp;amp;A Sessions with Steam</title><link href="https://www.anthropicstudios.com/2020/10/04/qa-sessions-with-steam/" rel="alternate" type="text/html" title="Notes from the Q&amp;A Sessions with Steam" /><published>2020-10-04T00:00:00-04:00</published><updated>2020-10-04T00:00:00-04:00</updated><id>https://www.anthropicstudios.com/2020/10/04/qa-sessions-with-steam</id><content type="html" xml:base="https://www.anthropicstudios.com/2020/10/04/qa-sessions-with-steam/">&lt;p&gt;I recently attended the &lt;a href=&quot;https://www.eventbrite.ca/e/qa-session-with-steam-tickets-117008295963&quot; target=&quot;_blank&quot;&gt;Steam Q&amp;amp;A&lt;/a&gt; hosted by &lt;a href=&quot;https://gameplayspace.com/&quot; target=&quot;_blank&quot;&gt;GamePlay Space&lt;/a&gt;, and I took a bunch of notes for myself. A few friends asked about the event, so I figured I’d just upload my notes somewhere I can share.&lt;/p&gt;
+
+&lt;p&gt;If you’d prefer to read a summary over the raw notes, Chris Zukowski put together some takeaways in his article &lt;em&gt;&lt;a href=&quot;http://howtomarketagame.com/2020/09/20/what-steam-says-you-should-do/&quot; target=&quot;_blank&quot;&gt;“What does Valve say you should do to sell your game on Steam?”&lt;/a&gt;&lt;/em&gt;, and Simon Carless wrote some of his thoughts up in &lt;em&gt;&lt;a href=&quot;https://gamediscoverability.substack.com/p/the-mysterious-steam-algorithm-not&quot; target=&quot;_blank&quot;&gt;“The ‘mysterious’ Steam algorithm - not that scary?”&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h1 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h1&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#table-of-contents&quot; id=&quot;markdown-toc-table-of-contents&quot;&gt;Table of Contents&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#questions&quot; id=&quot;markdown-toc-questions&quot;&gt;Questions&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#common-store-page-mistakes&quot; id=&quot;markdown-toc-common-store-page-mistakes&quot;&gt;Common Store Page Mistakes&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#events-featured-on-steam&quot; id=&quot;markdown-toc-events-featured-on-steam&quot;&gt;Events Featured On Steam&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#predicting-sales-from-wishlists&quot; id=&quot;markdown-toc-predicting-sales-from-wishlists&quot;&gt;Predicting Sales from Wishlists&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-effect-of-reviews-on-visibility&quot; id=&quot;markdown-toc-the-effect-of-reviews-on-visibility&quot;&gt;The Effect of Reviews on Visibility&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#playtesting-support&quot; id=&quot;markdown-toc-playtesting-support&quot;&gt;Playtesting Support&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#click-through-rates&quot; id=&quot;markdown-toc-click-through-rates&quot;&gt;Click Through Rates&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pc-vs-mobile-ab-testing&quot; id=&quot;markdown-toc-pc-vs-mobile-ab-testing&quot;&gt;PC vs Mobile, A/B Testing&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#decay-factor-on-visibility&quot; id=&quot;markdown-toc-decay-factor-on-visibility&quot;&gt;Decay Factor on Visibility&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#game-prologues-vs-demos&quot; id=&quot;markdown-toc-game-prologues-vs-demos&quot;&gt;Game Prologues vs Demos&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#cart-abandonment&quot; id=&quot;markdown-toc-cart-abandonment&quot;&gt;Cart Abandonment&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#view-to-wishlist-conversion-rate&quot; id=&quot;markdown-toc-view-to-wishlist-conversion-rate&quot;&gt;View to Wishlist Conversion Rate&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#demo-download-location&quot; id=&quot;markdown-toc-demo-download-location&quot;&gt;Demo Download Location&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#store-page-demos&quot; id=&quot;markdown-toc-store-page-demos&quot;&gt;Store Page Demos&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#game-1&quot; id=&quot;markdown-toc-game-1&quot;&gt;Game 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#game-2&quot; id=&quot;markdown-toc-game-2&quot;&gt;Game 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#game-3&quot; id=&quot;markdown-toc-game-3&quot;&gt;Game 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#links&quot; id=&quot;markdown-toc-links&quot;&gt;Links&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;questions&quot;&gt;Questions&lt;/h1&gt;
+
+&lt;p&gt;Except where noted, questions were submitted beforehand. Valve grouped together similar questions prior to the event, and answered them together.&lt;/p&gt;
+
+&lt;p&gt;Bolded questions are mine, all others have been paraphrased.&lt;/p&gt;
+
+&lt;h2 id=&quot;common-store-page-mistakes&quot;&gt;Common Store Page Mistakes&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Besides failing to set up tags or not putting in work to publicize their game off of Steam, what’s the most common mistake small developers make that hurts their visibility on Steam?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Assuming you’re publicizing off of Steam (discord, social media, trade shows, whatever works)…&lt;/li&gt;
+  &lt;li&gt;Think about your capsule art!
+    &lt;ul&gt;
+      &lt;li&gt;High quality readable capsule art is important, must be eye catching, not cluttered with lot sof text&lt;/li&gt;
+      &lt;li&gt;It’s the branding of your game on Steam!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Make sure you have a killer trailer!
+    &lt;ul&gt;
+      &lt;li&gt;Jump right into gameplay within the first second or two&lt;/li&gt;
+      &lt;li&gt;It should be eye catching, people won’t watch the whole thing if it doesn’t catch their interest&lt;/li&gt;
+      &lt;li&gt;Steam is experimenting with showing one second slices of game trailers on mouse hover in some locations. They may increase the number of locations and give you control over which slices are shown eventually.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Make sure you have a strong overall store page
+    &lt;ul&gt;
+      &lt;li&gt;Game description&lt;/li&gt;
+      &lt;li&gt;Animated GIFs&lt;/li&gt;
+      &lt;li&gt;Strong explanation of the game
+        &lt;ul&gt;
+          &lt;li&gt;This varies for different genres!&lt;/li&gt;
+          &lt;li&gt;Think about it from the perspective of a new player who doesn’t know anything about the game.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Does it look fun, interesting, and high quality?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Make sure you’re using Steam events
+    &lt;ul&gt;
+      &lt;li&gt;Major updates, new DLC, Q&amp;amp;A with the devs on a livestream, etc&lt;/li&gt;
+      &lt;li&gt;These events appear on your store page and communicate that you’ve been communicating with the community, the game is being actively developed, etc. You want the game to be visibly thriving and for it to be obvious that people are playing it–especially with early access.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Take advantage of different events
+    &lt;ul&gt;
+      &lt;li&gt;PAX Online, events in Europe, etc&lt;/li&gt;
+      &lt;li&gt;Maybe release a demo for the event, or link a coming soon page on Steam, if not the game itself&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Discounts
+    &lt;ul&gt;
+      &lt;li&gt;Summer sale, etc, are valuable&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Developer homepage
+    &lt;ul&gt;
+      &lt;li&gt;If you have multiple games, people can follow you as a developer and find your other games etc&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;events-featured-on-steam&quot;&gt;Events Featured On Steam&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;A significant portion of my game’s wishlists come from PAX East 2020 and the Steam Game Festival, likely because Steam featured games participating in both of these events. I’m planning on participating in one of the upcoming Steam Game Festivals, are there any other events that you’re planning on featuring that I should consider applying to?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We participated in Gamescom. Some games from Gamescom were featured on the Steam event page, but not others–why is that?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Valve will be doing 3 more steam game festivals (October, Feburary, June)&lt;/li&gt;
+  &lt;li&gt;PAX Online [was] featured&lt;/li&gt;
+  &lt;li&gt;Other festivals and cons that are now digital, many are hosting pages on steam e.g. Gamescom, Indie Arena Booth did it&lt;/li&gt;
+  &lt;li&gt;IIRC, they said that which games are featured is up to the event organizers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;predicting-sales-from-wishlists&quot;&gt;Predicting Sales from Wishlists&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;I’ve seen a lot of folks online try to predict first year sales of a game based on wishlists at launch. Do you think this is a reasonable metric? Does Valve have any numbers on this they’re willing to share, or an alternate recommendation for projecting sales numbers?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Note: I think they’re being a little pessimistic here as they don’t want to be blamed for your predictions if they’re inaccurate, but that’s just my opinion!&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Valve doesn’t think you can predict things using wishlist data since it’s extremely noisy&lt;/li&gt;
+  &lt;li&gt;Every game is different, people wishlist games for different reasons&lt;/li&gt;
+  &lt;li&gt;Not all wishlist additions are created equally
+    &lt;ul&gt;
+      &lt;li&gt;What’s the wishlister’s intent?&lt;/li&gt;
+      &lt;li&gt;More is better! But the exact impact of each is too complex to predict&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;While it’s hard to predict what a specific number means, when the number goes up you know awareness is going up, so you’re doing something right, and everyone who wishlisted your game will get notified when it’s released&lt;/li&gt;
+  &lt;li&gt;Think of them as potential audience that might convert at different points based on timing and price points&lt;/li&gt;
+  &lt;li&gt;And hopefully people will continue to wishlist over time&lt;/li&gt;
+  &lt;li&gt;Short answer: it’s tough, but still worth trying to gather them&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-effect-of-reviews-on-visibility&quot;&gt;The Effect of Reviews on Visibility&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Do user ratings and reviews affect visibility?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Valve doesn’t want devs have to agonize over, for example,  &lt;em&gt;Overwhelmingly Positive&lt;/em&gt; vs &lt;em&gt;Extremely Positive&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;As long as the review is mixed or above, reviews don’t affect discoverability (though they may affect what a potential player’s impression!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;playtesting-support&quot;&gt;Playtesting Support&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;I used to run in-person playtest nights in my local community, but stopped due to the pandemic. I heard that Steam was testing out a playtest button that would show up on the store page–are you able to talk about the status of that/how it works?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;They’re working on it/trying it out, but it’s not publicly available right now&lt;/li&gt;
+  &lt;li&gt;Steam remote play together can be used for this though! You run the game on your machine, and then let people connect–maps well to the usual playtest experience, very 1:1 (if it’s a single player game)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=XpeDNV1qUBk&quot; target=&quot;_blank&quot;&gt;Erik has a video about this&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Feels less like you’re intruding on their play session!&lt;/li&gt;
+      &lt;li&gt;Also doesn’t actually download the game which is cool&lt;/li&gt;
+      &lt;li&gt;You can also configure more easily what levels people are testing etc since it’s running on your machine&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;click-through-rates&quot;&gt;Click Through Rates&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Should I ignore the click through rate on the marketing and visibility page, or is there a meaningful way to interpret it? The numbers it provides don’t seem to make sense–I have a 50% click through for external traffic, All Traffic varies between 1% and 50% depending on the week, etc.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What is a good click through rate? How can we increase our click through rate?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Do you have any tips on optimizing our images to improve our click through rate?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Why do some games seem to naturally earn more impressions than other games they are similar to? Does Steam “bless” specific games?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Valve doesn’t want to create incentives for devs to create clickbait, so they try to rely on better data
+    &lt;ul&gt;
+      &lt;li&gt;For example, actual sales (or wishlists if unreleased)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Valve doesn’t think don’t think that clickthrough is reliable data for Steam to make decisions based off of, impressions might come from being featured on a page with a lot of games, etc, which would “hurt” clickthrough rate.&lt;/li&gt;
+  &lt;li&gt;It’s presented so that you can see:
+    &lt;ul&gt;
+      &lt;li&gt;Is steam working for my game? Where’s it shown? It’s probably shown in the front page capsule to some people even if not big and successful due to recommendations or curators etc.&lt;/li&gt;
+      &lt;li&gt;Don’t agonize over what those %s are. The way it fluctuates over time is probably more interesting, but keep in mind that it’s context dependent.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;There’s a feature on steamworks called artwork override
+    &lt;ul&gt;
+      &lt;li&gt;You can iterate on your artwork and see if it affects your clickthrough rate&lt;/li&gt;
+      &lt;li&gt;e.g. change them for a week and see if you get more sales or more interest or whatever etc&lt;/li&gt;
+      &lt;li&gt;After the week it’ll automatically revert&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=KQSQJ_C5Pco&amp;amp;feature=youtu.be&quot; target=&quot;_blank&quot;&gt;Erik also has a video on this&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;pc-vs-mobile-ab-testing&quot;&gt;PC vs Mobile, A/B Testing&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;[Someone asked a live question I didn’t catch about PC vs mobile, and A/B testing]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;They’ve talked about AB testing, not much about other app store like stuff cause the mobile space is a bit different than Steam
+    &lt;ul&gt;
+      &lt;li&gt;PC vs Mobile: on the PC, there’s so many ways that players learn about new games. You’re not constrained to just the store. Steam definitely helps with discovery, but the speaker suspected it’s much more broadly distributed than on mobile.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;decay-factor-on-visibility&quot;&gt;Decay Factor on Visibility&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Does time affect the Steam algorithm? What is the effect of a burst of sales on launch day vs a burst of sales a year later? How does time spent in early access affect this?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Is the fate of your game set in stone after launch? Can you recover from a rocky launch?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Are you at a disadvantage if you soft launch your page? I’ve heard people say that Steam looks at the view to wishlist conversion when the page is first posted and uses that to judge interest in the game.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Steam is essentially a positive feedback loop&lt;/li&gt;
+  &lt;li&gt;It looks at sales and decides okay customers are giving us good data, they’re buying a game cause people are interested in it, show it to more customers if that keeps working, etc.&lt;/li&gt;
+  &lt;li&gt;“What if there’s a rocky launch? if things don’t go right? Is it possible to claw our way back and have success?”
+    &lt;ul&gt;
+      &lt;li&gt;Yes!&lt;/li&gt;
+      &lt;li&gt;The key is: you have to look at the reason why a launch is rocky, e.g. multi player without enough players? bad mouse bug on the first day? didn’t tell anyone about it?&lt;/li&gt;
+      &lt;li&gt;Most important: listen, talk to the community, figure out what’s bothering them/what they’re thinking, reassure people you’re gonna update the game/fix stuff, etc
+        &lt;ul&gt;
+          &lt;li&gt;Actively communicate, steam events, discord, etc&lt;/li&gt;
+          &lt;li&gt;Over time continue, it’s a process, etc&lt;/li&gt;
+          &lt;li&gt;If people aren’t aware…lots of work goes into telling a community about a game, that work still needs to be done if it wasn’t done beforehand!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;From the algorithm side: any burst of sales/interaction is gonna be picked up on
+        &lt;ul&gt;
+          &lt;li&gt;If you do it ahead of time, you’ll get a bigger burst at launch due to the people clicking the wishlist links, and it will therefore get shown to more customers etc&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Early access vs standard release:
+        &lt;ul&gt;
+          &lt;li&gt;Not like a full launch&lt;/li&gt;
+          &lt;li&gt;You can still show up top sellers/new and trending, etc&lt;/li&gt;
+          &lt;li&gt;But standard launch visibility doesn’t come into play–normally it’s featured at launch–it will only happen when the true launch happens&lt;/li&gt;
+          &lt;li&gt;There’s no decay factor on how much they’re willing to promote a game–a burst is a burst, even if it’s 2 years after launch. He’s talked to people who released an update years after their launch and then saw the biggest sales period for the game even bigger than their launch, etc.
+            &lt;ul&gt;
+              &lt;li&gt;Other speaker echoed that they see this all the time, e.g. Among Us is two years old but streamers playing it lead to a resurgence&lt;/li&gt;
+              &lt;li&gt;Customers might be more excited if it feels new though, there could be a natural decay factor for that sort of reason&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;game-prologues-vs-demos&quot;&gt;Game Prologues vs Demos&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Some developers have been releasing their demos as separate games they call prologues instead of as attached demos. Is this a good idea?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Content of game probably matters more than separate page vs demo&lt;/li&gt;
+  &lt;li&gt;Pro: it’s shown in some places a demo wouldn’t be&lt;/li&gt;
+  &lt;li&gt;Con: people start wishlisting the prologue&lt;/li&gt;
+  &lt;li&gt;Either is just as good, demo attached to the base game makes a little more sense, Steam understands it, they’re coupled in the steam ecosystem&lt;/li&gt;
+  &lt;li&gt;I’ve actually seen a few people manage to wishlist my demo somehow–sounds like this is a bug, but they aren’t surprised by it. I get the impression that under the hood anything can be wishlisted, but the wishlist UI is never supposed to be shown for demos. Either it’s getting shown by mistake somewhere, or users are crafting requests by hand and serverside this isn’t checked for.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;cart-abandonment&quot;&gt;Cart Abandonment&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Has Valve considered notifying users about abandoned carts, e.g. during sales?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Customer privacy is important, feels like an invasion to comment on the fact that they left stuff on their cart&lt;/li&gt;
+  &lt;li&gt;Not spamming players is important&lt;/li&gt;
+  &lt;li&gt;They thought about this and decided against it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;view-to-wishlist-conversion-rate&quot;&gt;View to Wishlist Conversion Rate&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What’s a good page view to wishlist conversion rate? What are the best ways to improve our wishlist rate?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What is the best way to get wishlists?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Similar question to earlier&lt;/li&gt;
+  &lt;li&gt;Core should be good value prop
+    &lt;ul&gt;
+      &lt;li&gt;Make sure users can get at info they want, localize in as many languages as you can, have good regional pricing, etc&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The game festivals they’ve been hosting are helpful!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;demo-download-location&quot;&gt;Demo Download Location&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;[Live question about the location of the demo button varying between different games]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Under “special settings”, you can configure where on the game page the demo button shows up&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;store-page-demos&quot;&gt;Store Page Demos&lt;/h1&gt;
+
+&lt;p&gt;Valve then reviewed the store pages for a few of the games submitted. I don’t want to include info about specific dev’s games without their permission, so here are some anonymized notes. This is, of course, less useful than seeing the pages themselves–but the devs may have updated their pages in response to the feedback by now anyway.&lt;/p&gt;
+
+&lt;h2 id=&quot;game-1&quot;&gt;Game 1&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Trailer
+    &lt;ul&gt;
+      &lt;li&gt;It gets to gameplay pretty quickly which is good, may wanna get to gameplay even more quickly&lt;/li&gt;
+      &lt;li&gt;It does a good job showing what the game is like to play, what’s going on, how you interact, etc
+        &lt;ul&gt;
+          &lt;li&gt;Showing UI can help here, it often helps communicate genre etc&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Watch some movie trailers, they all start with a mini trailer before the trailer starts, the first 2-3 seconds&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Release date
+    &lt;ul&gt;
+      &lt;li&gt;This game just listed a year, having some more specificity can be helpful to players–e.g. even if a specific date isn’t available yet, a month can help.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Has good tags
+    &lt;ul&gt;
+      &lt;li&gt;Note that not all tags are shown on game pages–you can click the plus sign to see them&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;They’re using Steam events which is good–although there’s only one right now
+    &lt;ul&gt;
+      &lt;li&gt;Show them that you’re there, you’re engaged, will be listening to feedback, etc!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Review section with three quick quotes + links is good!&lt;/li&gt;
+  &lt;li&gt;About this game section w/ gif and stuff is well done&lt;/li&gt;
+  &lt;li&gt;Looks high quality, dev obviously putting in love, strong marketing!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;game-2&quot;&gt;Game 2&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;About this game
+    &lt;ul&gt;
+      &lt;li&gt;Images, ways of explaining it&lt;/li&gt;
+      &lt;li&gt;Instead of just big images maybe use really short animated GIFs to show gameplay of your game&lt;/li&gt;
+      &lt;li&gt;Make sure they’re quick &amp;amp; small though! Don’t wanna slow down the load time too much for customers on mobile or with slow internet!!
+        &lt;ul&gt;
+          &lt;li&gt;5mb per gif max is best, but smaller is probably better&lt;/li&gt;
+          &lt;li&gt;Use dev tools in browser to see total page load&lt;/li&gt;
+          &lt;li&gt;Test on slower connections!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Looks good overall&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;game-3&quot;&gt;Game 3&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This game was early access&lt;/li&gt;
+  &lt;li&gt;The live stream showing up on the page is good (this is a Steam feature)
+    &lt;ul&gt;
+      &lt;li&gt;Helpful when you’re driving a bunch of traffic there&lt;/li&gt;
+      &lt;li&gt;Helps people see what it’s like to play!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The early access questionnaire has long answers, could be shorter&lt;/li&gt;
+  &lt;li&gt;Steam events are being used which is good&lt;/li&gt;
+  &lt;li&gt;Nice GIF &amp;amp; formatting&lt;/li&gt;
+  &lt;li&gt;There’s a lot of good stuff in the “about this game” section, if that section is lacking potential players start to wonder if the devs put much into the game&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.eventbrite.ca/e/qa-session-with-steam-tickets-117008295963&quot; target=&quot;_blank&quot;&gt;The event page (past)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gameplayspace.com/&quot; target=&quot;_blank&quot;&gt;GamePlay Space&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://howtomarketagame.com/2020/09/20/what-steam-says-you-should-do/&quot; target=&quot;_blank&quot;&gt;What does Valve say you should do to sell your game on Steam?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gamediscoverability.substack.com/p/the-mysterious-steam-algorithm-not&quot; target=&quot;_blank&quot;&gt;The ‘mysterious’ Steam algorithm - not that scary?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=XpeDNV1qUBk&quot; target=&quot;_blank&quot;&gt;Steamworks Quick Tips - Playtesting with Steam Remote Play Together&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=KQSQJ_C5Pco&amp;amp;feature=youtu.be&quot; target=&quot;_blank&quot;&gt;Steamworks Quick Tips - Artwork Overrides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>mason</name></author><category term="marketing" /><summary type="html">I recently attended the Steam Q&amp;amp;A hosted by GamePlay Space, and I took a bunch of notes for myself. A few friends asked about the event, so I figured I’d just upload my notes somewhere I can share. If you’d prefer to read a summary over the raw notes, Chris Zukowski put together some takeaways in his article “What does Valve say you should do to sell your game on Steam?”, and Simon Carless wrote some of his thoughts up in “The ‘mysterious’ Steam algorithm - not that scary?”.</summary></entry><entry><title type="html">Symmetric Matrices &amp;amp; Triangle Numbers</title><link href="https://www.anthropicstudios.com/2020/03/30/symmetric-matrices/" rel="alternate" type="text/html" title="Symmetric Matrices &amp; Triangle Numbers" /><published>2020-03-30T00:00:00-04:00</published><updated>2020-03-30T00:00:00-04:00</updated><id>https://www.anthropicstudios.com/2020/03/30/symmetric-matrices</id><content type="html" xml:base="https://www.anthropicstudios.com/2020/03/30/symmetric-matrices/">&lt;p&gt;With Santa Cruz officially in lockdown due to COVID-19, I’ve been at home a lot working on &lt;a href=&quot;/way-of-rhea&quot;&gt;Way of Rhea&lt;/a&gt;. Since I’m left without any excuse for not posting, here’s a neat proof I happened across while working on some new puzzles. :)&lt;/p&gt;
+
+&lt;h2 id=&quot;symmetric-matrices&quot;&gt;Symmetric Matrices&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Symmetric_matrix&quot;&gt;Wikipedia&lt;/a&gt; defines a symmetric matrix as “a square matrix that is equal to its transpose.” In other words, a symmetric matrix has symmetry along its diagonal such that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m[row][col]&lt;/code&gt; always equals &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m[col][row]&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Why should you care about symmetric matrices?&lt;/p&gt;
+
+&lt;p&gt;I dunno, you read the title and chose to click on this blog post, you tell me. &lt;strong&gt;I’m&lt;/strong&gt; interested in symmetric matrices because this morning, as part of a puzzle I was working on, I added a layer system to Way of Rhea’s physics engine.&lt;/p&gt;
+
+&lt;p&gt;The layer system essentially lets me define a number of layers rigid bodies can be placed on, and then for each layer-layer pair set a boolean that indicates whether or not collisions can occur between those two layers.&lt;/p&gt;
+
+&lt;figure style=&quot;position: relative&quot;&gt;
+  &lt;a href=&quot;/assets/monsters-and-sprites/symmetric-matrices/player-orb.png&quot;&gt;
+    &lt;img style=&quot;min-width: 100%; max-width: 100%; width: 100%&quot; src=&quot;/assets/monsters-and-sprites/symmetric-matrices/player-orb.png&quot; /&gt;
+    &lt;figcaption style=&quot;
+      position: absolute;
+      bottom: 0;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+    &quot;&gt;
+      &lt;div style=&quot;margin: 5px&quot;&gt;
+        The pink orb should not collide with the player, but it should collide with the ground.
+      &lt;/div&gt;
+    &lt;/figcaption&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;table style=&quot;display: table; font-size: 80%&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;&lt;i&gt;Layers&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Default&lt;/th&gt;
+    &lt;th&gt;Character&lt;/th&gt;
+    &lt;th&gt;Orb&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Default&lt;/th&gt;
+    &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Character&lt;/th&gt;
+    &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Orb&lt;/th&gt;
+    &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;So for example, rigid bodies on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Layer::Default&lt;/code&gt; can collide with rigid bodies on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Layer::Character&lt;/code&gt;, but rigid bodies on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Layer::Character&lt;/code&gt; cannot collide with rigid bodies on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Layer::Orb&lt;/code&gt;. You’ll notice that I didn’t bother filling out the top right half of the matrix. That’s because it’s symmetric! I don’t care whether an orb is intersecting with a character, or a character is intersecting with an orb; the result should be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; either way.&lt;/p&gt;
+
+&lt;p&gt;In general, symmetric matrices can be used to create per-pair properties. Here’s a couple other places I’ve had this come up:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Coefficient_of_restitution&quot;&gt;coefficient of restitution&lt;/a&gt; is a property of object pairs, not single objects! It’s pretty common to set it per object and then “combine” the two coefficients using some heuristic, which is totally fine most of the time, but if you want finer grained control for gameplay reasons you probably want a symmetric matrix!&lt;/li&gt;
+  &lt;li&gt;I believe that the same holds true for &lt;a href=&quot;https://simple.wikipedia.org/wiki/Coefficient_of_friction&quot;&gt;friction coefficients&lt;/a&gt;. Regardless of the physical reality, it’s again possible that you’ll want fine grained control over this for gameplay reasons.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;mapping-to-a-two-dimensional-array&quot;&gt;Mapping to a Two Dimensional Array&lt;/h2&gt;
+
+&lt;p&gt;The first two times this came up, I just hardcoded a giant match statement and kept the branches in sync manually. The third time it came up, with the layer system, I figured it was time to come up with a real solution.&lt;/p&gt;
+
+&lt;p&gt;At first I considered implementing symmetric matrices as 2D arrays. I figured I could make a triangular 2D array and swap the row/col indices when necessary to stay in the triangle, or I could just store each value twice.&lt;/p&gt;
+
+&lt;p&gt;This would have been fairly reasonable IMO, but something was nagging me…&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;mapping-to-a-one-dimensional-array&quot;&gt;Mapping to a One Dimensional Array&lt;/h2&gt;
+
+&lt;p&gt;…it felt like there should be some way to map to a one dimensional array that didn’t depend on the matrix’s size, which if true, would be super neat! You’d just need to implement an index function, and then you could use any existing array type as a symmetric array with no additional bookkeeping. As a plus, if your underlying array type is growable, your matrix is too!&lt;/p&gt;
+
+&lt;p&gt;Well, as you probably guessed since I’m writing this blog post about it, it turns out that this is possible!&lt;/p&gt;
+
+&lt;p&gt;Consider the following numbering scheme, left to right top to bottom:&lt;/p&gt;
+
+&lt;table style=&quot;width:auto; display: table&quot;&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;th&gt;&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;2&lt;/th&gt;&lt;th&gt;3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;th&gt;0&lt;/th&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;th&gt;1&lt;/th&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;th&gt;2&lt;/th&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;th&gt;3&lt;/th&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Our goal is to define a function that maps each row and column to the number in the corresponding cell. If the cell is unoccupied, we want to look at the cell opposite the diagonal from it (e.g. with the row and column swapped.)&lt;/p&gt;
+
+&lt;p&gt;For example, say that we want to calculate the index of &lt;strong&gt;x&lt;/strong&gt;, at (2, 1). We can see above that this maps to 4, which is also the number of cells that occur prior to x in our ordering:&lt;/p&gt;
+&lt;table style=&quot;width:auto; display: table&quot;&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;th&gt;&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;2&lt;/th&gt;&lt;th&gt;3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;th&gt;0&lt;/th&gt;&lt;td style=&quot;background:rgb(113, 190, 70)&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;th&gt;1&lt;/th&gt;&lt;td style=&quot;background:rgb(113, 190, 70)&quot;&gt;&lt;/td&gt;&lt;td style=&quot;background:rgb(113, 190, 70)&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;th&gt;2&lt;/th&gt;&lt;td style=&quot;background:rgb(113, 190, 70)&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;x&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;th&gt;3&lt;/th&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Above, I’ve highlighted the shape formed by the cells that come before &lt;strong&gt;x&lt;/strong&gt; in our ordering. If we can come up with a formula for the area of that shape, we have a solution. It’s a bit of an odd shape, so let’s break it into two simpler pieces:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The cells on &lt;strong&gt;x&lt;/strong&gt;’s row leading up to it&lt;/li&gt;
+  &lt;li&gt;The triangle formed by the cells above &lt;strong&gt;x&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+  #table-addition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #table-addition table {
+    width: auto;
+    font-size: 50%;
+    margin: 0;
+  }
+
+  #table-addition span {
+    height: 100%;
+    margin: 2em;
+  }
+
+  @media only screen and (max-width: 800px) {
+    #table-addition {
+      flex-direction: column;
+    }
+  }
+&lt;/style&gt;
+
+&lt;div id=&quot;table-addition&quot;&gt;
+  &lt;table&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;2&lt;/th&gt;&lt;th&gt;3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;0&lt;/th&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;1&lt;/th&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;2&lt;/th&gt;&lt;td style=&quot;background:rgb(113, 190, 70)&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;x&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;3&lt;/th&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+
+  &lt;span&gt;+&lt;/span&gt;
+
+  &lt;table&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;2&lt;/th&gt;&lt;th&gt;3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;0&lt;/th&gt;&lt;td style=&quot;background:rgb(113, 190, 70)&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;1&lt;/th&gt;&lt;td style=&quot;background:rgb(113, 190, 70)&quot;&gt;&lt;/td&gt;&lt;td style=&quot;background:rgb(113, 190, 70)&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;2&lt;/th&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;x&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;3&lt;/th&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+
+  &lt;span&gt;=&lt;/span&gt;
+
+  &lt;table&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;2&lt;/th&gt;&lt;th&gt;3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;0&lt;/th&gt;&lt;td style=&quot;background:rgb(113, 190, 70)&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;1&lt;/th&gt;&lt;td style=&quot;background:rgb(113, 190, 70)&quot;&gt;&lt;/td&gt;&lt;td style=&quot;background:rgb(113, 190, 70)&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;2&lt;/th&gt;&lt;td style=&quot;background:rgb(113, 190, 70)&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;x&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr style=&quot;background-color: black&quot;&gt;
+      &lt;th&gt;3&lt;/th&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The number of cells leading up to &lt;strong&gt;x&lt;/strong&gt; on the same row as it is easy–that’s just equal to &lt;strong&gt;x&lt;/strong&gt;’s column, which we’re given.&lt;/p&gt;
+
+&lt;p&gt;The triangle is a little trickier. Notice that regardless of the dimensions, it will &lt;strong&gt;always&lt;/strong&gt; form an &lt;a href=&quot;https://en.wikipedia.org/wiki/Equilateral_triangle&quot;&gt;equilateral triangle&lt;/a&gt;. If we can come up with an equation to calculate the number of cells required to form an equilateral triangle of a given size, then we’re good to go!&lt;/p&gt;
+
+&lt;h2 id=&quot;triangle-numbers&quot;&gt;Triangle Numbers&lt;/h2&gt;
+
+&lt;p&gt;Well, it turns out that this is called a &lt;a href=&quot;https://en.wikipedia.org/wiki/Triangular_number&quot;&gt;triangle number&lt;/a&gt;. We could go try to dig through that Wikipedia link to see if it has the equation…but where’s the fun in that? Let’s derive it.&lt;/p&gt;
+
+&lt;p&gt;If we look at an example equilateral triangle, it’s easy to see that we’ll always take up half of the square it fits inside…sort of:&lt;/p&gt;
+&lt;table style=&quot;width:auto; display: table&quot;&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;td style=&quot;background:rgb(113, 190, 70);color:rgba(0, 0, 0, 0)&quot;&gt;0&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;td style=&quot;background:rgb(113, 190, 70);color:rgba(0, 0, 0, 0)&quot;&gt;1&lt;/td&gt;&lt;td style=&quot;background:rgb(113, 190, 70);color:rgba(0, 0, 0, 0)&quot;&gt;2&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr style=&quot;background-color: black&quot;&gt;
+    &lt;td style=&quot;background:rgb(113, 190, 70);color:rgba(0, 0, 0, 0)&quot;&gt;3&lt;/td&gt;&lt;td style=&quot;background:rgb(113, 190, 70);color:rgba(0, 0, 0, 0)&quot;&gt;4&lt;/td&gt;&lt;td style=&quot;background:rgb(113, 190, 70);color:rgba(0, 0, 0, 0)&quot;&gt;5&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;We have 9 cells in this square, half of that is…4.5. The answer we’re actually looking for is 6. This is because we need to include the diagonal!&lt;/p&gt;
+
+&lt;p&gt;Alright, how can we do that?&lt;/p&gt;
+
+&lt;p&gt;Well, our square always has &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n*n&lt;/code&gt; cells, and our diagonal always has &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt;. Let’s just remove the diagonal from the square, halve that, and then add it back!&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;square = n * n
+diagonal = n
+triangle = (square - diagonal) / 2 + diagonal
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With the substitutions made:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;triangle = ((n * n - n) / 2) + n
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now that we have an equation, we can simplify it!&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;((n * n - n) / 2) + n
+((n * n - n) / 2) + (2 * n / 2)
+(n * n - n + 2 * n) / 2
+(n * n + n) / 2
+n * (n + 1) / 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And there you have it, the equation for a triangle number! Feel free to plug in some numbers to see for yourself that it works.&lt;/p&gt;
+
+&lt;h2 id=&quot;putting-it-all-together&quot;&gt;Putting it all together&lt;/h2&gt;
+
+&lt;p&gt;We originally broke the shape whose area we’re trying to calculate into two pieces, and we now have a format for both pieces separately: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;row * (row + 1) / 2&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;col&lt;/code&gt;. If we add those together, we get:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;row * (row + 1) / 2 + col
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Since the caller could pass in indices that point outside the triangle, we also need to flip the row and column if row is smaller than the column so that we always get a cell inside the triangle.&lt;/p&gt;
+
+&lt;p&gt;Here’s my final implementation–note for those of you reading from the &lt;a href=&quot;https://www.rust-lang.org/&quot;&gt;Rust&lt;/a&gt; subreddit, this is written in a scripting language I wrote in Rust not Rust itself hence the Rust-like but sill unfamiliar syntax:&lt;/p&gt;
+
+&lt;div class=&quot;language-rs highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;// Maps (row, col) or (col, row) indices into a symmetric matrix to a 1D index.&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index_a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;u16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index_b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;u16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;usize&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;// Get the low and high indices&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;usize_min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index_a&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;usize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index_b&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;usize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;usize_max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index_a&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;usize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index_b&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;usize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;// Calculate the index (triangle number + offset into the row)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tri&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;usize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;usize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;// Calculate the resulting index&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;tri&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>mason</name></author><category term="way-of-rhea" /><category term="tech" /><summary type="html">With Santa Cruz officially in lockdown due to COVID-19, I’ve been at home a lot working on Way of Rhea. Since I’m left without any excuse for not posting, here’s a neat proof I happened across while working on some new puzzles. :) Symmetric Matrices Wikipedia defines a symmetric matrix as “a square matrix that is equal to its transpose.” In other words, a symmetric matrix has symmetry along its diagonal such that m[row][col] always equals m[col][row]. Why should you care about symmetric matrices? I dunno, you read the title and chose to click on this blog post, you tell me. I’m interested in symmetric matrices because this morning, as part of a puzzle I was working on, I added a layer system to Way of Rhea’s physics engine. The layer system essentially lets me define a number of layers rigid bodies can be placed on, and then for each layer-layer pair set a boolean that indicates whether or not collisions can occur between those two layers. The pink orb should not collide with the player, but it should collide with the ground. Layers Default Character Orb Default true Character true false Orb true false false So for example, rigid bodies on Layer::Default can collide with rigid bodies on Layer::Character, but rigid bodies on Layer::Character cannot collide with rigid bodies on Layer::Orb. You’ll notice that I didn’t bother filling out the top right half of the matrix. That’s because it’s symmetric! I don’t care whether an orb is intersecting with a character, or a character is intersecting with an orb; the result should be false either way. In general, symmetric matrices can be used to create per-pair properties. Here’s a couple other places I’ve had this come up: The coefficient of restitution is a property of object pairs, not single objects! It’s pretty common to set it per object and then “combine” the two coefficients using some heuristic, which is totally fine most of the time, but if you want finer grained control for gameplay reasons you probably want a symmetric matrix! I believe that the same holds true for friction coefficients. Regardless of the physical reality, it’s again possible that you’ll want fine grained control over this for gameplay reasons. Mapping to a Two Dimensional Array The first two times this came up, I just hardcoded a giant match statement and kept the branches in sync manually. The third time it came up, with the layer system, I figured it was time to come up with a real solution. At first I considered implementing symmetric matrices as 2D arrays. I figured I could make a triangular 2D array and swap the row/col indices when necessary to stay in the triangle, or I could just store each value twice. This would have been fairly reasonable IMO, but something was nagging me…</summary></entry><entry><title type="html">Way of Rhea’s Entity System</title><link href="https://www.anthropicstudios.com/2019/06/05/entity-systems/" rel="alternate" type="text/html" title="Way of Rhea's Entity System" /><published>2019-06-05T00:00:00-04:00</published><updated>2019-06-05T00:00:00-04:00</updated><id>https://www.anthropicstudios.com/2019/06/05/entity-systems</id><content type="html" xml:base="https://www.anthropicstudios.com/2019/06/05/entity-systems/">&lt;p&gt;I posted &lt;a href=&quot;https://twitter.com/masonremaley/status/1135083247598047232&quot;&gt;this poll&lt;/a&gt; on Twitter few weeks ago:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://twitter.com/masonremaley/status/1135083247598047232&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/entity-systems/poll.png&quot; /&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Entity systems won by a long shot, so that’s what I’m going to be writing about today.&lt;/p&gt;
+
+&lt;p&gt;In particular, I’m going to outline the process that lead me to &lt;a href=&quot;https://www.anthropicstudios.com/way-of-rhea&quot;&gt;Way of Rhea&lt;/a&gt;’s current entity system. &lt;em&gt;Way of Rhea&lt;/em&gt; is being built in a &lt;a href=&quot;https://www.masonremaley.com/projects/game-engine/&quot;&gt;custom engine&lt;/a&gt; and &lt;a href=&quot;https://www.masonremaley.com/projects/scripting-language/&quot;&gt;scripting language&lt;/a&gt; written in &lt;a href=&quot;https://www.rust-lang.org/&quot;&gt;Rust&lt;/a&gt;, but the ideas described should still be applicable elsewhere. Hopefully this writeup will be found helpful, or at least interesting. :)&lt;/p&gt;
+
+&lt;h2 id=&quot;the-ad-hoc-approach&quot;&gt;The Ad Hoc Approach&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Way of Rhea&lt;/em&gt;’s &lt;a href=&quot;https://twitter.com/masonremaley/status/988634973245669377&quot;&gt;initial prototype&lt;/a&gt; didn’t have an explicit entity system—I wanted to get something playable on the screen ASAP to validate that the game idea was worth spending time on. Each time I wanted to introduce a new entity type, I just made a new struct, and an ad hoc decision on where to store it.&lt;/p&gt;
+
+&lt;p&gt;This approach is severely undervalued. Letting yourself be inconsistent during the early stages of a project has two big advantages:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It lets you prototype just the thing you’re actually trying to build.&lt;/li&gt;
+  &lt;li&gt;It generates a lot of data on what a generic system would &lt;em&gt;actually need to accomplish&lt;/em&gt;. It’s hard to build a good cart before you know anything about the horse. :)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;/assets/monsters-and-sprites/entity-systems/old-editor.jpg&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/entity-systems/old-editor.jpg&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Some entities like the player were hard coded into the all-encompassing &quot;world&quot; struct, while others were stored in a tile map and exposed to the editor via the pictured GUI.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;As most entities in the game were fairly independent of each other, this approach served me well for almost a year. As time wore on, though, I had more and more ideas that couldn’t be expressed well in the system I’d built up…&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;/assets/monsters-and-sprites/entity-systems/physics-small.jpg&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/entity-systems/physics-small.jpg&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Many of the puzzles I wanted to build involved entities being run through some sort of physics simulation, which would have been difficult to add to the existing codebase.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;It was going to be difficult to add things like physics puzzles to the game if there wasn’t a good way to share data and behavior between entities. This problem seemed chronic enough that it was worth solving the general case.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;common-approaches&quot;&gt;Common Approaches&lt;/h2&gt;
+
+&lt;p&gt;In my mind, most entity systems fall into one of the following categories:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Decked out versions of the ad hoc approach, well tuned to the needs of a specific game or game type. For lack of a better term I’ll refer to this as the static approach.&lt;/li&gt;
+  &lt;li&gt;Very dynamic and generic approaches that let you mix and match “components” at will. I’ll refer to this as the dynamic approach.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;the-static-approach&quot;&gt;The Static Approach&lt;/h3&gt;
+&lt;p&gt;I’ve seen the first approach in a lot of engines that were initially designed for a specific game. If you take the time to understand the somewhat arbitrary metaphysics of one of these systems, they’re generally pretty easy to work with—things you’re likely to want to do are usually directly baked in and have a nice workflow.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, if you have a gameplay idea not anticipated by the system, you may have hard time implementing it without some &lt;a href=&quot;https://www.geek.com/games/a-train-you-ride-in-fallout-3-is-actually-an-npc-wearing-a-train-hat-1628532/&quot; target=&quot;_blank&quot;&gt;funny business&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.insidemacgames.com/features/view.php?ID=312#&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/entity-systems/dim3-inside-mac-games.jpg&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;dim3 was the first 3d engine I ever used, described by its creator Brian Barnes as a &quot;game without content&quot;. The game had a number of pre-baked object types (lights, scenery items, etc), and the option to introduce new objects via scripts. Screenshot taken from &lt;a href=&quot;http://www.insidemacgames.com/features/view.php?ID=312#&quot;&gt;Inside Mac Games&lt;/a&gt; as I couldn't find a copy of the editor.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;the-dynamic-approach&quot;&gt;The Dynamic Approach&lt;/h3&gt;
+&lt;p&gt;On the other end of the spectrum is the dynamic approach. When people talk about “entity component systems”, they’re usually talking about something in this category.&lt;/p&gt;
+
+&lt;p&gt;This approach has some bold promises: you can mix and match existing pieces like legos, possibly even creating completely new entity types at runtime.&lt;/p&gt;
+
+&lt;figure style=&quot;width:75%&quot;&gt;
+  &lt;a href=&quot;/assets/monsters-and-sprites/entity-systems/unity.jpg&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/entity-systems/unity.jpg&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;In Unity's approach, entities are built up of a large number of components that may or may not depend on each other.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This sounds great, but in practice, I’ve seen it have two major problems:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;When designing a component, you either anticipate every possible use, or you don’t. If you do you’re likely wasting your time on pairings that will never occur, but if you don’t, you can’t truely mix and match things freely.&lt;/li&gt;
+  &lt;li&gt;You’ve essentially built a dynamic type system for your game, and taken on all the problems that come with one. For example, in Unity, one component can fail to get data from another at runtime if the component in question isn’t present on the entity or was deleted at runtime—and there’s not always a good way to respond to that failure.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This isn’t to say that the dynamic approach is never the way to go—but in practice it does have costs that I don’t often see discussed.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-best-of-both-worlds&quot;&gt;The Best Of Both Worlds&lt;/h2&gt;
+
+&lt;p&gt;Neither of these routes felt quite right for &lt;em&gt;Way of Rhea&lt;/em&gt;. Between the gameplay not being very dynamic, and &lt;a href=&quot;https://www.masonremaley.com/projects/game-engine/&quot;&gt;the engine&lt;/a&gt;’s support for arbitrary hot swapping, there’s not much need for mixing and matching components at runtime. At the same time, the problem of sharing behavior between entities felt like it was worth solving.&lt;/p&gt;
+
+&lt;p&gt;To find a better compromise, we’ll need to break down what we actually want out of the &lt;em&gt;Way of Rhea&lt;/em&gt; entity system.&lt;/p&gt;
+
+&lt;p&gt;Want:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The ability to have data and/or behavior specific to an entity type&lt;/li&gt;
+  &lt;li&gt;The ability to have data and/or behavior shared by a set of entity types&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Would like:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Static knowledge of the fields that will be present on a given entity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Don’t need:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;We don’t need to create new entity or component types at runtime&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The single bullet under the “don’t need” category changes things. &lt;strong&gt;Most of these systems get built specifically to allow dynamic changes.&lt;/strong&gt; If you’re working on a large team, you don’t want the designers to have to call in a programmer every time they want to try something new, but that isn’t an issue on a small indie team where the designer is the programmer.&lt;/p&gt;
+
+&lt;p&gt;Taking all this into account, I came up with a fairly straightforward—but still flexible—approach that satisfies the requirements at hand. I’m going to copy and paste bits and pieces from the &lt;em&gt;Way of Rhea&lt;/em&gt; source to explain it. As mentioned previously, the actual game logic is written in &lt;a href=&quot;https://www.masonremaley.com/projects/scripting-language/&quot;&gt;my scripting language&lt;/a&gt;, but the syntax is very similar to &lt;a href=&quot;https://www.rust-lang.org/&quot;&gt;Rust&lt;/a&gt; which my engine, compiler, and VM are written in.&lt;/p&gt;
+
+&lt;p&gt;Here’s the current declaration of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Entity&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;language-rs highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Entity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;Gate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Gate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;Elevator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Elevator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;Orb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;Stand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Stand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;Teleporter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Teleporter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;Blocker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Blocker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;SpriteSpawnPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SpawnPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;Sprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Sprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Similarly to in Rust the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;enum&lt;/code&gt; keyword in my scripting language represents a &lt;a href=&quot;https://en.wikipedia.org/wiki/Sum_type&quot; target=&quot;_blank&quot;&gt;sum type&lt;/a&gt;, equivalent to a tagged union in C.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Each entity must be one of these 8 variants. The variants are baked into the system, but it’s trivial to add another and hot swap it in.&lt;/p&gt;
+
+&lt;p&gt;Given an arbitrary entity, you can use a match statement—similar to a switch statement in C—to determine its type. For example:&lt;/p&gt;
+
+&lt;div class=&quot;language-rs highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;Gate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;It's a gate: {gate}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;Elevator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elevator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;It's an elevator: {elevator}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;mi&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;It's something else!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Once you’ve matched on an entity and gotten its inner type, you just have an instance of that entity’s struct, and can operate on it directly like you would any struct. For example, you could pass the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gate&lt;/code&gt; struct above to this update function:&lt;/p&gt;
+&lt;div class=&quot;language-rs highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Gate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entities&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Entities&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;// Check if we should be open&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;should_be_open&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intersecting&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;// ... (truncated for brevity) ...&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;// Apply any necessary state changes&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;should_be_open&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;.open&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;.open&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;nn&quot;&gt;mixer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;play_sound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;door open clean.ogg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MAX_VOLUME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;.open&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;.open&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;nn&quot;&gt;mixer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;play_sound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;door close clean.ogg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MAX_VOLUME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Alright, so nothing particularly novel so far. The trick lies in how we share data and behavior between entity types.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Way of Rhea&lt;/em&gt; has a lot of color based puzzles in it, and as such most interactive entities in the game have a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;color&lt;/code&gt; field. If you know the type of an entity you can read that field directly, but what if you want to get the color of an arbitrary entity?&lt;/p&gt;
+
+&lt;p&gt;You can probably guess—we just define a function that does the match for us!&lt;/p&gt;
+&lt;div class=&quot;language-rs highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Entity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Option&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ColorKind&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nf&quot;&gt;Gate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Option&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Some&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ColorKind&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gate&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;.color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;nf&quot;&gt;Elevator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elevator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Option&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Some&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ColorKind&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elevator&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;.color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;nf&quot;&gt;Orb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Option&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Some&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ColorKind&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orb&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;.color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;nf&quot;&gt;Sprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Option&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Some&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ColorKind&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sprite&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;.drawable.color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;nf&quot;&gt;SpriteSpawnPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sprite_spawn_point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Option&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Some&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ColorKind&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sprite_spawn_point&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;.drawable.color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;nf&quot;&gt;Stand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Teleporter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Blocker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Option&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ColorKind&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If the entity has a color, this function returns it. If not, it returns &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;None&lt;/code&gt;. When you don’t know the type of an entity and are okay with the possibility of absence, you read components through one of these functions. When you need a component to be present, you just get a direct reference to the concrete type. If you wanted to hold a reference to any arbitrary entity that must have a color, you could go as far as defining a new enum that can only hold those variants.&lt;/p&gt;
+
+&lt;p&gt;The physics simulation, once implemented, will use this pattern as well: when it’s time to update the physics objects, it will be trivial to loop over all the entities and call something like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;physics::update(rigid_body)&lt;/code&gt; on each entity that has a rigid body.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;/assets/monsters-and-sprites/entity-systems/new-editor.gif&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/entity-systems/new-editor.gif&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;The level editor has been updated to take advantage of the entity system. The component getters are used to draw controls for all component types that exist on at least one of the selected entities.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There are a few other subtleties around spatial partitioning and serialization, but this is the general idea behind the system. I haven’t lived with it for very long yet, so if I discover anything interesting about it down the line I’ll try to write up another post.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading this far!&lt;/p&gt;</content><author><name>mason</name></author><category term="way-of-rhea" /><category term="tech" /><summary type="html">I posted this poll on Twitter few weeks ago: Entity systems won by a long shot, so that’s what I’m going to be writing about today. In particular, I’m going to outline the process that lead me to Way of Rhea’s current entity system. Way of Rhea is being built in a custom engine and scripting language written in Rust, but the ideas described should still be applicable elsewhere. Hopefully this writeup will be found helpful, or at least interesting. :) The Ad Hoc Approach Way of Rhea’s initial prototype didn’t have an explicit entity system—I wanted to get something playable on the screen ASAP to validate that the game idea was worth spending time on. Each time I wanted to introduce a new entity type, I just made a new struct, and an ad hoc decision on where to store it. This approach is severely undervalued. Letting yourself be inconsistent during the early stages of a project has two big advantages: It lets you prototype just the thing you’re actually trying to build. It generates a lot of data on what a generic system would actually need to accomplish. It’s hard to build a good cart before you know anything about the horse. :) Some entities like the player were hard coded into the all-encompassing &quot;world&quot; struct, while others were stored in a tile map and exposed to the editor via the pictured GUI. As most entities in the game were fairly independent of each other, this approach served me well for almost a year. As time wore on, though, I had more and more ideas that couldn’t be expressed well in the system I’d built up… Many of the puzzles I wanted to build involved entities being run through some sort of physics simulation, which would have been difficult to add to the existing codebase. It was going to be difficult to add things like physics puzzles to the game if there wasn’t a good way to share data and behavior between entities. This problem seemed chronic enough that it was worth solving the general case.</summary></entry><entry><title type="html">Artists’ Alley #1: Abstract Palettes and Environment</title><link href="https://www.anthropicstudios.com/2018/06/30/artists-alley-1/" rel="alternate" type="text/html" title="Artists' Alley #1: Abstract Palettes and Environment" /><published>2018-06-30T00:00:00-04:00</published><updated>2018-06-30T00:00:00-04:00</updated><id>https://www.anthropicstudios.com/2018/06/30/artists-alley-1</id><content type="html" xml:base="https://www.anthropicstudios.com/2018/06/30/artists-alley-1/">&lt;p&gt;Artists Alley is a segment which provides a behind the scenes glance into the artistic process for &lt;a href=&quot;/way-of-rhea&quot;&gt;[Way of Rhea (WoR)]&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This segment is essentially a journal that helps me keep organized and focused. Additionally, I hope these updates will provide insight to other newbie gaming artists, game developers who are working with artists, and curious individuals.&lt;/p&gt;
+
+&lt;p&gt;That said, I am beyond excited about this project! And I hope you all will join me on this journey full of magic, whimsy, and learning &amp;lt;];{D&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;So far, I am happy about the existing color palette for &lt;a href=&quot;/way-of-rhea&quot;&gt;[WoR]&lt;/a&gt;. I have been exploring how this palette can be manipulated to create different environments and moods. This can be done by changing weight on different colors within the palette.&lt;/p&gt;
+
+&lt;p&gt;For instance, when pale pink is the most prominent color, the world becomes a bit bubble-gummy and light.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-1/0.5.jpg&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-1/0.5.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-1/1.png&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-1/1.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;While oranges, and deep purple dominating the scene brings to mind more mysterious deep feelings.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-1/2.png&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-1/2.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-1/2.5.jpg&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-1/2.5.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Aesthetics I want to achieve, when I get a better feel for setting include:
+A sense of curiosity, mystery, a pinch of fun, and a color scheme that can be variable for different moods.&lt;/p&gt;
+
+&lt;p&gt;As the game progresses and the plot unfolds, the background will reflect intended emotions. 
+Some levels will be a bit darker, and should feel a bit scary. While other levels should be light and whimsical. In addition to color, terrain make up is important for game design. Different terrains can lead to different obstacles (water, vines, gaps, etc…)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-1/3.png&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-1/3.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Another factor to explore through environment is physics. What is the gravity of the environment? Are there any special ‘rules’? [WoR] is a puzzle game. So if for instance, the terrain is mirrored, the character you are controlling can have a reflection plane which mimics the players moves. To make things interesting, there could be some ‘inconsistencies’ between these planes, and the player can switch planes to solve puzzles and overcome obstacles.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-1/4.png&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-1/4.png&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-1/5.png&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-1/5.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>carolyn</name></author><category term="way-of-rhea" /><category term="art" /><summary type="html">Artists Alley is a segment which provides a behind the scenes glance into the artistic process for [Way of Rhea (WoR)]. This segment is essentially a journal that helps me keep organized and focused. Additionally, I hope these updates will provide insight to other newbie gaming artists, game developers who are working with artists, and curious individuals. That said, I am beyond excited about this project! And I hope you all will join me on this journey full of magic, whimsy, and learning &amp;lt;];{D&amp;gt; So far, I am happy about the existing color palette for [WoR]. I have been exploring how this palette can be manipulated to create different environments and moods. This can be done by changing weight on different colors within the palette. For instance, when pale pink is the most prominent color, the world becomes a bit bubble-gummy and light. While oranges, and deep purple dominating the scene brings to mind more mysterious deep feelings.</summary></entry><entry><title type="html">Scripting Language Cleanup</title><link href="https://www.anthropicstudios.com/2018/06/30/language-cleanup/" rel="alternate" type="text/html" title="Scripting Language Cleanup" /><published>2018-06-30T00:00:00-04:00</published><updated>2018-06-30T00:00:00-04:00</updated><id>https://www.anthropicstudios.com/2018/06/30/language-cleanup</id><content type="html" xml:base="https://www.anthropicstudios.com/2018/06/30/language-cleanup/">&lt;p&gt;When we built the original &lt;a href=&quot;/monsters-and-sprites&quot;&gt;Monsters and Sprites&lt;/a&gt; demo, we only had 9 days to get it working before the &lt;a href=&quot;https://playcrafting.com/&quot; target=&quot;_blank&quot;&gt;Playcrafting&lt;/a&gt; expo we had signed up for, so we had to cut a lot of corners. Since then I’ve been doing bug fixes and working on a lot of miscellaneous &lt;a href=&quot;https://masonremaley.com/projects/game-engine/&quot;&gt;engine&lt;/a&gt;/&lt;a href=&quot;https://masonremaley.com/projects/scripting-language/&quot;&gt;language&lt;/a&gt; features that I either couldn’t get done in time for the demo, or didn’t realize were important until I started building it.&lt;/p&gt;
+
+&lt;p&gt;We’ve made a few game updates since then (&lt;a href=&quot;https://twitter.com/AnthropicSt/status/1010568311690743808&quot;&gt;we now have sound!&lt;/a&gt;), but this post is specifically going to explore some language updates I’ve made.&lt;/p&gt;
+
+&lt;p&gt;I made a bunch of smaller changes that I’m going to just gloss over here:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Adding new compiler warnings&lt;/li&gt;
+  &lt;li&gt;Fixing a parser error in compound assignments for structs (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x.y += 2&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;Fixing bugs in the type checker&lt;/li&gt;
+  &lt;li&gt;Supporting a similar struct initializer shorthand to what Rust allows (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Vec2 { x: x, y: y }&lt;/code&gt; can now be written as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Vec2 { x, y }&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And some slightly bigger ones I’ll write about more in depth.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;numeric-types&quot;&gt;Numeric Types&lt;/h1&gt;
+
+&lt;p&gt;My initial pass at numeric types for the language involved using big integers for all integer types, and ratios of big integers for decimals. Under the hood these were just types exported by &lt;a href=&quot;https://github.com/rust-num/num&quot; target=&quot;_blank&quot;&gt;rust-num&lt;/a&gt;. In practice, this resulted in a lot more trouble than it was worth:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The engine almost always had to convert them back to normal number types before passing them to (for example) OpenGL anyway&lt;/li&gt;
+  &lt;li&gt;Ratios don’t work well for physics as the numerators/denominators get very large making it unclear how to ideally convert them back to floats when you inevitably need to&lt;/li&gt;
+  &lt;li&gt;The semantics are arguably more confusing and subtle: I can set up fixed size integers to crash when they get too large, big ints just get slower.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So this change was pretty straightforward, I actually made parts of it during the week I was working on the demo: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ratio&lt;/code&gt; are now replaced with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i8&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i16&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i32&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i64&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;isize&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;u8&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;u16&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;u32&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;u64&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;usize&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f32&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f64&lt;/code&gt;. If I ever feel like I really want the other types I can add them as additional options.&lt;/p&gt;
+
+&lt;p&gt;The biggest open question here is how to decide what type a literal is. Previously it was easy: If your number had a decimal, it was a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ratio&lt;/code&gt;, otherwise it was an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;. Now it’s not so clear. To start with I’ve just set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i32&lt;/code&gt;/&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f32&lt;/code&gt; as the defaults and required a postfix (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10u8&lt;/code&gt;) for all other types, but I’m considering some kind of type inference here to make this less verbose.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;format-strings&quot;&gt;Format Strings&lt;/h1&gt;
+
+&lt;p&gt;Up until this point, the language had no good way to handle &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;println&lt;/code&gt; because I wanted to wait until I came up with a decent solution to make a decision on this, so I was stuck doing a lot of this:&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;High Score: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is inefficient since currently there’s no optimization preventing it from reallocating after every addition, but more importantly, it’s difficult to read and write. Many languages have some sort of special function type that takes a variable number of parameters to solve this:&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;High Score: %i&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I’m hesitant to add support for that to this language so early though as the only thing I see myself using it for right now is string formatting. If I’m going to add something like this I want more use cases to evaluate it against. At the same time I found myself writing a lot of print statements when building the Monsters and Sprites demo. So instead of creating a whole new function type, I decided just to add a format string syntax:&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;High Score: {score * 100}!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Breaking this down, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;println&lt;/code&gt; is just a normal function of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fn(string)&lt;/code&gt; like before, but is being called here with a “format string”–that’s where the magic is. Whenever you see a string prefixed by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f&quot;&lt;/code&gt;, the contents are interpolated. So for example:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ let name = &quot;world&quot;
+$ f&quot;Hello, {name!}&quot;
+&quot;Hello, world!&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This syntax was (roughly) taken from Python3.&lt;/p&gt;
+
+&lt;p&gt;The type checker/codegen implementation was pretty easy here, I just check that every format arg can be casted to a string, and then in codegen do the cast if necessary and emit a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Concat&lt;/code&gt; bytecode instruction which I’ve implemented to allocate a string with the capacity equal to that of the sum of the lengths of each piece of the string, and then slot in the pieces. Surprisingly the &lt;a href=&quot;https://en.wikipedia.org/wiki/Lexical_analysis&quot; target=&quot;_blank&quot;&gt;lexing&lt;/a&gt;/&lt;a href=&quot;https://en.wikipedia.org/wiki/Parsing&quot; target=&quot;_blank&quot;&gt;parsing&lt;/a&gt; for once turned out to be the hard part.&lt;/p&gt;
+
+&lt;p&gt;For those unfamiliar, compilers normally break down source code into “tokens” like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Plus&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Minus&lt;/code&gt;, or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Identifier(score)&lt;/code&gt; in a phase called lexing before the parser converts the tokens into an &lt;a href=&quot;https://en.wikipedia.org/wiki/Abstract_syntax_tree&quot;&gt;abstract syntax tree&lt;/a&gt;, usually using &lt;a href=&quot;https://en.wikipedia.org/wiki/Recursive_descent_parser&quot; target=&quot;_blank&quot;&gt;recursive descent&lt;/a&gt;. Normally lexing and parsing are completely separably.&lt;/p&gt;
+
+&lt;p&gt;The problem I ran into was that format strings can contain arbitrary expressions inside of them that should be evaluated as normal code if they’re between braces, which means the lexer needs to know when to stop parsing strings and start parsing expressions, and also when the expression is finished. However, the lexer by definition doesn’t know when the expression is finished–only the parser does.&lt;/p&gt;
+
+&lt;p&gt;To solve this problem, I decided to change the pattern slightly–the parser now handles strings instead of the lexer. When the parser hits a quote, it switches the lexer into a mode where it just reads the characters directly without converting them into tokens. When parsing format strings, the parser just switches modes whenever it enters/exists a format arg. This sounds a little odd at first when you’re used to the normal pattern, but it ends up being really elegant.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;imports&quot;&gt;Imports&lt;/h1&gt;
+
+&lt;p&gt;The language doesn’t yet support methods. I’m not really a fan of the way classes/methods are implemented in most languages, so I’m holding off on making any decisions here until I have a better idea of how I want things to work. It turns out that so far in practice…not having methods has been fine. I’ve just put structs that I’d like to treat as classes in their own files and put free functions with parameters named
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;self&lt;/code&gt; in the same namespace:&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;// player.welp&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Ball&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;velocity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Ball&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Ball&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;velocity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;pub&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ball&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;// ...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The biggest annoyance here is that because each type gets its own namespace, you end up having to say things like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ball::Ball&lt;/code&gt; a lot which is silly. This lead me to decid it was time to update how I handle imports a bit: you can now import specific types/statics instead of whole modules, and do so under aliased names to prevent clashes and such.&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ball&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ball&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;dbg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ball&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;With all of these changes, I was able to easily make sure I don’t miss any existing code when updating it to use new features/idioms by just adding new compiler warnings. So, for example, if I had previously written code that looked like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Vec2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I now get some helpful warnings pointing out that there’s now a nicer way to do this:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ @Vec2 { x: x, y: y }
+warning: redundant field name in initializer, when assigning a field to a
+variable of the same name you can simply name the field and give it no explicit
+value (use #[allow(redundant_field_name)] to ignore)
+  --&amp;gt; input:1:12
+  | 
+1 | @Vec2 { x: x, y: y }
+  |            ^        
+
+warning: redundant field name in initializer, when assigning a field to a
+variable of the same name you can simply name the field and give it no explicit
+value (use #[allow(redundant_field_name)] to ignore)
+  --&amp;gt; input:1:18
+  | 
+1 | @Vec2 { x: x, y: y }
+  |                  ^  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;For bigger changes, I just have old code error out at compile time if it doesn’t match up with the newer version of the language. I’m my only user at the moment so while versioning is still important, backwards compat isn’t. This is also one of the reasons I’ve held off on making any of these tools public: I want to maintain the ability to make drastic changes without bothering anyone besides myself.&lt;/p&gt;</content><author><name>mason</name></author><category term="way-of-rhea" /><category term="tech" /><summary type="html">When we built the original Monsters and Sprites demo, we only had 9 days to get it working before the Playcrafting expo we had signed up for, so we had to cut a lot of corners. Since then I’ve been doing bug fixes and working on a lot of miscellaneous engine/language features that I either couldn’t get done in time for the demo, or didn’t realize were important until I started building it. We’ve made a few game updates since then (we now have sound!), but this post is specifically going to explore some language updates I’ve made. I made a bunch of smaller changes that I’m going to just gloss over here: Adding new compiler warnings Fixing a parser error in compound assignments for structs (e.g. x.y += 2) Fixing bugs in the type checker Supporting a similar struct initializer shorthand to what Rust allows (e.g. @Vec2 { x: x, y: y } can now be written as @Vec2 { x, y }) And some slightly bigger ones I’ll write about more in depth.</summary></entry><entry><title type="html">Artists’ Alley #2: Inspiration and Learning from the Greats</title><link href="https://www.anthropicstudios.com/2018/06/30/arists-alley-2/" rel="alternate" type="text/html" title="Artists' Alley #2: Inspiration and Learning from the Greats" /><published>2018-06-30T00:00:00-04:00</published><updated>2018-06-30T00:00:00-04:00</updated><id>https://www.anthropicstudios.com/2018/06/30/arists-alley-2</id><content type="html" xml:base="https://www.anthropicstudios.com/2018/06/30/arists-alley-2/">&lt;p&gt;These past two weeks I have been drawing inspiration from other side scroller games in order to develop a style unique to &lt;a href=&quot;/way-of-rhea&quot;&gt;[Way of Rhea]&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;I have found Braid to be a particularly good source of guidance because it is a successful game with an inspiring art style. The art for Braid is both as encapsulating as it is functional. Additionally, this is the first serious game I’ve worked on, so it helps that Braid’s artist, David Hellman has a &lt;a href=&quot;http://www.davidhellman.net/blog/the-art-of-braid-index&quot; target=&quot;_blank&quot;&gt;SUPER amazing process blog of his own out&lt;/a&gt;. I’ve been using this blog as guidance for how to approach our project here at Anthropic Studios.&lt;/p&gt;
+
+&lt;p&gt;One of the steps Hellman used to create Braid’s art was tracing. He traced scenes from games such as Mario, re-making them in possible Braid styles. I’ve traced a few levels from Braid and other side scrollers with focus on incorporating the color schemes from last post into more functional and stylized “screenshot” scenes.&lt;/p&gt;
+
+&lt;p&gt;Through this exercise, I’ve stumbled upon things I would like to incorporate into the game:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Angular “rocks” (which can easily change to suit new color schemes and make variable puzzle pieces&lt;/li&gt;
+  &lt;li&gt;Foliage which can be easily made into variable puzzle pieces.&lt;/li&gt;
+  &lt;li&gt;A brighter foreground and a dimmer non-interactive area&lt;/li&gt;
+  &lt;li&gt;The use of water as an obstacle (I would like to imagine the Sprites would melt on contact!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This tracing exercise has also made it apparent there are some things I need to correct/ think more about as the journey of creation continues:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;While I like the jaggy rocks, I’ll have to make sure the “walkable” areas need are obvious and completely intuitive.&lt;/li&gt;
+  &lt;li&gt;The pools are a really fun and aesthetically pleasing. But I’ll need to do some soul- searching and peer review to make sure they are not too distracting.&lt;/li&gt;
+  &lt;li&gt;The interactive pieces (gates, teleporters, etc..) need to look a bit more detailed.&lt;/li&gt;
+  &lt;li&gt;I think I’m on the right path, but the non-interactive background needs to be developed a bit more!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Below are some “traced” pieces and the original screenshots:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-2/1-ms.jpg&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-2/1-ms.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;
+            &lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-2/2-braid.png&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-2/2-braid.png&quot; /&gt;&lt;/a&gt;
+        &lt;/th&gt;
+        &lt;th&gt;
+            &lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-2/3-braid.png&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-2/3-braid.png&quot; /&gt;&lt;/a&gt;
+        &lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-2/4-ms.jpg&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-2/4-ms.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Top Image - My Art&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Middle 2 Images - Braid Screenshots&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Bottom Image - My Art&lt;/em&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-2/5-ms.jpg&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-2/5-ms.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th width=&quot;50%&quot;&gt;
+            &lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-2/6-aa.png&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-2/6-aa.png&quot; /&gt;&lt;/a&gt;
+        &lt;/th&gt;
+        &lt;th width=&quot;50%&quot;&gt;
+            &lt;a href=&quot;/assets/monsters-and-sprites/artists-alley-2/7-s.png&quot;&gt;&lt;img src=&quot;/assets/monsters-and-sprites/artists-alley-2/7-s.png&quot; /&gt;&lt;/a&gt;
+        &lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Top Image - My Art&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Bottom 2 Images - Traced Screenshots&lt;/em&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>carolyn</name></author><category term="way-of-rhea" /><category term="art" /><summary type="html">These past two weeks I have been drawing inspiration from other side scroller games in order to develop a style unique to [Way of Rhea]! I have found Braid to be a particularly good source of guidance because it is a successful game with an inspiring art style. The art for Braid is both as encapsulating as it is functional. Additionally, this is the first serious game I’ve worked on, so it helps that Braid’s artist, David Hellman has a SUPER amazing process blog of his own out. I’ve been using this blog as guidance for how to approach our project here at Anthropic Studios. One of the steps Hellman used to create Braid’s art was tracing. He traced scenes from games such as Mario, re-making them in possible Braid styles. I’ve traced a few levels from Braid and other side scrollers with focus on incorporating the color schemes from last post into more functional and stylized “screenshot” scenes. Through this exercise, I’ve stumbled upon things I would like to incorporate into the game: Angular “rocks” (which can easily change to suit new color schemes and make variable puzzle pieces Foliage which can be easily made into variable puzzle pieces. A brighter foreground and a dimmer non-interactive area The use of water as an obstacle (I would like to imagine the Sprites would melt on contact!) This tracing exercise has also made it apparent there are some things I need to correct/ think more about as the journey of creation continues: While I like the jaggy rocks, I’ll have to make sure the “walkable” areas need are obvious and completely intuitive. The pools are a really fun and aesthetically pleasing. But I’ll need to do some soul- searching and peer review to make sure they are not too distracting. The interactive pieces (gates, teleporters, etc..) need to look a bit more detailed. I think I’m on the right path, but the non-interactive background needs to be developed a bit more! Below are some “traced” pieces and the original screenshots: Top Image - My Art Middle 2 Images - Braid Screenshots Bottom Image - My Art Top Image - My Art Bottom 2 Images - Traced Screenshots</summary></entry></feed>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Blog | Anthropic Studios</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Blog" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://www.anthropicstudios.com/blog/" />
+<meta property="og:url" content="https://www.anthropicstudios.com/blog/" />
+<meta property="og:site_name" content="Anthropic Studios" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"https://www.anthropicstudios.com/blog/","headline":"Blog","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://www.anthropicstudios.com/feed.xml" title="Anthropic Studios" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/"><img src="/assets/logo.png" height="50px"/> Anthropic Studios</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/press/">Press Kit</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 class="post-list-heading">
+  
+    Blog
+  
+</h1> 
+
+<ul class="post-list">
+  
+    
+      <li>
+        <h3>
+          <a class="post-link" href="/2020/10/04/qa-sessions-with-steam/">
+            Notes from the Q&amp;A Sessions with Steam
+          </a>
+        </h3>
+        
+          <p class="post-meta">
+  <time class="dt-published" datetime="2020-10-04T00:00:00-04:00" itemprop="datePublished">Oct 4, 2020
+  </time>
+    • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="//twitter.com/MasonRemaley">Mason Remaley</a></span></span>&nbsp;•
+  
+    <a class="tag" href="/blog/tags/marketing">marketing</a>
+  
+</p>
+
+          <p>I recently attended the <a href="https://www.eventbrite.ca/e/qa-session-with-steam-tickets-117008295963" target="_blank">Steam Q&amp;A</a> hosted by <a href="https://gameplayspace.com/" target="_blank">GamePlay Space</a>, and I took a bunch of notes for myself. A few friends asked about the event, so I figured I’d just upload my notes somewhere I can share.</p>
+
+<p>If you’d prefer to read a summary over the raw notes, Chris Zukowski put together some takeaways in his article <em><a href="http://howtomarketagame.com/2020/09/20/what-steam-says-you-should-do/" target="_blank">“What does Valve say you should do to sell your game on Steam?”</a></em>, and Simon Carless wrote some of his thoughts up in <em><a href="https://gamediscoverability.substack.com/p/the-mysterious-steam-algorithm-not" target="_blank">“The ‘mysterious’ Steam algorithm - not that scary?”</a></em>.</p>
+
+
+          <a href="/2020/10/04/qa-sessions-with-steam/">Read more...</a>
+        
+      </li>
+    
+  
+    
+      <li>
+        <h3>
+          <a class="post-link" href="/2020/03/30/symmetric-matrices/">
+            Symmetric Matrices &amp; Triangle Numbers
+          </a>
+        </h3>
+        
+          <p class="post-meta">
+  <time class="dt-published" datetime="2020-03-30T00:00:00-04:00" itemprop="datePublished">Mar 30, 2020
+  </time>
+    • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="//twitter.com/MasonRemaley">Mason Remaley</a></span></span>&nbsp;•
+  
+    <a class="tag" href="/blog/tags/way-of-rhea">way-of-rhea</a>
+  
+    <a class="tag" href="/blog/tags/tech">tech</a>
+  
+</p>
+
+          <p>With Santa Cruz officially in lockdown due to COVID-19, I’ve been at home a lot working on <a href="/way-of-rhea">Way of Rhea</a>. Since I’m left without any excuse for not posting, here’s a neat proof I happened across while working on some new puzzles. :)</p>
+
+<h2 id="symmetric-matrices">Symmetric Matrices</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/Symmetric_matrix">Wikipedia</a> defines a symmetric matrix as “a square matrix that is equal to its transpose.” In other words, a symmetric matrix has symmetry along its diagonal such that <code class="language-plaintext highlighter-rouge">m[row][col]</code> always equals <code class="language-plaintext highlighter-rouge">m[col][row]</code>.</p>
+
+<p>Why should you care about symmetric matrices?</p>
+
+<p>I dunno, you read the title and chose to click on this blog post, you tell me. <strong>I’m</strong> interested in symmetric matrices because this morning, as part of a puzzle I was working on, I added a layer system to Way of Rhea’s physics engine.</p>
+
+<p>The layer system essentially lets me define a number of layers rigid bodies can be placed on, and then for each layer-layer pair set a boolean that indicates whether or not collisions can occur between those two layers.</p>
+
+<figure style="position: relative">
+  <a href="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png">
+    <img style="min-width: 100%; max-width: 100%; width: 100%" src="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png" />
+    <figcaption style="
+      position: absolute;
+      bottom: 0;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+    ">
+      <div style="margin: 5px">
+        The pink orb should not collide with the player, but it should collide with the ground.
+      </div>
+    </figcaption>
+  </a>
+</figure>
+
+<table style="display: table; font-size: 80%">
+  <tr>
+    <th><i>Layers</i></th>
+    <th>Default</th>
+    <th>Character</th>
+    <th>Orb</th>
+  </tr>
+  <tr>
+    <th>Default</th>
+    <td><code class="language-plaintext highlighter-rouge">true</code></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Character</th>
+    <td><code class="language-plaintext highlighter-rouge">true</code></td>
+    <td><code class="language-plaintext highlighter-rouge">false</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Orb</th>
+    <td><code class="language-plaintext highlighter-rouge">true</code></td>
+    <td><code class="language-plaintext highlighter-rouge">false</code></td>
+    <td><code class="language-plaintext highlighter-rouge">false</code></td>
+  </tr>
+</table>
+
+<p>So for example, rigid bodies on <code class="language-plaintext highlighter-rouge">Layer::Default</code> can collide with rigid bodies on <code class="language-plaintext highlighter-rouge">Layer::Character</code>, but rigid bodies on <code class="language-plaintext highlighter-rouge">Layer::Character</code> cannot collide with rigid bodies on <code class="language-plaintext highlighter-rouge">Layer::Orb</code>. You’ll notice that I didn’t bother filling out the top right half of the matrix. That’s because it’s symmetric! I don’t care whether an orb is intersecting with a character, or a character is intersecting with an orb; the result should be <code class="language-plaintext highlighter-rouge">false</code> either way.</p>
+
+<p>In general, symmetric matrices can be used to create per-pair properties. Here’s a couple other places I’ve had this come up:</p>
+<ul>
+  <li>The <a href="https://en.wikipedia.org/wiki/Coefficient_of_restitution">coefficient of restitution</a> is a property of object pairs, not single objects! It’s pretty common to set it per object and then “combine” the two coefficients using some heuristic, which is totally fine most of the time, but if you want finer grained control for gameplay reasons you probably want a symmetric matrix!</li>
+  <li>I believe that the same holds true for <a href="https://simple.wikipedia.org/wiki/Coefficient_of_friction">friction coefficients</a>. Regardless of the physical reality, it’s again possible that you’ll want fine grained control over this for gameplay reasons.</li>
+</ul>
+
+<h2 id="mapping-to-a-two-dimensional-array">Mapping to a Two Dimensional Array</h2>
+
+<p>The first two times this came up, I just hardcoded a giant match statement and kept the branches in sync manually. The third time it came up, with the layer system, I figured it was time to come up with a real solution.</p>
+
+<p>At first I considered implementing symmetric matrices as 2D arrays. I figured I could make a triangular 2D array and swap the row/col indices when necessary to stay in the triangle, or I could just store each value twice.</p>
+
+<p>This would have been fairly reasonable IMO, but something was nagging me…</p>
+
+
+          <a href="/2020/03/30/symmetric-matrices/">Read more...</a>
+        
+      </li>
+    
+  
+    
+      <li>
+        <h3>
+          <a class="post-link" href="/2019/06/05/entity-systems/">
+            Way of Rhea&#39;s Entity System
+          </a>
+        </h3>
+        
+          <p class="post-meta">
+  <time class="dt-published" datetime="2019-06-05T00:00:00-04:00" itemprop="datePublished">Jun 5, 2019
+  </time>
+    • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="//twitter.com/MasonRemaley">Mason Remaley</a></span></span>&nbsp;•
+  
+    <a class="tag" href="/blog/tags/way-of-rhea">way-of-rhea</a>
+  
+    <a class="tag" href="/blog/tags/tech">tech</a>
+  
+</p>
+
+          <p>I posted <a href="https://twitter.com/masonremaley/status/1135083247598047232">this poll</a> on Twitter few weeks ago:</p>
+
+<figure>
+  <a href="https://twitter.com/masonremaley/status/1135083247598047232"><img src="/assets/monsters-and-sprites/entity-systems/poll.png" /></a>
+</figure>
+
+<p>Entity systems won by a long shot, so that’s what I’m going to be writing about today.</p>
+
+<p>In particular, I’m going to outline the process that lead me to <a href="https://www.anthropicstudios.com/way-of-rhea">Way of Rhea</a>’s current entity system. <em>Way of Rhea</em> is being built in a <a href="https://www.masonremaley.com/projects/game-engine/">custom engine</a> and <a href="https://www.masonremaley.com/projects/scripting-language/">scripting language</a> written in <a href="https://www.rust-lang.org/">Rust</a>, but the ideas described should still be applicable elsewhere. Hopefully this writeup will be found helpful, or at least interesting. :)</p>
+
+<h2 id="the-ad-hoc-approach">The Ad Hoc Approach</h2>
+
+<p><em>Way of Rhea</em>’s <a href="https://twitter.com/masonremaley/status/988634973245669377">initial prototype</a> didn’t have an explicit entity system—I wanted to get something playable on the screen ASAP to validate that the game idea was worth spending time on. Each time I wanted to introduce a new entity type, I just made a new struct, and an ad hoc decision on where to store it.</p>
+
+<p>This approach is severely undervalued. Letting yourself be inconsistent during the early stages of a project has two big advantages:</p>
+<ul>
+  <li>It lets you prototype just the thing you’re actually trying to build.</li>
+  <li>It generates a lot of data on what a generic system would <em>actually need to accomplish</em>. It’s hard to build a good cart before you know anything about the horse. :)</li>
+</ul>
+
+<figure>
+  <a href="/assets/monsters-and-sprites/entity-systems/old-editor.jpg"><img src="/assets/monsters-and-sprites/entity-systems/old-editor.jpg" /></a>
+  <figcaption>Some entities like the player were hard coded into the all-encompassing "world" struct, while others were stored in a tile map and exposed to the editor via the pictured GUI.</figcaption>
+</figure>
+
+<p>As most entities in the game were fairly independent of each other, this approach served me well for almost a year. As time wore on, though, I had more and more ideas that couldn’t be expressed well in the system I’d built up…</p>
+
+<figure>
+  <a href="/assets/monsters-and-sprites/entity-systems/physics-small.jpg"><img src="/assets/monsters-and-sprites/entity-systems/physics-small.jpg" /></a>
+  <figcaption>Many of the puzzles I wanted to build involved entities being run through some sort of physics simulation, which would have been difficult to add to the existing codebase.</figcaption>
+</figure>
+
+<p>It was going to be difficult to add things like physics puzzles to the game if there wasn’t a good way to share data and behavior between entities. This problem seemed chronic enough that it was worth solving the general case.</p>
+
+
+          <a href="/2019/06/05/entity-systems/">Read more...</a>
+        
+      </li>
+    
+  
+    
+      <li>
+        <h3>
+          <a class="post-link" href="/2018/06/30/arists-alley-2/">
+            Artists&#39; Alley #2: Inspiration and Learning from the Greats
+          </a>
+        </h3>
+        
+          <p class="post-meta">
+  <time class="dt-published" datetime="2018-06-30T00:00:00-04:00" itemprop="datePublished">Jun 30, 2018
+  </time>
+    • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="//www.instagram.com/cw_visuals_insta/">Carolyn Whitmeyer</a></span></span>&nbsp;•
+  
+    <a class="tag" href="/blog/tags/way-of-rhea">way-of-rhea</a>
+  
+    <a class="tag" href="/blog/tags/art">art</a>
+  
+</p>
+
+          <p>These past two weeks I have been drawing inspiration from other side scroller games in order to develop a style unique to <a href="/way-of-rhea">[Way of Rhea]</a>!</p>
+
+<p>I have found Braid to be a particularly good source of guidance because it is a successful game with an inspiring art style. The art for Braid is both as encapsulating as it is functional. Additionally, this is the first serious game I’ve worked on, so it helps that Braid’s artist, David Hellman has a <a href="http://www.davidhellman.net/blog/the-art-of-braid-index" target="_blank">SUPER amazing process blog of his own out</a>. I’ve been using this blog as guidance for how to approach our project here at Anthropic Studios.</p>
+
+<p>One of the steps Hellman used to create Braid’s art was tracing. He traced scenes from games such as Mario, re-making them in possible Braid styles. I’ve traced a few levels from Braid and other side scrollers with focus on incorporating the color schemes from last post into more functional and stylized “screenshot” scenes.</p>
+
+<p>Through this exercise, I’ve stumbled upon things I would like to incorporate into the game:</p>
+
+<ul>
+  <li>Angular “rocks” (which can easily change to suit new color schemes and make variable puzzle pieces</li>
+  <li>Foliage which can be easily made into variable puzzle pieces.</li>
+  <li>A brighter foreground and a dimmer non-interactive area</li>
+  <li>The use of water as an obstacle (I would like to imagine the Sprites would melt on contact!)</li>
+</ul>
+
+<p>This tracing exercise has also made it apparent there are some things I need to correct/ think more about as the journey of creation continues:</p>
+
+<ul>
+  <li>While I like the jaggy rocks, I’ll have to make sure the “walkable” areas need are obvious and completely intuitive.</li>
+  <li>The pools are a really fun and aesthetically pleasing. But I’ll need to do some soul- searching and peer review to make sure they are not too distracting.</li>
+  <li>The interactive pieces (gates, teleporters, etc..) need to look a bit more detailed.</li>
+  <li>I think I’m on the right path, but the non-interactive background needs to be developed a bit more!</li>
+</ul>
+
+<p>Below are some “traced” pieces and the original screenshots:</p>
+
+<p><a href="/assets/monsters-and-sprites/artists-alley-2/1-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/1-ms.jpg" /></a></p>
+<table>
+    <tr>
+        <th>
+            <a href="/assets/monsters-and-sprites/artists-alley-2/2-braid.png"><img src="/assets/monsters-and-sprites/artists-alley-2/2-braid.png" /></a>
+        </th>
+        <th>
+            <a href="/assets/monsters-and-sprites/artists-alley-2/3-braid.png"><img src="/assets/monsters-and-sprites/artists-alley-2/3-braid.png" /></a>
+        </th>
+    </tr>
+</table>
+<p><a href="/assets/monsters-and-sprites/artists-alley-2/4-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/4-ms.jpg" /></a></p>
+
+<p><em>Top Image - My Art</em><br />
+<em>Middle 2 Images - Braid Screenshots</em><br />
+<em>Bottom Image - My Art</em><br />
+<br /></p>
+
+<p><a href="/assets/monsters-and-sprites/artists-alley-2/5-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/5-ms.jpg" /></a></p>
+<table>
+    <tr>
+        <th width="50%">
+            <a href="/assets/monsters-and-sprites/artists-alley-2/6-aa.png"><img src="/assets/monsters-and-sprites/artists-alley-2/6-aa.png" /></a>
+        </th>
+        <th width="50%">
+            <a href="/assets/monsters-and-sprites/artists-alley-2/7-s.png"><img src="/assets/monsters-and-sprites/artists-alley-2/7-s.png" /></a>
+        </th>
+    </tr>
+</table>
+
+<p><em>Top Image - My Art</em><br />
+<em>Bottom 2 Images - Traced Screenshots</em><br />
+<br /></p>
+
+
+          <a href="/2018/06/30/arists-alley-2/">Read more...</a>
+        
+      </li>
+    
+  
+    
+      <li>
+        <h3>
+          <a class="post-link" href="/2018/06/30/language-cleanup/">
+            Scripting Language Cleanup
+          </a>
+        </h3>
+        
+          <p class="post-meta">
+  <time class="dt-published" datetime="2018-06-30T00:00:00-04:00" itemprop="datePublished">Jun 30, 2018
+  </time>
+    • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="//twitter.com/MasonRemaley">Mason Remaley</a></span></span>&nbsp;•
+  
+    <a class="tag" href="/blog/tags/way-of-rhea">way-of-rhea</a>
+  
+    <a class="tag" href="/blog/tags/tech">tech</a>
+  
+</p>
+
+          <p>When we built the original <a href="/monsters-and-sprites">Monsters and Sprites</a> demo, we only had 9 days to get it working before the <a href="https://playcrafting.com/" target="_blank">Playcrafting</a> expo we had signed up for, so we had to cut a lot of corners. Since then I’ve been doing bug fixes and working on a lot of miscellaneous <a href="https://masonremaley.com/projects/game-engine/">engine</a>/<a href="https://masonremaley.com/projects/scripting-language/">language</a> features that I either couldn’t get done in time for the demo, or didn’t realize were important until I started building it.</p>
+
+<p>We’ve made a few game updates since then (<a href="https://twitter.com/AnthropicSt/status/1010568311690743808">we now have sound!</a>), but this post is specifically going to explore some language updates I’ve made.</p>
+
+<p>I made a bunch of smaller changes that I’m going to just gloss over here:</p>
+
+<ul>
+  <li>Adding new compiler warnings</li>
+  <li>Fixing a parser error in compound assignments for structs (e.g. <code class="language-plaintext highlighter-rouge">x.y += 2</code>)</li>
+  <li>Fixing bugs in the type checker</li>
+  <li>Supporting a similar struct initializer shorthand to what Rust allows (e.g. <code class="language-plaintext highlighter-rouge">@Vec2 { x: x, y: y }</code> can now be written as <code class="language-plaintext highlighter-rouge">@Vec2 { x, y }</code>)</li>
+</ul>
+
+<p>And some slightly bigger ones I’ll write about more in depth.</p>
+
+
+          <a href="/2018/06/30/language-cleanup/">Read more...</a>
+        
+      </li>
+    
+  
+    
+      <li>
+        <h3>
+          <a class="post-link" href="/2018/06/30/artists-alley-1/">
+            Artists&#39; Alley #1: Abstract Palettes and Environment
+          </a>
+        </h3>
+        
+          <p class="post-meta">
+  <time class="dt-published" datetime="2018-06-30T00:00:00-04:00" itemprop="datePublished">Jun 30, 2018
+  </time>
+    • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="//www.instagram.com/cw_visuals_insta/">Carolyn Whitmeyer</a></span></span>&nbsp;•
+  
+    <a class="tag" href="/blog/tags/way-of-rhea">way-of-rhea</a>
+  
+    <a class="tag" href="/blog/tags/art">art</a>
+  
+</p>
+
+          <p>Artists Alley is a segment which provides a behind the scenes glance into the artistic process for <a href="/way-of-rhea">[Way of Rhea (WoR)]</a>.</p>
+
+<p>This segment is essentially a journal that helps me keep organized and focused. Additionally, I hope these updates will provide insight to other newbie gaming artists, game developers who are working with artists, and curious individuals.</p>
+
+<p>That said, I am beyond excited about this project! And I hope you all will join me on this journey full of magic, whimsy, and learning &lt;];{D&gt;</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<p>So far, I am happy about the existing color palette for <a href="/way-of-rhea">[WoR]</a>. I have been exploring how this palette can be manipulated to create different environments and moods. This can be done by changing weight on different colors within the palette.</p>
+
+<p>For instance, when pale pink is the most prominent color, the world becomes a bit bubble-gummy and light.</p>
+
+<p><a href="/assets/monsters-and-sprites/artists-alley-1/0.5.jpg"><img src="/assets/monsters-and-sprites/artists-alley-1/0.5.jpg" /></a></p>
+
+<p><a href="/assets/monsters-and-sprites/artists-alley-1/1.png"><img src="/assets/monsters-and-sprites/artists-alley-1/1.png" /></a></p>
+
+<p>While oranges, and deep purple dominating the scene brings to mind more mysterious deep feelings.</p>
+
+<p><a href="/assets/monsters-and-sprites/artists-alley-1/2.png"><img src="/assets/monsters-and-sprites/artists-alley-1/2.png" /></a></p>
+
+<p><a href="/assets/monsters-and-sprites/artists-alley-1/2.5.jpg"><img src="/assets/monsters-and-sprites/artists-alley-1/2.5.jpg" /></a></p>
+
+
+          <a href="/2018/06/30/artists-alley-1/">Read more...</a>
+        
+      </li>
+    
+  
+</ul>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1" style="width: 100%">
+        
+        <a class="u-email" href="mailto:anthropicstudios@gmail.com">anthropicstudios@gmail.com</a>
+        
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p></p>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <ul class="social-media-list" style="width:100%; float: right">
+  <li><a href="https://discord.gg/JGeVt5XwPP"><img src="https://discord.com/api/guilds/787767251884310548/widget.png?style=shield"/></a></li>
+  
+  <li><a href="https://www.twitter.com/AnthropicSt"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">@Twitter</span></a></li>
+  <li><a href="https://instagram.com/AnthropicStudios"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg> <span class="username">@Instagram</span></a></li>
+  
+
+  <li><a href="https://www.facebook.com/AnthropicStudios"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">@Facebook</span></a></li>
+</ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
