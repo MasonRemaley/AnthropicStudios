@@ -58,4 +58,4 @@ authors:
     name: Carolyn Whitmeyer
     social: //www.instagram.com/cw_visuals_insta/
 
-keep_files: ['CNAME']
+keep_files: [CNAME, .git]
