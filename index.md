@@ -137,4 +137,4 @@ redirect_from:
 
 {% include newsletter-button.html %}
 
-*Programming and game design by [Mason Remaley](https://twitter.com/masonremaley){:target="_blank"}, visual art by [Carolyn Whitmeyer](https://www.instagram.com/cw_visuals_insta/){:target="_blank"}, narrative design by [Evan Morris](https://twitter.com/evan_cmm){:target="_blank"}, sound by [Nick Romero](https://soundcloud.com/stonedape){:target="_blank"}, and music by [Colin Quinn](mailto:colinquinnwork@gmail.com).*
+*Programming and game design by [Mason Remaley](https://twitter.com/masonremaley){:target="_blank"}, visual art by [Carolyn Whitmeyer](https://www.instagram.com/cw_visuals_insta/){:target="_blank"}, narrative design by [Evan Morris](https://twitter.com/evan_cmm){:target="_blank"}, sound by [Nick Romero](https://soundcloud.com/stonedape){:target="_blank"}, and music by [Colin Quinn](mailto:colinquinnwork@gmail.com)!*
