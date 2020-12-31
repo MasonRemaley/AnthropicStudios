@@ -1,0 +1,91 @@
+/* Site Header */
+.site-header {
+	background-color: darken(desaturate($earth, 30%), 30%);
+	line-height: 54px * 1.5;
+	border: none;
+}
+
+.site-header a, .site-header a:visited, .site-header a:hover, .site-header a:active {
+	color: white !important;
+}
+
+.site-header img {
+	position: relative;
+	top: -3px;
+}
+
+/* Page Content */
+.page-content {
+	background-color: darken($water, 57%);
+	color: white;
+}
+
+.signup {
+	background-color: darken($earth, 20%);
+	color: white !important;
+	font-weight: bold;
+	width: 95%;
+	height: 2.5em;
+	text-align: center;
+	display: table;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.signup:hover {
+	background-color: darken($earth, 10%);
+}
+
+.signup span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.screenshots {
+	display: flex;
+}
+
+.screenshots a {
+	width: 100%;
+	padding: 10px 5px;
+}
+
+.tag {
+	background: $earth;
+	padding: 1px 3px;
+	margin: 2px;
+	border-radius: 5px;
+	color: white !important;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.tag:hover {
+	background: lighten($earth, 5%);
+	text-decoration: none;
+}
+
+/* Site Footer */
+.site-footer {
+	background-color: lighten($sun, 20%);
+	color: black;
+}
+
+.site-footer a {
+	color: black;
+	border: none !important;
+}
+
+.site-footer a:visited {
+	filter: brightness(50%);
+	border: none !important;
+}
+
+.site-footer a:hover {
+	filter: brightness(150%);
+	border: none !important;
+}
+
+.site-footer a:active {
+	filter: brightness(50%);
+	border: none !important;
+}

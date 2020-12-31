@@ -8,6 +8,8 @@ redirect_from:
   - /way-of-rhea
 ---
 
+<img src="assets/monsters-and-sprites/logo.svg"/>
+
 <style type="text/css">
     #trailer-embed iframe{
         position: absolute;
@@ -26,13 +28,11 @@ redirect_from:
 </style>
 <div id="trailer-embed"><iframe src="https://www.youtube.com/embed/eVrbZss_B3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-<table style="width: auto; display:table;">
-  <tr>
-    <th width="215.3333"><a href="/assets/monsters-and-sprites/press-kit/animated-rev-2.gif" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/animated-rev-2.gif"/></a></th>
-    <th width="215.3333"><a href="/assets/monsters-and-sprites/press-kit/7-rev-1.png" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/7-rev-1.png"/></a></th>
-    <th width="215.3333"><a href="/assets/monsters-and-sprites/press-kit/6-rev-2.png" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/6-rev-2.png"/></a></th>
-  </tr>
-</table>
+<div class="screenshots">
+    <a href="/assets/monsters-and-sprites/press-kit/animated-rev-2.gif"><img src="/assets/monsters-and-sprites/press-kit/animated-rev-2.gif"/></a>
+    <a href="/assets/monsters-and-sprites/press-kit/7-rev-1.png"><img src="/assets/monsters-and-sprites/press-kit/7-rev-1.png"/></a>
+    <a href="/assets/monsters-and-sprites/press-kit/6-rev-2.png"><img src="/assets/monsters-and-sprites/press-kit/6-rev-2.png"/></a>
+</div>
 
 <iframe src="https://store.steampowered.com/widget/1110620/?t=Way%20of%20Rhea%20is%20an%20upcoming%20puzzle%20platformer%20that%20takes%20place%20in%20a%20world%20where%20you%20can%20only%20interact%20with%20objects%20that%20match%20your%20current%20color.%20" frameborder="0" width="100%" height="190"></iframe>
 

@@ -1,14 +1,15 @@
 <ul class="social-media-list" style="width:100%; float: right">
   <li><a href="https://discord.gg/JGeVt5XwPP"><img src="https://discord.com/api/guilds/787767251884310548/widget.png?style=shield"/></a></li>
   {% if site.github_username%}<li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">@GitHub</span></a></li>{% endif %}
+  {% if site.twitter_username%}<li><a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">@Twitter</span></a></li>{% endif %}
   {% if site.instagram_username%}<li><a href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg> <span class="username">@Instagram</span></a></li>{% endif %}
   {% if site.linkedin_username%}<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">@LinkedIn</span></a></li>{% endif %}
-  {% if site.twitter_username%}<li><a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">@Twitter</span></a></li>{% endif %}
+
   {% if site.mastodon_username%}
     {% if site.mastodon_instance%}
       <li><a href="https://{{ site.mastodon_instance| cgi_escape | escape }}/@{{ site.mastodon_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="/assets/extra-social-icons.svg#mastodon"></use></svg> <span class="username">@Mastodon</span></a></li>
     {% endif %}
   {% endif %}
-  {%- if site.facebook_username -%}<li><a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg> <span class="username">{{ site.facebook_username| escape }}</span></a></li>{%- endif -%}
+  {%- if site.facebook_username -%}<li><a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg> <span class="username">@Facebook</span></a></li>{%- endif -%}
   {% if site.rss %}<li><a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg> <span>{{ site.rss | escape }}</span></a></li>{% endif %}
 </ul>

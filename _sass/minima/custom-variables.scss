@@ -1,0 +1,26 @@
+$sun: rgb(245, 165, 44);
+$earth: rgb(113, 190, 70);
+$water: rgb(101, 203, 223);
+
+$brand-color:           lighten($sun, 20%);
+$brand-color-light:     lighten($brand-color, 40%);
+$brand-color-dark:      darken($brand-color, 25%);
+
+$site-title-color:      $brand-color-dark;
+$text-color:            $sun;
+$background-color:      darken($earth, 60%);
+$code-background-color: black;
+
+$link-base-color:       lighten($water, 20%);
+$link-visited-color:    darken($link-base-color, 18%);
+$link-hover-color:      $text-color;
+
+$border-color-01:       $brand-color-dark;
+$border-color-02:       $brand-color-light;
+$border-color-03:       $brand-color;
+
+$table-text-color:      $text-color;
+$table-zebra-color:     lighten($background-color, 4%);
+$table-header-bg-color: lighten($background-color, 10%);
+$table-header-border:   lighten($background-color, 21%);
+$table-border-color:    $border-color-01;

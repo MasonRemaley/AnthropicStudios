@@ -32,6 +32,8 @@ header_pages:
 # Build settings
 markdown: kramdown
 remote_theme: jekyll/minima
+minima:
+  skin: dark
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
@@ -54,4 +56,4 @@ authors:
     social: //twitter.com/MasonRemaley
   carolyn:
     name: Carolyn Whitmeyer
-    social: //www.instagram.com/nylorac0__o/
+    social: //www.instagram.com/cw_visuals_insta/

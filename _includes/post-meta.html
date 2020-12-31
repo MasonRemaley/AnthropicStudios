@@ -1,19 +1,3 @@
-<style type="text/css">
-  #tag {
-    background: rgb(200, 100, 200);
-    padding: 1px 3px;
-    margin: 2px;
-    border-radius: 5px;
-    color: white;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-  }
-
-  #tag:hover {
-    background: rgb(220, 120, 220);
-    text-decoration: none;
-  }
-</style>
-
 <p class="post-meta">
   <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -25,6 +9,6 @@
   {%- endif -%}
   &nbsp;•
   {% for tag in post.tags %}
-    <a id="tag" href="/blog/tags/{{tag}}">{{tag}}</a>
+    <a class="tag" href="/blog/tags/{{tag}}">{{tag}}</a>
   {% endfor %}
 </p>

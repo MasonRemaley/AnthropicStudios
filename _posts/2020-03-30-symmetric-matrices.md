@@ -91,19 +91,19 @@ Well, as you probably guessed since I'm writing this blog post about it, it turn
 Consider the following numbering scheme, left to right top to bottom:
 
 <table style="width:auto; display: table">
-  <tr style="background-color: white">
+  <tr style="background-color: black">
     <th></th><th>0</th><th>1</th><th>2</th><th>3</th>
   </tr>
-  <tr style="background-color: white">
+  <tr style="background-color: black">
     <th>0</th><td>0</td><td></td><td></td><td></td>
   </tr>
-  <tr style="background-color: white">
+  <tr style="background-color: black">
     <th>1</th><td>1</td><td>2</td><td></td><td></td>
   </tr>
-  <tr style="background-color: white">
+  <tr style="background-color: black">
     <th>2</th><td>3</td><td>4</td><td>5</td><td></td>
   </tr>
-  <tr style="background-color: white">
+  <tr style="background-color: black">
     <th>3</th><td>6</td><td>7</td><td>8</td><td>9</td>
   </tr>
 </table>
@@ -112,19 +112,19 @@ Our goal is to define a function that maps each row and column to the number in 
 
 For example, say that we want to calculate the index of **x**, at (2, 1). We can see above that this maps to 4, which is also the number of cells that occur prior to x in our ordering:
 <table style="width:auto; display: table">
-  <tr style="background-color: white">
+  <tr style="background-color: black">
     <th></th><th>0</th><th>1</th><th>2</th><th>3</th>
   </tr>
-  <tr style="background-color: white">
-    <th>0</th><td style="background:#aaa"></td><td></td><td></td><td></td>
+  <tr style="background-color: black">
+    <th>0</th><td style="background:rgb(113, 190, 70)"></td><td></td><td></td><td></td>
   </tr>
-  <tr style="background-color: white">
-    <th>1</th><td style="background:#aaa"></td><td style="background:#aaa"></td><td></td><td></td>
+  <tr style="background-color: black">
+    <th>1</th><td style="background:rgb(113, 190, 70)"></td><td style="background:rgb(113, 190, 70)"></td><td></td><td></td>
   </tr>
-  <tr style="background-color: white">
-    <th>2</th><td style="background:#aaa"></td><td><b>x</b></td><td></td><td></td>
+  <tr style="background-color: black">
+    <th>2</th><td style="background:rgb(113, 190, 70)"></td><td><b>x</b></td><td></td><td></td>
   </tr>
-  <tr style="background-color: white">
+  <tr style="background-color: black">
     <th>3</th><td></td><td></td><td></td><td></td>
   </tr>
 </table>
@@ -159,19 +159,19 @@ Above, I've highlighted the shape formed by the cells that come before **x** in 
 
 <div id="table-addition">
   <table>
-    <tr style="background-color: white">
+    <tr style="background-color: black">
       <th></th><th>0</th><th>1</th><th>2</th><th>3</th>
     </tr>
-    <tr style="background-color: white">
+    <tr style="background-color: black">
       <th>0</th><td></td><td></td><td></td><td></td>
     </tr>
-    <tr style="background-color: white">
+    <tr style="background-color: black">
       <th>1</th><td></td><td></td><td></td><td></td>
     </tr>
-    <tr style="background-color: white">
-      <th>2</th><td style="background:#aaa"></td><td><b>x</b></td><td></td><td></td>
+    <tr style="background-color: black">
+      <th>2</th><td style="background:rgb(113, 190, 70)"></td><td><b>x</b></td><td></td><td></td>
     </tr>
-    <tr style="background-color: white">
+    <tr style="background-color: black">
       <th>3</th><td></td><td></td><td></td><td></td>
     </tr>
   </table>
@@ -179,19 +179,19 @@ Above, I've highlighted the shape formed by the cells that come before **x** in 
   <span>+</span>
 
   <table>
-    <tr style="background-color: white">
+    <tr style="background-color: black">
       <th></th><th>0</th><th>1</th><th>2</th><th>3</th>
     </tr>
-    <tr style="background-color: white">
-      <th>0</th><td style="background:#aaa"></td><td></td><td></td><td></td>
+    <tr style="background-color: black">
+      <th>0</th><td style="background:rgb(113, 190, 70)"></td><td></td><td></td><td></td>
     </tr>
-    <tr style="background-color: white">
-      <th>1</th><td style="background:#aaa"></td><td style="background:#aaa"></td><td></td><td></td>
+    <tr style="background-color: black">
+      <th>1</th><td style="background:rgb(113, 190, 70)"></td><td style="background:rgb(113, 190, 70)"></td><td></td><td></td>
     </tr>
-    <tr style="background-color: white">
+    <tr style="background-color: black">
       <th>2</th><td></td><td><b>x</b></td><td></td><td></td>
     </tr>
-    <tr style="background-color: white">
+    <tr style="background-color: black">
       <th>3</th><td></td><td></td><td></td><td></td>
     </tr>
   </table>
@@ -199,19 +199,19 @@ Above, I've highlighted the shape formed by the cells that come before **x** in 
   <span>=</span>
 
   <table>
-    <tr style="background-color: white">
+    <tr style="background-color: black">
       <th></th><th>0</th><th>1</th><th>2</th><th>3</th>
     </tr>
-    <tr style="background-color: white">
-      <th>0</th><td style="background:#aaa"></td><td></td><td></td><td></td>
+    <tr style="background-color: black">
+      <th>0</th><td style="background:rgb(113, 190, 70)"></td><td></td><td></td><td></td>
     </tr>
-    <tr style="background-color: white">
-      <th>1</th><td style="background:#aaa"></td><td style="background:#aaa"></td><td></td><td></td>
+    <tr style="background-color: black">
+      <th>1</th><td style="background:rgb(113, 190, 70)"></td><td style="background:rgb(113, 190, 70)"></td><td></td><td></td>
     </tr>
-    <tr style="background-color: white">
-      <th>2</th><td style="background:#aaa"></td><td><b>x</b></td><td></td><td></td>
+    <tr style="background-color: black">
+      <th>2</th><td style="background:rgb(113, 190, 70)"></td><td><b>x</b></td><td></td><td></td>
     </tr>
-    <tr style="background-color: white">
+    <tr style="background-color: black">
       <th>3</th><td></td><td></td><td></td><td></td>
     </tr>
   </table>
@@ -228,14 +228,14 @@ Well, it turns out that this is called a [triangle number](https://en.wikipedia.
 
 If we look at an example equilateral triangle, it's easy to see that we'll always take up half of the square it fits inside...sort of:
 <table style="width:auto; display: table">
-  <tr style="background-color: white">
-    <td style="background:#aaa;color:rgba(0, 0, 0, 0)">0</td><td></td><td></td>
+  <tr style="background-color: black">
+    <td style="background:rgb(113, 190, 70);color:rgba(0, 0, 0, 0)">0</td><td></td><td></td>
   </tr>
-  <tr style="background-color: white">
-    <td style="background:#aaa;color:rgba(0, 0, 0, 0)">1</td><td style="background:#aaa;color:rgba(0, 0, 0, 0)">2</td><td></td>
+  <tr style="background-color: black">
+    <td style="background:rgb(113, 190, 70);color:rgba(0, 0, 0, 0)">1</td><td style="background:rgb(113, 190, 70);color:rgba(0, 0, 0, 0)">2</td><td></td>
   </tr>
-  <tr style="background-color: white">
-    <td style="background:#aaa;color:rgba(0, 0, 0, 0)">3</td><td style="background:#aaa;color:rgba(0, 0, 0, 0)">4</td><td style="background:#aaa;color:rgba(0, 0, 0, 0)">5</td>
+  <tr style="background-color: black">
+    <td style="background:rgb(113, 190, 70);color:rgba(0, 0, 0, 0)">3</td><td style="background:rgb(113, 190, 70);color:rgba(0, 0, 0, 0)">4</td><td style="background:rgb(113, 190, 70);color:rgba(0, 0, 0, 0)">5</td>
   </tr>
 </table>
 
