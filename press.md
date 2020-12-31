@@ -135,6 +135,7 @@ Evan Morris is the narrative designer for *Way of Rhea*. He's currently working 
   - [Super MAGFest 2020](https://super.magfest.org/){:target="_blank"}
   - [PAX East 2020](https://east.paxsite.com/){:target="_blank"} via [PAXRising](https://east.paxsite.com/rising){:target="_blank"}
   - Steam Summer Festival 2020
+  - [PlayNYC 2020](https://www.play-nyc.com/){:target="_blank"} (as part of [GUMBO](https://www.gumbo.nyc/){:target="_blank"})
 
 - Minor Events:
   - Many [Playcrafting](https://playcrafting.com/){:target="_blank"} events, including...
@@ -152,11 +153,6 @@ Evan Morris is the narrative designer for *Way of Rhea*. He's currently working 
   - Talk + Demo @ [42](https://www.42.us.org/){:target="_blank"}
   - [UCSC's Monthly Playtest Nights](https://www.meetup.com/Indie-Game-Developers-of-Silicon-Valley){:target="_blank"} (Mason co-hosts these, so we're at most of them...)
   - [PREGAMER: Pax East Edition (2020)](https://www.eventbrite.com/e/pregamer-pax-east-edition-tickets-87148881651#)
-- Upcoming:
-  - [PAX East 2020](https://east.paxsite.com/){:target="_blank"} via [PAXRising](https://east.paxsite.com/rising){:target="_blank"}
-  - [PlayNYC](https://www.play-nyc.com/){:target="_blank"} 2020 (as part of [GUMBO](https://www.gumbo.nyc/){:target="_blank"})
-  - We aren't planning on being part of the [GDC 2020](https://gdconf.com/){:target="_blank"} showfloor, but Mason will be present & will have a build of the game--[contact us if you'd like to meet.](mailto:mason.remaley@gmail.com)
-
 
 # FAQ
 
