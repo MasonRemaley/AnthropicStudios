@@ -63,20 +63,20 @@ They had initially planned to repeat this exercise a few more times after the ex
 # Images
 <table>
   <tr>
-    <th><a href="/assets/monsters-and-sprites/press-kit/animated-rev-2.gif" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/animated-rev-2.gif"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/press-kit/1-rev-1.png" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/1-rev-1.png"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/animated-rev-3.gif" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/animated-rev-3.gif"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/1-rev-2.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/1-rev-2.jpg"/></a></th>
   </tr>
   <tr>
-    <th><a href="/assets/monsters-and-sprites/press-kit/2-rev-1.png" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/2-rev-1.png"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/press-kit/3-rev-1.png" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/3-rev-1.png"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/2-rev-2.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/2-rev-2.jpg"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/3-rev-2.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/3-rev-2.jpg"/></a></th>
   </tr>
   <tr>
-    <th><a href="/assets/monsters-and-sprites/press-kit/4-rev-2.png" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/4-rev-2.png"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/press-kit/5-rev-1.png" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/5-rev-1.png"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/4-rev-3.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/4-rev-3.jpg"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/5-rev-2.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/5-rev-2.jpg"/></a></th>
   </tr>
   <tr>
-    <th><a href="/assets/monsters-and-sprites/press-kit/7-rev-1.png" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/7-rev-1.png"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/press-kit/6-rev-2.png" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/6-rev-2.png"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/7-rev-2.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/7-rev-2.jpg"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/6-rev-3.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/6-rev-3.jpg"/></a></th>
   </tr>
   <tr>
     <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/booth.jpg" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/booth.jpg"/></a></th>
