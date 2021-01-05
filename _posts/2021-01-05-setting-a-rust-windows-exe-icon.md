@@ -5,18 +5,9 @@ date: 2021-01-05
 tags: tech
 author: mason
 excerpt_separator: <!--more-->
+twitter: https://twitter.com/masonremaley/status/1346594278802399232
+reddit: https://www.reddit.com/r/rust_gamedev/comments/kraink/setting_a_rust_executables_icon_in_windows/
 ---
-<!-- TODO -->
-<!-- twitter: https://twitter.com/masonremaley/status/1312803634833510400 -->
-<!-- reddit: https://www.reddit.com/r/gamedev/comments/fst8i3/symmetric_matrices_triangle_numbers/ -->
-
-<!--
-  intro to the problem, make sure googleable
-  steps the solution
-  further thoughts
--->
-
-<!-- TODO: add image -->
 
 This morning, I decided it was long overdue that [Way of Rhea](/way-of-rhea) get its own icon.
 
