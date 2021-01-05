@@ -8,7 +8,7 @@ title: Press Kit
 
 - **Title:** *Way of Rhea*
 - **Developer:** [Anthropic Studios](https://anthropicstudios.com){:target="_blank"}
-- **Release Date:** TBD
+- **Release Date:** TBA 2021
 - **Platforms:** Windows
 - **Store Pages:** <a href="https://store.steampowered.com/app/1110620/Way_of_Rhea">Steam</a>
 - **Website:** [anthropicstudios.com/way-of-rhea](https://anthropicstudios.com/way-of-rhea){:target="_blank"}
@@ -162,7 +162,7 @@ Currently only Windows support is planned. We have a macOS build as well, but Ap
 
 **When will it be released?**
 
-We're still too early in development to make any promises. :)
+We haven't announced a release date yet, but we expect to release in 2021.
 
 **Why aren't you using XXX engine?**
 
