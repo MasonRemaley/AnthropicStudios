@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="When we built the original Monsters and Sprites demo, we only had 9 days to get it working before the Playcrafting expo we had signed up for, so we had to cut a lot of corners. Since then I’ve been doing bug fixes and working on a lot of miscellaneous engine/language features that I either couldn’t get done in time for the demo, or didn’t realize were important until I started building it. We’ve made a few game updates since then (we now have sound!), but this post is specifically going to explore some language updates I’ve made. I made a bunch of smaller changes that I’m going to just gloss over here: Adding new compiler warnings Fixing a parser error in compound assignments for structs (e.g. x.y += 2) Fixing bugs in the type checker Supporting a similar struct initializer shorthand to what Rust allows (e.g. @Vec2 { x: x, y: y } can now be written as @Vec2 { x, y }) And some slightly bigger ones I’ll write about more in depth." />
 <meta property="og:description" content="When we built the original Monsters and Sprites demo, we only had 9 days to get it working before the Playcrafting expo we had signed up for, so we had to cut a lot of corners. Since then I’ve been doing bug fixes and working on a lot of miscellaneous engine/language features that I either couldn’t get done in time for the demo, or didn’t realize were important until I started building it. We’ve made a few game updates since then (we now have sound!), but this post is specifically going to explore some language updates I’ve made. I made a bunch of smaller changes that I’m going to just gloss over here: Adding new compiler warnings Fixing a parser error in compound assignments for structs (e.g. x.y += 2) Fixing bugs in the type checker Supporting a similar struct initializer shorthand to what Rust allows (e.g. @Vec2 { x: x, y: y } can now be written as @Vec2 { x, y }) And some slightly bigger ones I’ll write about more in depth." />
-<link rel="canonical" href="http://anthropicstudios.com/2018/06/30/language-cleanup/" />
-<meta property="og:url" content="http://anthropicstudios.com/2018/06/30/language-cleanup/" />
+<link rel="canonical" href="https://www.anthropicstudios.com/2018/06/30/language-cleanup/" />
+<meta property="og:url" content="https://www.anthropicstudios.com/2018/06/30/language-cleanup/" />
 <meta property="og:site_name" content="Anthropic Studios" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-06-30T00:00:00-04:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Scripting Language Cleanup","dateModified":"2018-06-30T00:00:00-04:00","url":"http://anthropicstudios.com/2018/06/30/language-cleanup/","datePublished":"2018-06-30T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://anthropicstudios.com/2018/06/30/language-cleanup/"},"author":{"@type":"Person","name":"mason"},"description":"When we built the original Monsters and Sprites demo, we only had 9 days to get it working before the Playcrafting expo we had signed up for, so we had to cut a lot of corners. Since then I’ve been doing bug fixes and working on a lot of miscellaneous engine/language features that I either couldn’t get done in time for the demo, or didn’t realize were important until I started building it. We’ve made a few game updates since then (we now have sound!), but this post is specifically going to explore some language updates I’ve made. I made a bunch of smaller changes that I’m going to just gloss over here: Adding new compiler warnings Fixing a parser error in compound assignments for structs (e.g. x.y += 2) Fixing bugs in the type checker Supporting a similar struct initializer shorthand to what Rust allows (e.g. @Vec2 { x: x, y: y } can now be written as @Vec2 { x, y }) And some slightly bigger ones I’ll write about more in depth.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Scripting Language Cleanup","dateModified":"2018-06-30T00:00:00-04:00","url":"https://www.anthropicstudios.com/2018/06/30/language-cleanup/","datePublished":"2018-06-30T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.anthropicstudios.com/2018/06/30/language-cleanup/"},"author":{"@type":"Person","name":"mason"},"description":"When we built the original Monsters and Sprites demo, we only had 9 days to get it working before the Playcrafting expo we had signed up for, so we had to cut a lot of corners. Since then I’ve been doing bug fixes and working on a lot of miscellaneous engine/language features that I either couldn’t get done in time for the demo, or didn’t realize were important until I started building it. We’ve made a few game updates since then (we now have sound!), but this post is specifically going to explore some language updates I’ve made. I made a bunch of smaller changes that I’m going to just gloss over here: Adding new compiler warnings Fixing a parser error in compound assignments for structs (e.g. x.y += 2) Fixing bugs in the type checker Supporting a similar struct initializer shorthand to what Rust allows (e.g. @Vec2 { x: x, y: y } can now be written as @Vec2 { x, y }) And some slightly bigger ones I’ll write about more in depth.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://anthropicstudios.com/feed.xml" title="Anthropic Studios" />
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://www.anthropicstudios.com/feed.xml" title="Anthropic Studios" />
 </head>
 <body><header class="site-header">
 
@@ -211,14 +211,14 @@ value (use #[allow(redundant_field_name)] to ignore)
   </div>
 
   <p>
-    Feel free to leave comments
+    Feel free to leave comments on
 
     
-      <a href="https://twitter.com/AnthropicSt/status/1013202971998539776">on Twitter,</a>
-      
+      <a href="https://twitter.com/AnthropicSt/status/1013202971998539776">Twitter,</a>
+    
     
 
-    or <a href="mailto:anthropicstudios@gmail.com">send us an email!</a><p>
+    <a href="https://discord.gg/JGeVt5XwPP">Discord,</a> or <a href="mailto:anthropicstudios@gmail.com">send us an email!</a><p>
   </p>
 
   <div style="">
