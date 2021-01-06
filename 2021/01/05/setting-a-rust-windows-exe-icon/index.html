@@ -111,7 +111,7 @@
   <li>Use <a href="https://llvm.org/">LLVM</a>’s implementation <a href="https://github.com/llvm/llvm-project/tree/62ec4ac90738a5f2d209ed28c822223e58aaaeb7/llvm/tools/llvm-rc"><code class="language-plaintext highlighter-rouge">llvm-rc</code></a></li>
   <li>Use the <a href="https://man7.org/linux/man-pages/man1/windres.1.html">GNU implementation</a> (if cross compiling from Linux)</li>
   <li>Check out <a href="https://github.com/ziglang/zig/blob/master/src/windows_sdk.cpp">how the Zig compiler finds similar files</a>, and write up something similar for <code class="language-plaintext highlighter-rouge">rc.exe</code></li>
-  <li>Use a library like <a href="https://crates.io/crates/embed-resource" target="_blank">embed-resource</a> to handle the compilation step for you (I haven’t tried this but it seems nifty, thanks Reddit &amp; Twitter for calling this one out!)</li>
+  <li>Use a library like <a href="https://crates.io/crates/embed-resource" target="_blank">embed-resource</a> or <a href="https://crates.io/crates/winres" target="_blank">winres</a> to handle the compilation step for you (I haven’t tried either but they seem convenient, thanks Reddit &amp; Twitter for calling them out!)</li>
 </ul>
 
 <p><em>If you’ve found a better way to do this, or know if it’s possible to use <a href="https://github.com/Microsoft/vswhere">vswhere</a> for this purpose, <a href="mailto:mason.remaley+pub@gmail.com">let me know</a> and I’ll update this post!</em></p>
