@@ -53,20 +53,21 @@ Once you've located `rc.exe`, you can use it to compile your `.rc` file into a `
 rc resources.rc
 ```
 
-(*Side note--programmatically determining the path to `rc.exe` is, unfortunately, not easy. If you can't work around this, here are some options:*
+Programmatically determining the path to `rc.exe` is, unfortunately, not easy. If you need to do this, here are some options:
 
-- *Require the user to provide the path*
-- *Call it from within a [Developer Command Prompt](https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs) where it's already in the path*
-- *Use [LLVM](https://llvm.org/)'s reimplementation [`llvm-rc`](https://github.com/llvm/llvm-project/tree/62ec4ac90738a5f2d209ed28c822223e58aaaeb7/llvm/tools/llvm-rc)*
-- *Check out [how the Zig compiler finds similar files](https://github.com/ziglang/zig/blob/master/src/windows_sdk.cpp), and write up something similar for `rc.exe`*
+- Require the user to provide the path
+- Call it from within a [Developer Command Prompt](https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs) where it's already in the path
+- Use [LLVM](https://llvm.org/)'s reimplementation [`llvm-rc`](https://github.com/llvm/llvm-project/tree/62ec4ac90738a5f2d209ed28c822223e58aaaeb7/llvm/tools/llvm-rc)
+- Check out [how the Zig compiler finds similar files](https://github.com/ziglang/zig/blob/master/src/windows_sdk.cpp), and write up something similar for `rc.exe`
+- Use a library like [embed-resource](https://github.com/nabijaczleweli/rust-embed-resource) to handle the compilation step for you (thanks Reddit & Twitter for calling this one out!)
 
-*If you've found a better way to do this, or know if it's possible to use [vswhere](https://github.com/Microsoft/vswhere) for this purpose, [let me know](mailto:mason.remaley+pub@gmail.com) and I'll update this post!*)
+*If you've found a better way to do this, or know if it's possible to use [vswhere](https://github.com/Microsoft/vswhere) for this purpose, [let me know](mailto:mason.remaley+pub@gmail.com) and I'll update this post!*
 
 ## 4. Link with the compiled resources
 
 Lastly, you need to link with the `.res` file when building your executable. How exactly you do this depends on your compiler and linker.
 
-Here's how I do it in Rust, with unrelated options removed for clarity:
+If you've used a library to handle the resource compilation step for you, it will likely automate this step as well. If not, here's how I did it in Rust with unrelated options remove for clarity:
 
 ```sh
 cargo rustc -- -C link-args="resources.res"
