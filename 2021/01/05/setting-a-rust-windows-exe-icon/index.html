@@ -120,7 +120,7 @@
 
 <p>Lastly, you need to link with the <code class="language-plaintext highlighter-rouge">.res</code> file when building your executable. How exactly you do this depends on your compiler and linker.</p>
 
-<p>If you’ve used a library to handle the resource compilation step for you, it will likely automate this step as well. If not, here’s how I did it in Rust with unrelated options remove for clarity:</p>
+<p>If you’ve used a library to handle the resource compilation step for you, it will likely automate this step as well. If not, here’s how I did it in Rust with unrelated options removed for clarity:</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo rustc <span class="nt">--</span> <span class="nt">-C</span> link-args<span class="o">=</span><span class="s2">"resources.res"</span>
 </code></pre></div></div>
