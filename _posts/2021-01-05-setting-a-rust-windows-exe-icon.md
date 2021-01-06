@@ -68,7 +68,7 @@ Programmatically determining the path to `rc.exe` is, unfortunately, not easy. I
 
 Lastly, you need to link with the `.res` file when building your executable. How exactly you do this depends on your compiler and linker.
 
-If you've used a library to handle the resource compilation step for you, it will likely automate this step as well. If not, here's how I did it in Rust with unrelated options remove for clarity:
+If you've used a library to handle the resource compilation step for you, it will likely automate this step as well. If not, here's how I did it in Rust with unrelated options removed for clarity:
 
 ```sh
 cargo rustc -- -C link-args="resources.res"
