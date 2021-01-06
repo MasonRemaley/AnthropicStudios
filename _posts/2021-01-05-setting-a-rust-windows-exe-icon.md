@@ -60,7 +60,7 @@ Programmatically determining the path to `rc.exe` is, unfortunately, not easy. I
 - Use [LLVM](https://llvm.org/)'s implementation [`llvm-rc`](https://github.com/llvm/llvm-project/tree/62ec4ac90738a5f2d209ed28c822223e58aaaeb7/llvm/tools/llvm-rc)
 - Use the [GNU implementation](https://man7.org/linux/man-pages/man1/windres.1.html) (if cross compiling from Linux)
 - Check out [how the Zig compiler finds similar files](https://github.com/ziglang/zig/blob/master/src/windows_sdk.cpp), and write up something similar for `rc.exe`
-- Use a library like [embed-resource](https://crates.io/crates/embed-resource){:target="_blank"} to handle the compilation step for you (I haven't tried this but it seems nifty, thanks Reddit & Twitter for calling this one out!)
+- Use a library like [embed-resource](https://crates.io/crates/embed-resource){:target="_blank"} or [winres](https://crates.io/crates/winres){:target="_blank"} to handle the compilation step for you (I haven't tried either but they seem convenient, thanks Reddit & Twitter for calling them out!)
 
 *If you've found a better way to do this, or know if it's possible to use [vswhere](https://github.com/Microsoft/vswhere) for this purpose, [let me know](mailto:mason.remaley+pub@gmail.com) and I'll update this post!*
 
