@@ -103,22 +103,23 @@
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rc resources.rc
 </code></pre></div></div>
 
-<p>(<em>Side note–programmatically determining the path to <code class="language-plaintext highlighter-rouge">rc.exe</code> is, unfortunately, not easy. If you can’t work around this, here are some options:</em></p>
+<p>Programmatically determining the path to <code class="language-plaintext highlighter-rouge">rc.exe</code> is, unfortunately, not easy. If you need to do this, here are some options:</p>
 
 <ul>
-  <li><em>Require the user to provide the path</em></li>
-  <li><em>Call it from within a <a href="https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs">Developer Command Prompt</a> where it’s already in the path</em></li>
-  <li><em>Use <a href="https://llvm.org/">LLVM</a>’s reimplementation <a href="https://github.com/llvm/llvm-project/tree/62ec4ac90738a5f2d209ed28c822223e58aaaeb7/llvm/tools/llvm-rc"><code class="language-plaintext highlighter-rouge">llvm-rc</code></a></em></li>
-  <li><em>Check out <a href="https://github.com/ziglang/zig/blob/master/src/windows_sdk.cpp">how the Zig compiler finds similar files</a>, and write up something similar for <code class="language-plaintext highlighter-rouge">rc.exe</code></em></li>
+  <li>Require the user to provide the path</li>
+  <li>Call it from within a <a href="https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs">Developer Command Prompt</a> where it’s already in the path</li>
+  <li>Use <a href="https://llvm.org/">LLVM</a>’s reimplementation <a href="https://github.com/llvm/llvm-project/tree/62ec4ac90738a5f2d209ed28c822223e58aaaeb7/llvm/tools/llvm-rc"><code class="language-plaintext highlighter-rouge">llvm-rc</code></a></li>
+  <li>Check out <a href="https://github.com/ziglang/zig/blob/master/src/windows_sdk.cpp">how the Zig compiler finds similar files</a>, and write up something similar for <code class="language-plaintext highlighter-rouge">rc.exe</code></li>
+  <li>Use a library like <a href="https://crates.io/crates/embed-resource">embed-resource</a> to handle the compilation step for you (thanks Reddit &amp; Twitter for calling this one out!)</li>
 </ul>
 
-<p><em>If you’ve found a better way to do this, or know if it’s possible to use <a href="https://github.com/Microsoft/vswhere">vswhere</a> for this purpose, <a href="mailto:mason.remaley+pub@gmail.com">let me know</a> and I’ll update this post!</em>)</p>
+<p><em>If you’ve found a better way to do this, or know if it’s possible to use <a href="https://github.com/Microsoft/vswhere">vswhere</a> for this purpose, <a href="mailto:mason.remaley+pub@gmail.com">let me know</a> and I’ll update this post!</em></p>
 
 <h2 id="4-link-with-the-compiled-resources">4. Link with the compiled resources</h2>
 
 <p>Lastly, you need to link with the <code class="language-plaintext highlighter-rouge">.res</code> file when building your executable. How exactly you do this depends on your compiler and linker.</p>
 
-<p>Here’s how I do it in Rust, with unrelated options removed for clarity:</p>
+<p>If you’ve used a library to handle the resource compilation step for you, it will likely automate this step as well. If not, here’s how I did it in Rust with unrelated options remove for clarity:</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo rustc <span class="nt">--</span> <span class="nt">-C</span> link-args<span class="o">=</span><span class="s2">"resources.res"</span>
 </code></pre></div></div>

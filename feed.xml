@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.anthropicstudios.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.anthropicstudios.com/" rel="alternate" type="text/html" /><updated>2021-01-05T18:19:41-05:00</updated><id>https://www.anthropicstudios.com/feed.xml</id><title type="html">Anthropic Studios</title><entry><title type="html">Setting a Rust Executable’s Icon in Windows</title><link href="https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon/" rel="alternate" type="text/html" title="Setting a Rust Executable's Icon in Windows" /><published>2021-01-05T00:00:00-05:00</published><updated>2021-01-05T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon/">&lt;p&gt;This morning, I decided it was long overdue that &lt;a href=&quot;/way-of-rhea&quot;&gt;Way of Rhea&lt;/a&gt; get its own icon.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.anthropicstudios.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.anthropicstudios.com/" rel="alternate" type="text/html" /><updated>2021-01-05T19:22:56-05:00</updated><id>https://www.anthropicstudios.com/feed.xml</id><title type="html">Anthropic Studios</title><entry><title type="html">Setting a Rust Executable’s Icon in Windows</title><link href="https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon/" rel="alternate" type="text/html" title="Setting a Rust Executable's Icon in Windows" /><published>2021-01-05T00:00:00-05:00</published><updated>2021-01-05T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon/">&lt;p&gt;This morning, I decided it was long overdue that &lt;a href=&quot;/way-of-rhea&quot;&gt;Way of Rhea&lt;/a&gt; get its own icon.&lt;/p&gt;
 
 &lt;figure&gt;&lt;img src=&quot;/assets/monsters-and-sprites/setting-a-rust-windows-exe-icon/icon.png&quot; /&gt;&lt;/figure&gt;
 
@@ -47,22 +47,23 @@
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rc resources.rc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;(&lt;em&gt;Side note–programmatically determining the path to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rc.exe&lt;/code&gt; is, unfortunately, not easy. If you can’t work around this, here are some options:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Programmatically determining the path to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rc.exe&lt;/code&gt; is, unfortunately, not easy. If you need to do this, here are some options:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;Require the user to provide the path&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Call it from within a &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs&quot;&gt;Developer Command Prompt&lt;/a&gt; where it’s already in the path&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Use &lt;a href=&quot;https://llvm.org/&quot;&gt;LLVM&lt;/a&gt;’s reimplementation &lt;a href=&quot;https://github.com/llvm/llvm-project/tree/62ec4ac90738a5f2d209ed28c822223e58aaaeb7/llvm/tools/llvm-rc&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;llvm-rc&lt;/code&gt;&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Check out &lt;a href=&quot;https://github.com/ziglang/zig/blob/master/src/windows_sdk.cpp&quot;&gt;how the Zig compiler finds similar files&lt;/a&gt;, and write up something similar for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rc.exe&lt;/code&gt;&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Require the user to provide the path&lt;/li&gt;
+  &lt;li&gt;Call it from within a &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs&quot;&gt;Developer Command Prompt&lt;/a&gt; where it’s already in the path&lt;/li&gt;
+  &lt;li&gt;Use &lt;a href=&quot;https://llvm.org/&quot;&gt;LLVM&lt;/a&gt;’s reimplementation &lt;a href=&quot;https://github.com/llvm/llvm-project/tree/62ec4ac90738a5f2d209ed28c822223e58aaaeb7/llvm/tools/llvm-rc&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;llvm-rc&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out &lt;a href=&quot;https://github.com/ziglang/zig/blob/master/src/windows_sdk.cpp&quot;&gt;how the Zig compiler finds similar files&lt;/a&gt;, and write up something similar for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rc.exe&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Use a library like &lt;a href=&quot;https://crates.io/crates/embed-resource&quot;&gt;embed-resource&lt;/a&gt; to handle the compilation step for you (thanks Reddit &amp;amp; Twitter for calling this one out!)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;em&gt;If you’ve found a better way to do this, or know if it’s possible to use &lt;a href=&quot;https://github.com/Microsoft/vswhere&quot;&gt;vswhere&lt;/a&gt; for this purpose, &lt;a href=&quot;mailto:mason.remaley+pub@gmail.com&quot;&gt;let me know&lt;/a&gt; and I’ll update this post!&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you’ve found a better way to do this, or know if it’s possible to use &lt;a href=&quot;https://github.com/Microsoft/vswhere&quot;&gt;vswhere&lt;/a&gt; for this purpose, &lt;a href=&quot;mailto:mason.remaley+pub@gmail.com&quot;&gt;let me know&lt;/a&gt; and I’ll update this post!&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;4-link-with-the-compiled-resources&quot;&gt;4. Link with the compiled resources&lt;/h2&gt;
 
 &lt;p&gt;Lastly, you need to link with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.res&lt;/code&gt; file when building your executable. How exactly you do this depends on your compiler and linker.&lt;/p&gt;
 
-&lt;p&gt;Here’s how I do it in Rust, with unrelated options removed for clarity:&lt;/p&gt;
+&lt;p&gt;If you’ve used a library to handle the resource compilation step for you, it will likely automate this step as well. If not, here’s how I did it in Rust with unrelated options remove for clarity:&lt;/p&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cargo rustc &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; link-args&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;resources.res&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
