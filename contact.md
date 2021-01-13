@@ -5,7 +5,7 @@ title: Contact Us
 
 # Feedback
 
-Feedback from players helps us improve our games! You can reach us directly here:
+We'd love to hear from you! You can reach us directly via the following methods:
 
 * [Discord](https://discord.gg/JGeVt5XwPP)
 * [Steam](https://steamcommunity.com/app/1110620)
