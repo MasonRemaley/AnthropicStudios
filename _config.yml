@@ -28,6 +28,7 @@ permalink: /:year/:month/:day/:title/
 header_pages:
   - blog.md
   - press.md
+  - contact.md
 
 # Build settings
 markdown: kramdown
