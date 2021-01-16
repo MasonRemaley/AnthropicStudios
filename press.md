@@ -136,6 +136,7 @@ Evan Morris is the narrative designer for *Way of Rhea*. He's currently working 
   - [PAX East 2020](https://east.paxsite.com/){:target="_blank"} via [PAXRising](https://east.paxsite.com/rising){:target="_blank"}
   - Steam Summer Festival 2020
   - [PlayNYC 2020](https://www.play-nyc.com/){:target="_blank"} (as part of [GUMBO](https://www.gumbo.nyc/){:target="_blank"})
+  - [Boston FIG 2021](https://www.eventbrite.com/e/bostonfig-fest-virtual-tickets-129017660295)
 
 - Minor Events:
   - Many [Playcrafting](https://playcrafting.com/){:target="_blank"} events, including...

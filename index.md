@@ -90,9 +90,23 @@ redirect_from:
     <div class="laurel-outer">
         <div class="laurel-inner">
             <div style="font-size:80%">Official Selection</div>
+            <div><b>Boston FIG</b></div>
+            <div style="font-size:80%">2021</div>
+        </div>
+    </div>
+    <div class="laurel-outer">
+        <div class="laurel-inner">
+            <div style="font-size:80%">Official Selection</div>
             <div><b>PAX Rising</b></div>
             <div><b>PAX East</b></div>
             <div style="font-size:80%">2020</div>
+        </div>
+    </div>
+    <div class="laurel-outer">
+        <div class="laurel-inner">
+            <div style="font-size:80%">Official Selection</div>
+            <div><b>Play NYC</b></div>
+            <div style="font-size:80%">2018-2020</div>
         </div>
     </div>
     <div class="laurel-outer">
@@ -106,14 +120,6 @@ redirect_from:
     <div class="laurel-outer">
         <div class="laurel-inner">
             <div style="font-size:80%">Official Selection</div>
-            <div><b>MIVS</b></div>
-            <div><b>MAGWest</b></div>
-            <div style="font-size:80%">2019</div>
-        </div>
-    </div>
-    <div class="laurel-outer">
-        <div class="laurel-inner">
-            <div style="font-size:80%">Official Selection</div>
             <div><b>PIGSquad</b></div>
             <div><b>PRGE</b></div>
             <div style="font-size:80%">2019</div>
@@ -122,15 +128,9 @@ redirect_from:
     <div class="laurel-outer">
         <div class="laurel-inner">
             <div style="font-size:80%">Official Selection</div>
-            <div><b>Play NYC</b></div>
+            <div><b>MIVS</b></div>
+            <div><b>MAGWest</b></div>
             <div style="font-size:80%">2019</div>
-        </div>
-    </div>
-    <div class="laurel-outer">
-        <div class="laurel-inner">
-            <div style="font-size:80%">Official Selection</div>
-            <div><b>Play NYC</b></div>
-            <div style="font-size:80%">2018</div>
         </div>
     </div>
 </div>
