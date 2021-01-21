@@ -6,6 +6,7 @@ layout: page
 redirect_from:
   - /monsters-and-sprites
   - /way-of-rhea
+description: Way of Rhea is an upcoming puzzle platformer that takes place in a world where you can only interact with objects that match your current color.
 ---
 
 <img src="assets/monsters-and-sprites/logo.svg" alt="way of rhea"/>

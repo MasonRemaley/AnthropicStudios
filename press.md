@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Press Kit
+description: Way of Rhea is an upcoming puzzle platformer that takes place in a world where you can only interact with objects that match your current color.
 ---
 
 <!-- TODO: Logo -->

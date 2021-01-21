@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact Us
+description: We'd love to hear from you! You can reach us directly via the following methods.
 ---
 
 # Feedback
