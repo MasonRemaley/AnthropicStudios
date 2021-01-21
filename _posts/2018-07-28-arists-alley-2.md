@@ -30,32 +30,32 @@ This tracing exercise has also made it apparent there are some things I need to 
 
 Below are some "traced" pieces and the original screenshots:
 
-<a href="/assets/monsters-and-sprites/artists-alley-2/1-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/1-ms.jpg"/></a>
+<a href="/assets/monsters-and-sprites/artists-alley-2/1-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/1-ms.jpg" alt="traced screenshot"/></a>
 <table>
     <tr>
         <th>
-            <a href="/assets/monsters-and-sprites/artists-alley-2/2-braid.png"><img src="/assets/monsters-and-sprites/artists-alley-2/2-braid.png"/></a>
+            <a href="/assets/monsters-and-sprites/artists-alley-2/2-braid.png"><img src="/assets/monsters-and-sprites/artists-alley-2/2-braid.png" alt="original braid screenshot 1"/></a>
         </th>
         <th>
-            <a href="/assets/monsters-and-sprites/artists-alley-2/3-braid.png"><img src="/assets/monsters-and-sprites/artists-alley-2/3-braid.png"/></a>
+            <a href="/assets/monsters-and-sprites/artists-alley-2/3-braid.png"><img src="/assets/monsters-and-sprites/artists-alley-2/3-braid.png" alt="original braid screenshot 2"/></a>
         </th>
     </tr>
 </table>
-<a href="/assets/monsters-and-sprites/artists-alley-2/4-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/4-ms.jpg"/></a>
+<a href="/assets/monsters-and-sprites/artists-alley-2/4-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/4-ms.jpg" alt="traced screenshot"/></a>
 
 *Top Image - My Art*<br>
 *Middle 2 Images - Braid Screenshots*<br>
 *Bottom Image - My Art*<br>
 <br>
 
-<a href="/assets/monsters-and-sprites/artists-alley-2/5-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/5-ms.jpg"/></a>
+<a href="/assets/monsters-and-sprites/artists-alley-2/5-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/5-ms.jpg" alt="traced screenshot"/></a>
 <table>
     <tr>
         <th width="50%">
-            <a href="/assets/monsters-and-sprites/artists-alley-2/6-aa.png"><img src="/assets/monsters-and-sprites/artists-alley-2/6-aa.png"/></a>
+            <a href="/assets/monsters-and-sprites/artists-alley-2/6-aa.png"><img src="/assets/monsters-and-sprites/artists-alley-2/6-aa.png" alt="orignal screenshot 1"/></a>
         </th>
         <th width="50%">
-            <a href="/assets/monsters-and-sprites/artists-alley-2/7-s.png"><img src="/assets/monsters-and-sprites/artists-alley-2/7-s.png"/></a>
+            <a href="/assets/monsters-and-sprites/artists-alley-2/7-s.png"><img src="/assets/monsters-and-sprites/artists-alley-2/7-s.png" alt="original screenshot 2"/></a>
         </th>
     </tr>
 </table>

@@ -11,7 +11,7 @@ reddit: https://www.reddit.com/r/rust_gamedev/comments/kraink/setting_a_rust_exe
 
 This morning, I decided it was long overdue that [Way of Rhea](/way-of-rhea) get its own icon.
 
-<figure><img src="/assets/monsters-and-sprites/setting-a-rust-windows-exe-icon/icon.png"/></figure>
+<figure><img src="/assets/monsters-and-sprites/setting-a-rust-windows-exe-icon/icon.png" alt="way of rhea icon"/></figure>
 
 I believe that if you're building a project in Visual Studio there's a UI through which you can change your exe's icon--but I'm not a Visual Studio user. It took me quite a while to figure out how to set an exe's icon from the command line, so I figured I'd document what I learned here in the hopes of saving someone else some time.
 
@@ -79,6 +79,6 @@ cargo rustc -- -C link-args="resources.res"
 
 That's it! If everything has gone well, your executable should display your icon in the file explorer and the task bar.
 
-<figure><img src="/assets/monsters-and-sprites/setting-a-rust-windows-exe-icon/task-bar.png"/></figure>
+<figure><img src="/assets/monsters-and-sprites/setting-a-rust-windows-exe-icon/task-bar.png" alt="taskbar screenshot with way of rhea icon"/></figure>
 
 If things *aren't* working correctly, there are third party tools like *Resource Hacker* that you can use to compare your final executable's resources to that of an executable with a working icon.

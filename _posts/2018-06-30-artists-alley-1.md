@@ -24,15 +24,15 @@ So far, I am happy about the existing color palette for [[WoR]](/way-of-rhea). I
 
 For instance, when pale pink is the most prominent color, the world becomes a bit bubble-gummy and light. 
 
-<a href="/assets/monsters-and-sprites/artists-alley-1/0.5.jpg"><img src="/assets/monsters-and-sprites/artists-alley-1/0.5.jpg"/></a>
+<a href="/assets/monsters-and-sprites/artists-alley-1/0.5.jpg"><img src="/assets/monsters-and-sprites/artists-alley-1/0.5.jpg" alt="abstract bubbly concept art"/></a>
 
-<a href="/assets/monsters-and-sprites/artists-alley-1/1.png"><img src="/assets/monsters-and-sprites/artists-alley-1/1.png"/></a>
+<a href="/assets/monsters-and-sprites/artists-alley-1/1.png"><img src="/assets/monsters-and-sprites/artists-alley-1/1.png" alt="bubble gummy level concept art"/></a>
 
 While oranges, and deep purple dominating the scene brings to mind more mysterious deep feelings.
 
-<a href="/assets/monsters-and-sprites/artists-alley-1/2.png"><img src="/assets/monsters-and-sprites/artists-alley-1/2.png"/></a>
+<a href="/assets/monsters-and-sprites/artists-alley-1/2.png"><img src="/assets/monsters-and-sprites/artists-alley-1/2.png" alt="abstract rocky concept art"/></a>
 
-<a href="/assets/monsters-and-sprites/artists-alley-1/2.5.jpg"><img src="/assets/monsters-and-sprites/artists-alley-1/2.5.jpg"/></a>
+<a href="/assets/monsters-and-sprites/artists-alley-1/2.5.jpg"><img src="/assets/monsters-and-sprites/artists-alley-1/2.5.jpg" alt="abstract rocky concept art with puzzle pieces"/></a>
 
 <!--more-->
 
@@ -42,9 +42,9 @@ A sense of curiosity, mystery, a pinch of fun, and a color scheme that can be va
 As the game progresses and the plot unfolds, the background will reflect intended emotions. 
 Some levels will be a bit darker, and should feel a bit scary. While other levels should be light and whimsical. In addition to color, terrain make up is important for game design. Different terrains can lead to different obstacles (water, vines, gaps, etc...)
 
-<a href="/assets/monsters-and-sprites/artists-alley-1/3.png"><img src="/assets/monsters-and-sprites/artists-alley-1/3.png"/></a>
+<a href="/assets/monsters-and-sprites/artists-alley-1/3.png"><img src="/assets/monsters-and-sprites/artists-alley-1/3.png" alt="nature concept art"/></a>
  
 Another factor to explore through environment is physics. What is the gravity of the environment? Are there any special ‘rules’? [WoR] is a puzzle game. So if for instance, the terrain is mirrored, the character you are controlling can have a reflection plane which mimics the players moves. To make things interesting, there could be some ‘inconsistencies’ between these planes, and the player can switch planes to solve puzzles and overcome obstacles.
 
-<a href="/assets/monsters-and-sprites/artists-alley-1/4.png"><img src="/assets/monsters-and-sprites/artists-alley-1/4.png"/></a>
-<a href="/assets/monsters-and-sprites/artists-alley-1/5.png"><img src="/assets/monsters-and-sprites/artists-alley-1/5.png"/></a>
+<a href="/assets/monsters-and-sprites/artists-alley-1/4.png"><img src="/assets/monsters-and-sprites/artists-alley-1/4.png" alt="manmade concept art 1"/></a>
+<a href="/assets/monsters-and-sprites/artists-alley-1/5.png"><img src="/assets/monsters-and-sprites/artists-alley-1/5.png" alt="manmade concept art 2"/></a>

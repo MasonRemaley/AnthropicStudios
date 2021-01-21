@@ -12,7 +12,7 @@ reddit: https://www.reddit.com/r/rust_gamedev/comments/c5lwi5/way_of_rheas_entit
 I posted [this poll](https://twitter.com/masonremaley/status/1135083247598047232) on Twitter few weeks ago:
 
 <figure>
-  <a href="https://twitter.com/masonremaley/status/1135083247598047232"><img src="/assets/monsters-and-sprites/entity-systems/poll.png"/></a>
+  <a href="https://twitter.com/masonremaley/status/1135083247598047232"><img src="/assets/monsters-and-sprites/entity-systems/poll.png" alt="twitter poll screenshot"/></a>
 </figure>
 
 Entity systems won by a long shot, so that's what I'm going to be writing about today.
@@ -28,14 +28,14 @@ This approach is severely undervalued. Letting yourself be inconsistent during t
 - It generates a lot of data on what a generic system would _actually need to accomplish_. It's hard to build a good cart before you know anything about the horse. :)
 
 <figure>
-  <a href="/assets/monsters-and-sprites/entity-systems/old-editor.jpg"><img src="/assets/monsters-and-sprites/entity-systems/old-editor.jpg"></a>
+  <a href="/assets/monsters-and-sprites/entity-systems/old-editor.jpg"><img src="/assets/monsters-and-sprites/entity-systems/old-editor.jpg" alt="old level editor screenshot"></a>
   <figcaption>Some entities like the player were hard coded into the all-encompassing "world" struct, while others were stored in a tile map and exposed to the editor via the pictured GUI.</figcaption>
 </figure>
 
 As most entities in the game were fairly independent of each other, this approach served me well for almost a year. As time wore on, though, I had more and more ideas that couldn't be expressed well in the system I'd built up...
 
 <figure>
-  <a href="/assets/monsters-and-sprites/entity-systems/physics-small.jpg"><img src="/assets/monsters-and-sprites/entity-systems/physics-small.jpg"></a>
+  <a href="/assets/monsters-and-sprites/entity-systems/physics-small.jpg"><img src="/assets/monsters-and-sprites/entity-systems/physics-small.jpg" alt="puzzle sketch"></a>
   <figcaption>Many of the puzzles I wanted to build involved entities being run through some sort of physics simulation, which would have been difficult to add to the existing codebase.</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ I've seen the first approach in a lot of engines that were initially designed fo
 On the other hand, if you have a gameplay idea not anticipated by the system, you may have hard time implementing it without some [funny business](https://www.geek.com/games/a-train-you-ride-in-fallout-3-is-actually-an-npc-wearing-a-train-hat-1628532/){:target="_blank"}.
 
 <figure>
-  <a href="http://www.insidemacgames.com/features/view.php?ID=312#"><img src="/assets/monsters-and-sprites/entity-systems/dim3-inside-mac-games.jpg"></a>
+  <a href="http://www.insidemacgames.com/features/view.php?ID=312#"><img src="/assets/monsters-and-sprites/entity-systems/dim3-inside-mac-games.jpg" alt="dim3 level editor"></a>
   <figcaption>dim3 was the first 3d engine I ever used, described by its creator Brian Barnes as a "game without content". The game had a number of pre-baked object types (lights, scenery items, etc), and the option to introduce new objects via scripts. Screenshot taken from <a href="http://www.insidemacgames.com/features/view.php?ID=312#">Inside Mac Games</a> as I couldn't find a copy of the editor.</figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ On the other end of the spectrum is the dynamic approach. When people talk about
 This approach has some bold promises: you can mix and match existing pieces like legos, possibly even creating completely new entity types at runtime.
 
 <figure style="width:75%">
-  <a href="/assets/monsters-and-sprites/entity-systems/unity.jpg"><img src="/assets/monsters-and-sprites/entity-systems/unity.jpg"></a>
+  <a href="/assets/monsters-and-sprites/entity-systems/unity.jpg"><img src="/assets/monsters-and-sprites/entity-systems/unity.jpg" alt="unity inspector"></a>
   <figcaption>In Unity's approach, entities are built up of a large number of components that may or may not depend on each other.</figcaption>
 </figure>
 
@@ -173,7 +173,7 @@ If the entity has a color, this function returns it. If not, it returns `None`. 
 The physics simulation, once implemented, will use this pattern as well: when it's time to update the physics objects, it will be trivial to loop over all the entities and call something like `physics::update(rigid_body)` on each entity that has a rigid body.
 
 <figure>
-  <a href="/assets/monsters-and-sprites/entity-systems/new-editor.gif"><img src="/assets/monsters-and-sprites/entity-systems/new-editor.gif"></a>
+  <a href="/assets/monsters-and-sprites/entity-systems/new-editor.gif"><img src="/assets/monsters-and-sprites/entity-systems/new-editor.gif" alt="new Way of Rhea level editor"></a>
   <figcaption>The level editor has been updated to take advantage of the entity system. The component getters are used to draw controls for all component types that exist on at least one of the selected entities.</figcaption>
 </figure>
 
