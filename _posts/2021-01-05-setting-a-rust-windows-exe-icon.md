@@ -11,6 +11,7 @@ seo:
   links:
     - https://www.gamasutra.com/blogs/MasonRemaley/20210111/376012/Setting_An_Executable_Icon_From_The_Command_Line_in_Windows.php
 image: https://www.anthropicstudios.com/assets/monsters-and-sprites/setting-a-rust-windows-exe-icon/icon.png
+description: It took me quite a while to figure out how to set an exe's icon from the command line, so I figured I'd document what I learned here.
 ---
 
 This morning, I decided it was long overdue that [Way of Rhea](/way-of-rhea) get its own icon.

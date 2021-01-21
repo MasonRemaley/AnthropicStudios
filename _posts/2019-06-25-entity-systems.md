@@ -11,6 +11,7 @@ seo:
   links:
     - https://gamasutra.com/blogs/MasonRemaley/20190702/345916/Way_of_Rheas_Entity_System.php
 image: /assets/monsters-and-sprites/entity-systems/physics-small.jpg
+description: I'm going to outline the process that lead me to Way of Rhea's entity system. I'm working in a custom engine & scripting language written in Rust.
 ---
 
 I posted [this poll](https://twitter.com/masonremaley/status/1135083247598047232) on Twitter few weeks ago:

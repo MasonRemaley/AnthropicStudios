@@ -11,6 +11,7 @@ seo:
   links:
     - https://gamasutra.com/blogs/MasonRemaley/20200401/360417/Symmetric_Matrices__Triangle_Numbers.php
 image: /assets/monsters-and-sprites/symmetric-matrices/player-orb.png
+description: Symmetric matrices came up because this morning, as part of a puzzle I was working on, I added a layer system to Way of Rhea's physics engine.
 ---
 
 With Santa Cruz officially in lockdown due to COVID-19, I've been at home a lot working on [Way of Rhea](/way-of-rhea). Since I'm left without any excuse for not posting, here's a neat proof I happened across while working on some new puzzles. :)

@@ -7,6 +7,7 @@ author: carolyn
 excerpt_separator: <!--more-->
 twitter: https://twitter.com/AnthropicSt/status/1013200248834023425
 image: /assets/monsters-and-sprites/artists-alley-1/2.png
+description: Artists Alley is a segment which provides a behind the scenes glance into the artistic process for Way of Rhea.
 ---
 
 Artists Alley is a segment which provides a behind the scenes glance into the artistic process for [[Way of Rhea (WoR)]](/way-of-rhea).

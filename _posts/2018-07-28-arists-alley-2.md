@@ -7,6 +7,7 @@ author: carolyn
 excerpt_separator: <!--more-->
 twitter: https://twitter.com/AnthropicSt/status/1023253105176178688
 image: /assets/monsters-and-sprites/artists-alley-2/4-ms.jpg
+description: These past two weeks I have been drawing inspiration from other side scroller games in order to develop a style unique to Way of Rhea! 
 ---
 
 These past two weeks I have been drawing inspiration from other side scroller games in order to develop a style unique to [[Way of Rhea]](/way-of-rhea)! 

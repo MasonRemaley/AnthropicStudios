@@ -6,9 +6,10 @@ tags: way-of-rhea tech
 author: mason
 excerpt_separator: <!--more-->
 twitter: https://twitter.com/AnthropicSt/status/1013202971998539776
+description: I've been doing bug fixes and working on miscellaneous engine features that I either couldn't get done in time for the demo.
 ---
 
-When we built the original [Monsters and Sprites](/monsters-and-sprites) demo, we only had 9 days to get it working before the [Playcrafting](https://playcrafting.com/){:target="_blank"} expo we had signed up for, so we had to cut a lot of corners. Since then I've been doing bug fixes and working on a lot of miscellaneous [engine](https://masonremaley.com/projects/game-engine/)/[language](https://masonremaley.com/projects/scripting-language/) features that I either couldn't get done in time for the demo, or didn't realize were important until I started building it.
+When we built the original [[Way of Rhea](/way-of-rhea)] demo, we only had 9 days to get it working before the [Playcrafting](https://playcrafting.com/){:target="_blank"} expo we had signed up for, so we had to cut a lot of corners. Since then I've been doing bug fixes and working on a lot of miscellaneous [engine](https://masonremaley.com/projects/game-engine/)/[language](https://masonremaley.com/projects/scripting-language/) features that I either couldn't get done in time for the demo, or didn't realize were important until I started building it.
 
 We've made a few game updates since then ([we now have sound!](https://twitter.com/AnthropicSt/status/1010568311690743808)), but this post is specifically going to explore some language updates I've made.
 
