@@ -11,9 +11,9 @@ description: Way of Rhea is an upcoming puzzle platformer that takes place in a 
 
 <img src="assets/monsters-and-sprites/logo.svg" alt="way of rhea"/>
 
-<br>
-<p><i>Way of Rhea is an upcoming puzzle platformer that takes place in a world where you can only interact with objects that match your current color.</i></p>
-<br>
+<br><br>
+Anthropic Studios is an independent game company, currently working on Way of Rhea--a puzzle platformer that takes place in a world where you can only interact with objects that match your current color.
+<br><br>
 
 <style type="text/css">
     #trailer-embed iframe{
