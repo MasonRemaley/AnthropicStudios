@@ -7,6 +7,10 @@ author: mason
 excerpt_separator: <!--more-->
 twitter: https://twitter.com/masonremaley/status/1143655586740838400
 reddit: https://www.reddit.com/r/rust_gamedev/comments/c5lwi5/way_of_rheas_entity_system/
+seo:
+  links:
+    - https://gamasutra.com/blogs/MasonRemaley/20190702/345916/Way_of_Rheas_Entity_System.php
+image: /assets/monsters-and-sprites/entity-systems/physics-small.jpg
 ---
 
 I posted [this poll](https://twitter.com/masonremaley/status/1135083247598047232) on Twitter few weeks ago:

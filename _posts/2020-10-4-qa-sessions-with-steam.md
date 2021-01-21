@@ -7,6 +7,9 @@ author: mason
 excerpt_separator: <!--more-->
 twitter: https://twitter.com/masonremaley/status/1312803634833510400
 <!-- reddit: https://www.reddit.com/r/gamedev/comments/fst8i3/symmetric_matrices_triangle_numbers/ -->
+seo:
+  links:
+    - https://www.gamasutra.com/blogs/MasonRemaley/20201004/371312/Notes_from_the_QA_Sessions_with_Steam.php
 ---
 
 I recently attended the [Steam Q&A](https://www.eventbrite.ca/e/qa-session-with-steam-tickets-117008295963){:target="_blank"} hosted by [GamePlay Space](https://gameplayspace.com/){:target="_blank"}, and I took a bunch of notes for myself. A few friends asked about the event, so I figured I'd just upload my notes somewhere I can share.

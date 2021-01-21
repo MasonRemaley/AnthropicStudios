@@ -7,6 +7,10 @@ author: mason
 excerpt_separator: <!--more-->
 twitter: https://twitter.com/masonremaley/status/1346594278802399232
 reddit: https://www.reddit.com/r/rust_gamedev/comments/kraink/setting_a_rust_executables_icon_in_windows/
+seo:
+  links:
+    - https://www.gamasutra.com/blogs/MasonRemaley/20210111/376012/Setting_An_Executable_Icon_From_The_Command_Line_in_Windows.php
+image: https://www.anthropicstudios.com/assets/monsters-and-sprites/setting-a-rust-windows-exe-icon/icon.png
 ---
 
 This morning, I decided it was long overdue that [Way of Rhea](/way-of-rhea) get its own icon.

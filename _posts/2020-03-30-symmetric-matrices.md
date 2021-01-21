@@ -7,6 +7,10 @@ author: mason
 excerpt_separator: <!--more-->
 twitter: https://twitter.com/masonremaley/status/1245205608774520833
 reddit: https://www.reddit.com/r/gamedev/comments/fst8i3/symmetric_matrices_triangle_numbers/
+seo:
+  links:
+    - https://gamasutra.com/blogs/MasonRemaley/20200401/360417/Symmetric_Matrices__Triangle_Numbers.php
+image: /assets/monsters-and-sprites/symmetric-matrices/player-orb.png
 ---
 
 With Santa Cruz officially in lockdown due to COVID-19, I've been at home a lot working on [Way of Rhea](/way-of-rhea). Since I'm left without any excuse for not posting, here's a neat proof I happened across while working on some new puzzles. :)
