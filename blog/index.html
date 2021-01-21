@@ -17,7 +17,7 @@
 </head>
 <body><header class="site-header">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/"><img src="/assets/logo.png" height="50px"/> Anthropic Studios</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/"><img src="/assets/logo.png" alt="anthropic logo of earth with a ring around it" height="50px"/> Anthropic Studios</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -59,7 +59,7 @@
 
           <p>This morning, I decided it was long overdue that <a href="/way-of-rhea">Way of Rhea</a> get its own icon.</p>
 
-<figure><img src="/assets/monsters-and-sprites/setting-a-rust-windows-exe-icon/icon.png" /></figure>
+<figure><img src="/assets/monsters-and-sprites/setting-a-rust-windows-exe-icon/icon.png" alt="way of rhea icon" /></figure>
 
 <p>I believe that if you’re building a project in Visual Studio there’s a UI through which you can change your exe’s icon–but I’m not a Visual Studio user. It took me quite a while to figure out how to set an exe’s icon from the command line, so I figured I’d document what I learned here in the hopes of saving someone else some time.</p>
 
@@ -129,7 +129,7 @@
 
 <figure style="position: relative">
   <a href="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png">
-    <img style="min-width: 100%; max-width: 100%; width: 100%" src="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png" />
+    <img style="min-width: 100%; max-width: 100%; width: 100%" src="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png" alt="way of rhea screenshot of player facing a glowing orb" />
     <figcaption style="
       position: absolute;
       bottom: 0;
@@ -215,7 +215,7 @@
           <p>I posted <a href="https://twitter.com/masonremaley/status/1135083247598047232">this poll</a> on Twitter few weeks ago:</p>
 
 <figure>
-  <a href="https://twitter.com/masonremaley/status/1135083247598047232"><img src="/assets/monsters-and-sprites/entity-systems/poll.png" /></a>
+  <a href="https://twitter.com/masonremaley/status/1135083247598047232"><img src="/assets/monsters-and-sprites/entity-systems/poll.png" alt="twitter poll screenshot" /></a>
 </figure>
 
 <p>Entity systems won by a long shot, so that’s what I’m going to be writing about today.</p>
@@ -233,14 +233,14 @@
 </ul>
 
 <figure>
-  <a href="/assets/monsters-and-sprites/entity-systems/old-editor.jpg"><img src="/assets/monsters-and-sprites/entity-systems/old-editor.jpg" /></a>
+  <a href="/assets/monsters-and-sprites/entity-systems/old-editor.jpg"><img src="/assets/monsters-and-sprites/entity-systems/old-editor.jpg" alt="old level editor screenshot" /></a>
   <figcaption>Some entities like the player were hard coded into the all-encompassing "world" struct, while others were stored in a tile map and exposed to the editor via the pictured GUI.</figcaption>
 </figure>
 
 <p>As most entities in the game were fairly independent of each other, this approach served me well for almost a year. As time wore on, though, I had more and more ideas that couldn’t be expressed well in the system I’d built up…</p>
 
 <figure>
-  <a href="/assets/monsters-and-sprites/entity-systems/physics-small.jpg"><img src="/assets/monsters-and-sprites/entity-systems/physics-small.jpg" /></a>
+  <a href="/assets/monsters-and-sprites/entity-systems/physics-small.jpg"><img src="/assets/monsters-and-sprites/entity-systems/physics-small.jpg" alt="puzzle sketch" /></a>
   <figcaption>Many of the puzzles I wanted to build involved entities being run through some sort of physics simulation, which would have been difficult to add to the existing codebase.</figcaption>
 </figure>
 
@@ -297,32 +297,32 @@
 
 <p>Below are some “traced” pieces and the original screenshots:</p>
 
-<p><a href="/assets/monsters-and-sprites/artists-alley-2/1-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/1-ms.jpg" /></a></p>
+<p><a href="/assets/monsters-and-sprites/artists-alley-2/1-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/1-ms.jpg" alt="traced screenshot" /></a></p>
 <table>
     <tr>
         <th>
-            <a href="/assets/monsters-and-sprites/artists-alley-2/2-braid.png"><img src="/assets/monsters-and-sprites/artists-alley-2/2-braid.png" /></a>
+            <a href="/assets/monsters-and-sprites/artists-alley-2/2-braid.png"><img src="/assets/monsters-and-sprites/artists-alley-2/2-braid.png" alt="original braid screenshot 1" /></a>
         </th>
         <th>
-            <a href="/assets/monsters-and-sprites/artists-alley-2/3-braid.png"><img src="/assets/monsters-and-sprites/artists-alley-2/3-braid.png" /></a>
+            <a href="/assets/monsters-and-sprites/artists-alley-2/3-braid.png"><img src="/assets/monsters-and-sprites/artists-alley-2/3-braid.png" alt="original braid screenshot 2" /></a>
         </th>
     </tr>
 </table>
-<p><a href="/assets/monsters-and-sprites/artists-alley-2/4-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/4-ms.jpg" /></a></p>
+<p><a href="/assets/monsters-and-sprites/artists-alley-2/4-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/4-ms.jpg" alt="traced screenshot" /></a></p>
 
 <p><em>Top Image - My Art</em><br />
 <em>Middle 2 Images - Braid Screenshots</em><br />
 <em>Bottom Image - My Art</em><br />
 <br /></p>
 
-<p><a href="/assets/monsters-and-sprites/artists-alley-2/5-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/5-ms.jpg" /></a></p>
+<p><a href="/assets/monsters-and-sprites/artists-alley-2/5-ms.jpg"><img src="/assets/monsters-and-sprites/artists-alley-2/5-ms.jpg" alt="traced screenshot" /></a></p>
 <table>
     <tr>
         <th width="50%">
-            <a href="/assets/monsters-and-sprites/artists-alley-2/6-aa.png"><img src="/assets/monsters-and-sprites/artists-alley-2/6-aa.png" /></a>
+            <a href="/assets/monsters-and-sprites/artists-alley-2/6-aa.png"><img src="/assets/monsters-and-sprites/artists-alley-2/6-aa.png" alt="orignal screenshot 1" /></a>
         </th>
         <th width="50%">
-            <a href="/assets/monsters-and-sprites/artists-alley-2/7-s.png"><img src="/assets/monsters-and-sprites/artists-alley-2/7-s.png" /></a>
+            <a href="/assets/monsters-and-sprites/artists-alley-2/7-s.png"><img src="/assets/monsters-and-sprites/artists-alley-2/7-s.png" alt="original screenshot 2" /></a>
         </th>
     </tr>
 </table>
@@ -412,15 +412,15 @@
 
 <p>For instance, when pale pink is the most prominent color, the world becomes a bit bubble-gummy and light.</p>
 
-<p><a href="/assets/monsters-and-sprites/artists-alley-1/0.5.jpg"><img src="/assets/monsters-and-sprites/artists-alley-1/0.5.jpg" /></a></p>
+<p><a href="/assets/monsters-and-sprites/artists-alley-1/0.5.jpg"><img src="/assets/monsters-and-sprites/artists-alley-1/0.5.jpg" alt="abstract bubbly concept art" /></a></p>
 
-<p><a href="/assets/monsters-and-sprites/artists-alley-1/1.png"><img src="/assets/monsters-and-sprites/artists-alley-1/1.png" /></a></p>
+<p><a href="/assets/monsters-and-sprites/artists-alley-1/1.png"><img src="/assets/monsters-and-sprites/artists-alley-1/1.png" alt="bubble gummy level concept art" /></a></p>
 
 <p>While oranges, and deep purple dominating the scene brings to mind more mysterious deep feelings.</p>
 
-<p><a href="/assets/monsters-and-sprites/artists-alley-1/2.png"><img src="/assets/monsters-and-sprites/artists-alley-1/2.png" /></a></p>
+<p><a href="/assets/monsters-and-sprites/artists-alley-1/2.png"><img src="/assets/monsters-and-sprites/artists-alley-1/2.png" alt="abstract rocky concept art" /></a></p>
 
-<p><a href="/assets/monsters-and-sprites/artists-alley-1/2.5.jpg"><img src="/assets/monsters-and-sprites/artists-alley-1/2.5.jpg" /></a></p>
+<p><a href="/assets/monsters-and-sprites/artists-alley-1/2.5.jpg"><img src="/assets/monsters-and-sprites/artists-alley-1/2.5.jpg" alt="abstract rocky concept art with puzzle pieces" /></a></p>
 
 
           <a href="/2018/06/30/artists-alley-1/">Read more...</a>
