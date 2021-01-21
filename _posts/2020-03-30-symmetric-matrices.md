@@ -23,7 +23,7 @@ The layer system essentially lets me define a number of layers rigid bodies can 
 
 <figure style="position: relative">
   <a href="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png">
-    <img style="min-width: 100%; max-width: 100%; width: 100%" src="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png" alt="way of rhea screenshot of player facing a glowing orb">
+    <img style="min-width: 100%; max-width: 100%; width: 100%" src="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png" alt="player facing glowing orb">
     <figcaption style="
       position: absolute;
       bottom: 0;

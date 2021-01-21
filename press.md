@@ -63,28 +63,80 @@ They had initially planned to repeat this exercise a few more times after the ex
 # Images
 <table>
   <tr>
-    <th><a href="/assets/monsters-and-sprites/press-kit/animated-rev-3.gif" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/animated-rev-3.gif"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/press-kit/1-rev-2.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/1-rev-2.jpg"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/animated-rev-3.gif" target="_blank">
+      <img
+        src="/assets/monsters-and-sprites/press-kit/animated-rev-3.gif"
+        alt="animated in game screenshot"
+      />
+    </a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/1-rev-2.jpg" target="_blank">
+      <img
+        src="/assets/monsters-and-sprites/press-kit/1-rev-2.jpg"
+        alt="in game screenshot facing elevator"
+      />
+    </a></th>
   </tr>
   <tr>
-    <th><a href="/assets/monsters-and-sprites/press-kit/2-rev-2.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/2-rev-2.jpg"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/press-kit/3-rev-2.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/3-rev-2.jpg"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/2-rev-2.jpg" target="_blank">
+      <img
+        src="/assets/monsters-and-sprites/press-kit/2-rev-2.jpg"
+        alt="in game screenshot exiting elevator"
+      />
+    </a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/3-rev-2.jpg" target="_blank">
+      <img
+        src="/assets/monsters-and-sprites/press-kit/3-rev-2.jpg"
+        alt="in game screenshot looking over a cliff"
+      /></a></th>
   </tr>
   <tr>
-    <th><a href="/assets/monsters-and-sprites/press-kit/4-rev-3.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/4-rev-3.jpg"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/press-kit/5-rev-2.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/5-rev-2.jpg"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/4-rev-3.jpg" target="_blank">
+      <img
+        src="/assets/monsters-and-sprites/press-kit/4-rev-3.jpg"
+        alt="in game screenshot puzzle solution"
+      /></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/5-rev-2.jpg" target="_blank">
+      <img
+        src="/assets/monsters-and-sprites/press-kit/5-rev-2.jpg"
+        alt="in game screenshot puzzle"
+      /></a></th>
   </tr>
   <tr>
-    <th><a href="/assets/monsters-and-sprites/press-kit/7-rev-2.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/7-rev-2.jpg"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/press-kit/6-rev-3.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/6-rev-3.jpg"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/7-rev-2.jpg" target="_blank">
+      <img
+        src="/assets/monsters-and-sprites/press-kit/7-rev-2.jpg"
+        alt="in game screenshot puzzle solution"
+      /></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/6-rev-3.jpg" target="_blank">
+      <img
+        src="/assets/monsters-and-sprites/press-kit/6-rev-3.jpg"
+        alt="in game screenshot npc dialogue"
+      /></a></th>
   </tr>
   <tr>
-    <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/booth.jpg" target="_blank"><img src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/booth.jpg"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/press-kit/magfest-2020-booth.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/magfest-2020-booth.jpg"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/booth.jpg" target="_blank">
+      <img
+        src="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/booth.jpg"
+        alt="way of rhea booth at PlaYNYC with players"
+      /></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/magfest-2020-booth.jpg" target="_blank">
+      <img
+        src="/assets/monsters-and-sprites/press-kit/magfest-2020-booth.jpg"
+        alt="way of rhea booth at MAGFest"
+      /></a></th>
   </tr>
   <tr>
-    <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/magfest-2020-players.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/magfest-2020-players.jpg"/></a></th>
-    <th><a href="/assets/monsters-and-sprites/press-kit/magfest-2020-mask.jpg" target="_blank"><img src="/assets/monsters-and-sprites/press-kit/magfest-2020-mask.jpg"/></a></th>
+    <th><a href="/assets/monsters-and-sprites/play-nyc-19-press-kit-photos/magfest-2020-players.jpg" target="_blank">
+      <img
+        src="/assets/monsters-and-sprites/press-kit/magfest-2020-players.jpg"
+        alt="way of rhea booth at MAGFest with players"
+      /></a></th>
+    <th><a href="/assets/monsters-and-sprites/press-kit/magfest-2020-mask.jpg" target="_blank">
+      <img
+        src="/assets/monsters-and-sprites/press-kit/magfest-2020-mask.jpg"
+        alt="player dressed as main character at booth"
+      />
+    </a></th>
   </tr>
 </table>
 

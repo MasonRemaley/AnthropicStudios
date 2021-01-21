@@ -28,14 +28,14 @@ This approach is severely undervalued. Letting yourself be inconsistent during t
 - It generates a lot of data on what a generic system would _actually need to accomplish_. It's hard to build a good cart before you know anything about the horse. :)
 
 <figure>
-  <a href="/assets/monsters-and-sprites/entity-systems/old-editor.jpg"><img src="/assets/monsters-and-sprites/entity-systems/old-editor.jpg" alt="old level editor screenshot"></a>
+  <a href="/assets/monsters-and-sprites/entity-systems/old-editor.jpg"><img src="/assets/monsters-and-sprites/entity-systems/old-editor.jpg" alt="old level editor screenshot in game"></a>
   <figcaption>Some entities like the player were hard coded into the all-encompassing "world" struct, while others were stored in a tile map and exposed to the editor via the pictured GUI.</figcaption>
 </figure>
 
 As most entities in the game were fairly independent of each other, this approach served me well for almost a year. As time wore on, though, I had more and more ideas that couldn't be expressed well in the system I'd built up...
 
 <figure>
-  <a href="/assets/monsters-and-sprites/entity-systems/physics-small.jpg"><img src="/assets/monsters-and-sprites/entity-systems/physics-small.jpg" alt="puzzle sketch"></a>
+  <a href="/assets/monsters-and-sprites/entity-systems/physics-small.jpg"><img src="/assets/monsters-and-sprites/entity-systems/physics-small.jpg" alt="puzzle sketch on paper"></a>
   <figcaption>Many of the puzzles I wanted to build involved entities being run through some sort of physics simulation, which would have been difficult to add to the existing codebase.</figcaption>
 </figure>
 
@@ -173,7 +173,7 @@ If the entity has a color, this function returns it. If not, it returns `None`. 
 The physics simulation, once implemented, will use this pattern as well: when it's time to update the physics objects, it will be trivial to loop over all the entities and call something like `physics::update(rigid_body)` on each entity that has a rigid body.
 
 <figure>
-  <a href="/assets/monsters-and-sprites/entity-systems/new-editor.gif"><img src="/assets/monsters-and-sprites/entity-systems/new-editor.gif" alt="new Way of Rhea level editor"></a>
+  <a href="/assets/monsters-and-sprites/entity-systems/new-editor.gif"><img src="/assets/monsters-and-sprites/entity-systems/new-editor.gif" alt="new Way of Rhea level editor in game"></a>
   <figcaption>The level editor has been updated to take advantage of the entity system. The component getters are used to draw controls for all component types that exist on at least one of the selected entities.</figcaption>
 </figure>
 
