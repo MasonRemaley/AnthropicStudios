@@ -6,18 +6,26 @@
 <title>Archive | Anthropic Studios</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Archive" />
+<meta name="author" content="AnthropicSt" />
 <meta property="og:locale" content="en_US" />
+<meta name="description" content="An independent game company." />
+<meta property="og:description" content="An independent game company." />
 <link rel="canonical" href="https://www.anthropicstudios.com/blog/tags/tech" />
 <meta property="og:url" content="https://www.anthropicstudios.com/blog/tags/tech" />
 <meta property="og:site_name" content="Anthropic Studios" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Archive" />
+<meta name="twitter:site" content="@AnthropicSt" />
+<meta name="twitter:creator" content="@AnthropicSt" />
+<meta property="article:publisher" content="https://www.facebook.com/AnthropicStudios/" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Archive","url":"https://www.anthropicstudios.com/blog/tags/tech","@context":"https://schema.org"}</script>
+{"headline":"Archive","url":"https://www.anthropicstudios.com/blog/tags/tech","@type":"WebPage","author":{"@type":"Person","name":"AnthropicSt"},"description":"An independent game company.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.anthropicstudios.com/assets/logo.png"},"name":"AnthropicSt"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://www.anthropicstudios.com/feed.xml" title="Anthropic Studios" />
 </head>
 <body><header class="site-header">
-
-  <div class="wrapper"><a class="site-title" rel="author" href="/"><img src="/assets/logo.png" alt="anthropic logo of earth with a ring around it" height="50px"/> Anthropic Studios</a><nav class="site-nav">
+  <link rel="icon" href="assets/favicon.ico" />
+  <div class="wrapper"><a class="site-title" rel="author" href="/"><img src="/assets/logo.png" alt="" height="50px"/> Anthropic Studios</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -104,7 +112,7 @@
 
 <figure style="position: relative">
   <a href="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png">
-    <img style="min-width: 100%; max-width: 100%; width: 100%" src="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png" alt="way of rhea screenshot of player facing a glowing orb" />
+    <img style="min-width: 100%; max-width: 100%; width: 100%" src="/assets/monsters-and-sprites/symmetric-matrices/player-orb.png" alt="player facing glowing orb" />
     <figcaption style="
       position: absolute;
       bottom: 0;
@@ -208,14 +216,14 @@
 </ul>
 
 <figure>
-  <a href="/assets/monsters-and-sprites/entity-systems/old-editor.jpg"><img src="/assets/monsters-and-sprites/entity-systems/old-editor.jpg" alt="old level editor screenshot" /></a>
+  <a href="/assets/monsters-and-sprites/entity-systems/old-editor.jpg"><img src="/assets/monsters-and-sprites/entity-systems/old-editor.jpg" alt="old level editor screenshot in game" /></a>
   <figcaption>Some entities like the player were hard coded into the all-encompassing "world" struct, while others were stored in a tile map and exposed to the editor via the pictured GUI.</figcaption>
 </figure>
 
 <p>As most entities in the game were fairly independent of each other, this approach served me well for almost a year. As time wore on, though, I had more and more ideas that couldn’t be expressed well in the system I’d built up…</p>
 
 <figure>
-  <a href="/assets/monsters-and-sprites/entity-systems/physics-small.jpg"><img src="/assets/monsters-and-sprites/entity-systems/physics-small.jpg" alt="puzzle sketch" /></a>
+  <a href="/assets/monsters-and-sprites/entity-systems/physics-small.jpg"><img src="/assets/monsters-and-sprites/entity-systems/physics-small.jpg" alt="puzzle sketch on paper" /></a>
   <figcaption>Many of the puzzles I wanted to build involved entities being run through some sort of physics simulation, which would have been difficult to add to the existing codebase.</figcaption>
 </figure>
 
@@ -248,7 +256,7 @@
   
 </p>
 
-          <p>When we built the original <a href="/monsters-and-sprites">Monsters and Sprites</a> demo, we only had 9 days to get it working before the <a href="https://playcrafting.com/" target="_blank">Playcrafting</a> expo we had signed up for, so we had to cut a lot of corners. Since then I’ve been doing bug fixes and working on a lot of miscellaneous <a href="https://masonremaley.com/projects/game-engine/">engine</a>/<a href="https://masonremaley.com/projects/scripting-language/">language</a> features that I either couldn’t get done in time for the demo, or didn’t realize were important until I started building it.</p>
+          <p>When we built the original [<a href="/way-of-rhea">Way of Rhea</a>] demo, we only had 9 days to get it working before the <a href="https://playcrafting.com/" target="_blank">Playcrafting</a> expo we had signed up for, so we had to cut a lot of corners. Since then I’ve been doing bug fixes and working on a lot of miscellaneous <a href="https://masonremaley.com/projects/game-engine/">engine</a>/<a href="https://masonremaley.com/projects/scripting-language/">language</a> features that I either couldn’t get done in time for the demo, or didn’t realize were important until I started building it.</p>
 
 <p>We’ve made a few game updates since then (<a href="https://twitter.com/AnthropicSt/status/1010568311690743808">we now have sound!</a>), but this post is specifically going to explore some language updates I’ve made.</p>
 
@@ -286,7 +294,7 @@
       </div>
 
       <div class="footer-col footer-col-2">
-        <p></p>
+        <!-- <p>An independent game company.</p> -->
       </div>
 
       <div class="footer-col footer-col-3">

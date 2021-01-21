@@ -261,3 +261,5 @@ table td { border: 1px solid #f49b14; }
 .site-footer a:hover { filter: brightness(150%); border: none !important; }
 
 .site-footer a:active { filter: brightness(50%); border: none !important; }
+
+.site-footer .footer-col { filter: brightness(20%); }
