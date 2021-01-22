@@ -21,7 +21,7 @@ description: "An independent game company."
 author: AnthropicSt # default twitter handle attribution, can be changed per-post
 twitter:
   username: AnthropicSt
-  card: summary
+  card: summary_large_image
 facebook:
   publisher: https://www.facebook.com/AnthropicStudios/
 logo: /assets/logo.png
