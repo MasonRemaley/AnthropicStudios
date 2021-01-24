@@ -218,7 +218,7 @@ Evan Morris is the narrative designer for *Way of Rhea*. He's currently working 
 
 # FAQ
 
-**What platforms will the game run on?**
+**What platforms will it run on?**
 
 Currently only Windows support is planned. We have a macOS build as well, but Apple's new code signing policy makes releasing it difficult. Other platforms may be considered after the initial release if there's sufficient interest.
 
