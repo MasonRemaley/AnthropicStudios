@@ -18,16 +18,22 @@ description: Way of Rhea is an upcoming puzzle platformer that takes place in a 
 
 # Description
 
-*Way of Rhea* is a puzzle platformer that begins with two simple rules:
+*Way of Rhea* is a picturesque puzzle platformer that lets you correct your mistakes. Change your color. Teleport past the colored gates. Manipulate the color powered circuits. Befriend the crabs—but don't let them out.
 
-- You can only interact with items in the world that match your current color
-- You can use the color changing orbs scattered throughout the world to change colors
+Each puzzle in Way of Rhea is hand crafted to teach a unique lesson—there's no filler. Some puzzles are easy, some are hard, but each will leave you with that "aha!" feeling you get from a good puzzle.
 
-As the game progresses, classic mechanics you've seen in other games are reintroduced—as well as some new ones. With each new mechanic, you're challenged to take advantage of its interaction with the mechanics you've already mastered to solve the puzzle at hand.
+While the game's puzzles can be challenging, the game itself is forgiving—a flexible undo/redo system lets you quickly explore possible solutions, and correct any mistakes you made along the way. Solving the puzzles is difficult, executing on the solutions is easy. **You won't find difficult platforming challenges in this game.**
 
-While the game's puzzles are challenging, the game itself is forgiving—a flexible undo/redo system lets you quickly explore possible solutions, and correct any mistakes you made along the way. *Solving the puzzles is difficult, executing on the solutions is easy. You won't find difficult platforming challenges in this game.*
+Way of Rhea takes place in a number of different biomes, each with its own unique twist. Each biome contains multiple levels, each of which teaches you a skill that unlocks more areas in the hub world.
 
-Anthropic Studios is a small indie studio founded in 2018 with collaborators working out of California, New York City, Washington DC, and Pennsylvania.
+Here are some notable biomes from the game:
+
+* Forest — The game starts you off in the forest biome. This biome consists of four separate levels which serve as you introduction both to the basic puzzle mechanics, and to the world itself. You'll learn how to change colors, how to operate teleporters, how the various fields work, how the physics of the game work, and you'll eventually graduate to some more advanced puzzles.
+* Circuit World — The circuit biome introduces a new mechanic—circuits, powered by the colored orbs. Place an orb on the circuit, and any connected elements matching that orb's color will activate—but what if there are elements of multiple colors? The circuit levels start you off with the basics, working there way up to advanced circuit puzzles. Once beaten, other areas of the game that use circuits will be unlocked.
+* Ice World — The ice world is home to a large number of friendly, but shy crab-like creatures. These little animals love to walk back and forth and push buttons, but, they don't understand the ramifications of their actions—it's up to you to learn their behavior, and work with them to solve puzzles using mechanics from other biomes that would be unsolvable alone.
+* *And more...*
+
+Anthropic Studios is a small indie studio founded in 2018 with collaborators working from all across the US.
 
 
 # History
@@ -143,15 +149,17 @@ They had initially planned to repeat this exercise a few more times after the ex
 
 
 # Demos
-The game is not yet publicly available, [contact us if you'd like a Steam key.](mailto:mason.remaley@gmail.com)
+[Contact us if you'd like a Steam key.](mailto:mason.remaley@gmail.com)
 
 <!-- TODO: Graphics package containing character cutouts/such, fonts, logo and icon, etc -->
 
 # Selected Articles
 
+"The artwork is gorgeous, the puzzles are clever, and everyone playing it, including my wife, were having a blast." [Nintendo Fuse (2019)](http://nintendofuse.com/play-nyc-2019-review-and-recap/)
+
 "The first thing that caught my eye was the game’s redesigned artwork. Not that I wasn’t a fan of the old style, but the new backgrounds I fell in love with immediately. It lends a whimsical feel that meshes well with the character design and the general concept of the game. Mason Remaley, designer and programmer of Way of Rhea, explained that artist Carolyn Whitmeyer had repainted all of the backgrounds and revamped the artwork in the span of a month, which was, quite frankly, shocking and impressive." [Tech Raptor (2019)](https://techraptor.net/gaming/previews/play-nyc-2019-way-of-rhea){:target="_blank"}
 
-"Though the demo only lasted about five or ten minutes, it was enough for me to get a good glimpse into the world of Way of Rhea, and now I’m looking forward to going back when the game releases." - Courtney Ehrenhofler, [Tech Raptor (2018)](https://techraptor.net/content/way-of-rhea-puzzle-sidescroller){:target="_blank"}
+"Though the [2018 Play NYC Demo] only lasted about five or ten minutes, it was enough for me to get a good glimpse into the world of Way of Rhea, and now I’m looking forward to going back when the game releases." - Courtney Ehrenhofler, [Tech Raptor (2018)](https://techraptor.net/content/way-of-rhea-puzzle-sidescroller){:target="_blank"}
 
 "Finally, [Way of Rhea] is a puzzle game that reminds me a bit of Hue, but unlike Hue, lays everything out in front of you, choosing to double down on a sense of whimsy as opposed to a sense of minimalist mystery.  While [Way of Rhea] is still very much early in development, I love the idea of tying color to the mechanics of a puzzle in a game. It’s a tried and true mechanic that has been used on everything from Red Doors to Blue Keys, but Indie games continue to reinvent this and re-imagine it in many ways." - Jacob Wood, [Indie Hangover (2018)](http://www.indiehangover.com/the-road-to-play-nyc-looking-good/){:target="_blank"}
 
@@ -210,7 +218,7 @@ Evan Morris is the narrative designer for *Way of Rhea*. He's currently working 
 
 # FAQ
 
-**Will the game support mobile platforms?**
+**What platforms will the game run on?**
 
 Currently only Windows support is planned. We have a macOS build as well, but Apple's new code signing policy makes releasing it difficult. Other platforms may be considered after the initial release if there's sufficient interest.
 
@@ -218,6 +226,6 @@ Currently only Windows support is planned. We have a macOS build as well, but Ap
 
 We haven't announced a release date yet, but we expect to release in 2021.
 
-**Why aren't you using XXX engine?**
+**Why aren't you using an existing engine?**
 
 Fast iteration time is incredibly important to us. Our engine was built from the ground up to support instantly hot swapping out changes without ever having to reload the game.
