@@ -47,7 +47,7 @@ They had initially planned to repeat this exercise a few more times after the ex
 # Technology
 *Way of Rhea* is being built in a custom game engine and scripting language built by  [Mason Remaley](https://twitter.com/masonremaley){:target="_blank"} in the [Rust programming language](https://www.rust-lang.org/en-US/){:target="_blank"}. The engine supports hot swapping of all assets and scripts—in other words, the game can be edited while it is running. The engine also makes it easy to efficiently render the game's large non-repeating parallaxing backgrounds.
 
-# Videos
+# Trailer
 <style type="text/css">
     #trailer-embed iframe{
         position: absolute;
@@ -64,7 +64,7 @@ They had initially planned to repeat this exercise a few more times after the ex
         padding-bottom: 51%;
     }
 </style>
-<div id="trailer-embed"><iframe src="https://www.youtube.com/embed/eVrbZss_B3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div id="trailer-embed"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PRifdHcaswc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 [Contact us if you'd like a copy you can more easily download.](mailto:mason.remaley@gmail.com)
 
 # Images
@@ -162,6 +162,10 @@ They had initially planned to repeat this exercise a few more times after the ex
 "Though the [2018 Play NYC Demo] only lasted about five or ten minutes, it was enough for me to get a good glimpse into the world of Way of Rhea, and now I’m looking forward to going back when the game releases." - Courtney Ehrenhofler, [Tech Raptor (2018)](https://techraptor.net/content/way-of-rhea-puzzle-sidescroller){:target="_blank"}
 
 "Finally, [Way of Rhea] is a puzzle game that reminds me a bit of Hue, but unlike Hue, lays everything out in front of you, choosing to double down on a sense of whimsy as opposed to a sense of minimalist mystery.  While [Way of Rhea] is still very much early in development, I love the idea of tying color to the mechanics of a puzzle in a game. It’s a tried and true mechanic that has been used on everything from Red Doors to Blue Keys, but Indie games continue to reinvent this and re-imagine it in many ways." - Jacob Wood, [Indie Hangover (2018)](http://www.indiehangover.com/the-road-to-play-nyc-looking-good/){:target="_blank"}
+
+# Selected Videos (YouTube Playlist)
+
+<div id="trailer-embed"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLqEl6upFYibniTMiu0UvHkv-cvvKXyt01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 
 # Team
