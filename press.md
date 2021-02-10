@@ -172,7 +172,7 @@ They had initially planned to repeat this exercise a few more times after the ex
 
 **[Mason Remaley](https://twitter.com/masonremaley){:target="_blank"} - Design, Programming**
 
-Mason Remaley is leading the project. He previously worked on Windows 10 at Microsoft, internal tools at Google, and was tech lead for the Apps and SDK teams at [CTRL-labs](https://www.wired.com/story/brain-machine-interface-isnt-sci-fi-anymore/){:target="_blank"} which was eventually aquired by Oculus. Outside of Way of Rhea, he co-organizes the [UCSC Silicon Valley Indie Playtest Night](https://www.meetup.com/Indie-Game-Developers-of-Silicon-Valley/){:target="_blank"}, and occasionally teaches grad and undergrad classes on game development.
+Mason Remaley is leading the project. He previously worked on Windows 10 at Microsoft, internal tools at Google, and was tech lead for the Apps and SDK teams at [CTRL-labs](https://www.wired.com/story/brain-machine-interface-isnt-sci-fi-anymore/){:target="_blank"} which was eventually aquired by Oculus. Outside of Way of Rhea, he co-organizes the [UCSC Silicon Valley Indie Playtest Night](https://www.meetup.com/Indie-Game-Developers-of-Silicon-Valley/){:target="_blank"}, is a board member of the [Zig Software Foundation](https://ziglang.org/zsf/), and occasionally teaches grad and undergrad classes on game development.
 
 
 **[Carolyn Whitmeyer](https://www.instagram.com/cw_visuals_insta/){:target="_blank"} - Visual Artwork**

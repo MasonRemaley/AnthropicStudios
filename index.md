@@ -12,7 +12,7 @@ description: Way of Rhea is a picturesque puzzle platformer that lets you correc
 <img src="assets/monsters-and-sprites/logo.svg" alt="way of rhea"/>
 
 <br><br>
-Anthropic Studios is an independent game company, currently working on Way of Rhea, a picturesque puzzle platformer that lets you correct your mistakes. Change your color. Teleport past the colored gates. Manipulate the color powered circuits. Befriend the color changing crabs—but don't let them out.
+Anthropic Studios is an independent game company currently working on Way of Rhea, a picturesque puzzle platformer that lets you correct your mistakes. Change your color. Teleport past the colored gates. Manipulate the color powered circuits. Befriend the color changing crabs—but don't let them out.
 <br><br>
 
 <style type="text/css">
