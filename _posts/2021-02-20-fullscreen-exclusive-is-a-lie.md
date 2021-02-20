@@ -21,7 +21,7 @@ Fullscreen exclusive is a real thing your computer can decide to grant a window,
 
 If you're an expert in this topic and believe this post is incorrect in any way, definitely [email me](mailto:mason.remaley+pub@gmail.com) or [DM me on Twitter](https://twitter.com/masonremaley) and I'll issue a correction!
 
-If you're interested in jumping to the conclusion, see [Testing Fullscreen Exclusivity in Other Games](#testing-fullscreen-exclusivity-in-other-games) and [Takeaways](#takeaways). If you're interested in my methodology, read on.
+If you're interested in jumping to the conclusion, see [Testing Fullscreen Exclusivity in Other Games]({{ site.baseurl }}{% link _posts/2021-02-20-fullscreen-exclusive-is-a-lie.md %}#testing-fullscreen-exclusivity-in-other-games) and [Takeaways]({{ site.baseurl }}{% link _posts/2021-02-20-fullscreen-exclusive-is-a-lie.md %}#takeaways). If you're interested in my methodology, read on.
 
 <!--more-->
 
