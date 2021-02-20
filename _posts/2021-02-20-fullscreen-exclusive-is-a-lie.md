@@ -1,22 +1,21 @@
 ---
 layout: post
-title: "Fullscreen Exclusive Is A Lie (kind of)"
+title: "Fullscreen Exclusive Is A Lie (...sort of)"
 date: 2021-02-20
 tags: tech
 author: mason
 excerpt_separator: <!--more-->
 <!-- TODO: ... -->
 image: /assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.png
+description: Fullscreen exclusive is real, but I haven't been able to find a single game where the fullscreen exclusive vs borderless window settings do what you'd expect.
 ---
 <!-- twitter: https://twitter.com/masonremaley/status/1346594278802399232
 reddit: https://www.reddit.com/r/rust_gamedev/comments/kraink/setting_a_rust_executables_icon_in_windows/
 seo:
   links:
     - https://www.gamasutra.com/blogs/MasonRemaley/20210111/376012/Setting_An_Executable_Icon_From_The_Command_Line_in_Windows.php
-description: It took me quite a while to figure out how to set an exe's icon from the command line, so I figured I'd document what I learned here. -->
+-->
 
-<!-- TODO: link targets -->
-<!-- TODO: https://devblogs.microsoft.com/directx/demystifying-full-screen-optimizations/ -->
 <figure><img src="/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.png" alt="way of rhea video settings"/></figure>
 
 Fullscreen exclusive is a real thing your computer can decide to grant a window, but, as of yet I haven't been able to find a single game where the fullscreen exclusive vs borderless window settings do what you'd expect them to.
@@ -95,6 +94,11 @@ I've managed to convince myself that can tell the difference between a flash due
 
 ## A Test That Works
 
+<figure>
+	<img src="/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/windows-menu.png" alt="way of rhea with the windows menu open"/>
+	<figcaption>It's not the classic windows key test–there's a little more to it.</figcaption>
+</figure>
+
 Alright, we've listed a number of methods that *don't* work. So what do we do?
 
 If we're in fullscreen exclusive mode, we're bypassing the compositor. This means that things like print screen will not behave correctly.
@@ -110,8 +114,8 @@ The test is as follows:
 * Press your print screen shortcut
 	* It's important that you use print screen--don't take a screenshot with Steam for example, Steam can screenshot exclusive windows correctly.
 * Check the resulting screenshot:
-	* If it's up to date, you're not exclusive.
-	* If the screenshot is of the area of the game you were in while the windows menu/such was present, you are!
+	* If the screen shot is up to date, you're not exclusive.
+	* If the screenshot is of the area of the game you were in while the windows menu/such was present, you are! (the menu/window itself will not appear in the screenshot)
 
 *Please note: I can't promise Microsoft won't fix this someday, you'll have to test for yourself whether these results are reproducible on your version of Windows. If you're never able to get an out of date screenshot, it's either been fixed or you haven't tested a truely fullscreen exclusive app yet.*
 
