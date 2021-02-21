@@ -5,12 +5,12 @@ date: 2021-02-20
 tags: way-of-rhea tech
 author: mason
 excerpt_separator: <!--more-->
-<!-- TODO: ... -->
 image: /assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.png
 description: Fullscreen exclusive is real, but I haven't been able to find a single game where the fullscreen exclusive vs borderless window settings do what you'd expect.
 twitter: https://twitter.com/masonremaley/status/1363279139000770566
 reddit: https://www.reddit.com/r/rust_gamedev/comments/lokeml/fullscreen_exclusive_is_a_lie_sort_of/
 ---
+<!-- TODO: ... -->
 <!--
 seo:
   links:
@@ -104,7 +104,7 @@ Alright, we've listed a number of methods that *don't* work. So what do we do?
 
 If we're in fullscreen exclusive mode, we're bypassing the compositor. This means that things like print screen will not behave correctly.
 
-In particular, if you have a fullscreen exclusive window, and you press the print screen shortcut, instead of getting a current screenshot you'll get a screenshot of *the last non-exclusive frame*. Normally, this is a nuisance, but today we can take advantage of this!
+In particular, if you have a fullscreen exclusive window, and you press the print screen shortcut, instead of getting a current screenshot you'll get a screenshot of *the last non-exclusive frame*. Normally this is a nuisance, but today we can take advantage of it!
 
 The test is as follows:
 
@@ -113,12 +113,12 @@ The test is as follows:
 * Temporarily prevent the app from being exclusive, e.g. by pressing the Windows key twice to toggle the Windows menu on and off or obscuring part of the game with another window
 * Once the game is back to its normal state, move the camera to a new location
 * Press your print screen shortcut
-	* It's important that you use print screen--don't take a screenshot with Steam for example, Steam can screenshot exclusive windows correctly.
+	* It's important that you use print screen--don't take a screenshot with Steam for example, Steam can screenshot exclusive windows correctly
 * Check the resulting screenshot:
 	* If the screen shot is up to date, you're not exclusive.
-	* If the screenshot is of the area of the game you were in while the windows menu/such was present, you are! (the menu/window itself will not appear in the screenshot)
+	* If the screenshot is of the area of the game you were in while the windows menu/such was present, you're in exclusive mode! (the menu/window itself will not appear in the screenshot)
 
-*Please note: I can't promise Microsoft won't fix this someday, you'll have to test for yourself whether these results are reproducible on your version of Windows. If you're never able to get an out of date screenshot, it's either been fixed or you haven't tested a truely fullscreen exclusive app yet.*
+*Note: I can't promise Microsoft won't fix this someday, you'll have to test for yourself whether these results are reproducible on your version of Windows. If you're never able to get an out of date screenshot, it's either been fixed or you haven't tested a truely fullscreen exclusive app yet.*
 
 # Testing Methods of Gaining Fullscreen Exclusivity in OpenGL
 
@@ -127,7 +127,7 @@ I tested out the various methods of gaining fullscreen exclusivity in OpenGL sug
 * I've never successfully gained exclusivity without the `WS_POPUP` window style
 * I've never observed the `WS_CLIPCHILDREN` or `WS_CLIPSIBLINGS` window styles making a difference
 * I've never observed calling `ChangeDisplaySettings` with `CDS_FULLSCREEN` making a difference
-	* This shouldn't be too surprising--despite the weird name, according to [the docs](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-changedisplaysettingsa#CDS_FULLSCREEN) all it does is make the other settings changed by `ChangeDisplaySettings` temporary. [See also Raymond Chen](https://devblogs.microsoft.com/oldnewthing/20080104-00/?p=23923).
+	* This shouldn't be too surprising--despite the name, according to [the docs](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-changedisplaysettingsa#CDS_FULLSCREEN) all it does is make the other settings changed by `ChangeDisplaySettings` temporary. [See also Raymond Chen](https://devblogs.microsoft.com/oldnewthing/20080104-00/?p=23923).
 * On all 5 setups, I can gain exclusivity at any resolution without without calling `ChangeDisplaySettings`
 	* I just render to a framebuffer and upscale to the native resolution, just like in borderless window mode. Nothing about this requires the compositor.
 * On two of the five setups, I was unable to gain exclusivity without being [DPI Aware](https://docs.microsoft.com/en-us/windows/win32/hidpi/setting-the-default-dpi-awareness-for-a-process)
@@ -135,7 +135,7 @@ I tested out the various methods of gaining fullscreen exclusivity in OpenGL sug
 
 Okay, so things are looking good for `WS_POPUP` + DPI Awareness right? Well...
 
-`WS_POPUP` and DPI Awareness do appear to be *necessary* for exclusivity, but they're unfortunately not *sufficient*! On the setup that I expect is most similar to most player's setups (single monitor w/ an NVIDIA GPU) I wasn't able to acquire fullscreen exclusivity at all, no matter what I did.
+`WS_POPUP` and DPI Awareness do appear to be *necessary* for exclusivity, but they're unfortunately not *sufficient*! On the setup that I expect is most similar to most player's setups (single monitor w/ an NVIDIA GPU) I wasn't able to figure out how to acquire fullscreen exclusivity at all.
 
 Alright, this is kind of a mess! How the heck are other games doing it?
 
