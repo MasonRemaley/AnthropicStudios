@@ -2,7 +2,7 @@
 layout: post
 title: "Fullscreen Exclusive Is A Lie (...sort of)"
 date: 2021-02-20
-tags: tech
+tags: way-of-rhea tech
 author: mason
 excerpt_separator: <!--more-->
 <!-- TODO: ... -->
