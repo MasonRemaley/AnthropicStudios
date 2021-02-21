@@ -34,7 +34,7 @@ If you're interested in jumping to the conclusion, see [Testing Fullscreen Exclu
 
 # Defining Our Terms
 
-Today I'm specifically discussing Windows 10. I should probably define some terms before we start:
+Today I'm specifically discussing Windows 10. I'm using OpenGL and calling into win32 directly, but these results will likely be of interest regardless of your graphics API and windowing library. I should probably define some terms before we start:
 
 * When I say fullscreen exclusive, I'm referring to a fullscreen window that bypasses the compositor.
 * I'm aware that there's technically a distinction between [full screen optimizations mode](https://devblogs.microsoft.com/directx/demystifying-full-screen-optimizations/) and fullscreen exclusive, but I'm not particularly concerned about that difference. I ran a number of these tests with FSO disabled and saw no discernible difference.
