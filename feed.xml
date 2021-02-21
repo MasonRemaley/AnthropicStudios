@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.anthropicstudios.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.anthropicstudios.com/" rel="alternate" type="text/html" /><updated>2021-02-20T19:37:11-05:00</updated><id>https://www.anthropicstudios.com/feed.xml</id><title type="html">Anthropic Studios</title><subtitle>An independent game company.</subtitle><author><name>AnthropicSt</name></author><entry><title type="html">Fullscreen Exclusive Is A Lie (…sort of)</title><link href="https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie/" rel="alternate" type="text/html" title="Fullscreen Exclusive Is A Lie (...sort of)" /><published>2021-02-20T00:00:00-05:00</published><updated>2021-02-20T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie/">&lt;!--
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.anthropicstudios.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.anthropicstudios.com/" rel="alternate" type="text/html" /><updated>2021-02-21T00:11:02-05:00</updated><id>https://www.anthropicstudios.com/feed.xml</id><title type="html">Anthropic Studios</title><subtitle>An independent game company.</subtitle><author><name>AnthropicSt</name></author><entry><title type="html">Fullscreen Exclusive Is A Lie (…sort of)</title><link href="https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie/" rel="alternate" type="text/html" title="Fullscreen Exclusive Is A Lie (...sort of)" /><published>2021-02-20T00:00:00-05:00</published><updated>2021-02-20T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie/">&lt;!-- TODO: ... --&gt;
+&lt;!--
 seo:
   links:
     - https://www.gamasutra.com/blogs/MasonRemaley/20210111/376012/Setting_An_Executable_Icon_From_The_Command_Line_in_Windows.php
@@ -37,7 +38,7 @@ seo:
 
 &lt;h1 id=&quot;defining-our-terms&quot;&gt;Defining Our Terms&lt;/h1&gt;
 
-&lt;p&gt;Today I’m specifically discussing Windows 10. I should probably define some terms before we start:&lt;/p&gt;
+&lt;p&gt;Today I’m specifically discussing Windows 10. I’m using OpenGL and calling into win32 directly, but these results will likely be of interest regardless of your graphics API and windowing library. I should probably define some terms before we start:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;When I say fullscreen exclusive, I’m referring to a fullscreen window that bypasses the compositor.&lt;/li&gt;
@@ -111,7 +112,7 @@ seo:
 
 &lt;p&gt;If we’re in fullscreen exclusive mode, we’re bypassing the compositor. This means that things like print screen will not behave correctly.&lt;/p&gt;
 
-&lt;p&gt;In particular, if you have a fullscreen exclusive window, and you press the print screen shortcut, instead of getting a current screenshot you’ll get a screenshot of &lt;em&gt;the last non-exclusive frame&lt;/em&gt;. Normally, this is a nuisance, but today we can take advantage of this!&lt;/p&gt;
+&lt;p&gt;In particular, if you have a fullscreen exclusive window, and you press the print screen shortcut, instead of getting a current screenshot you’ll get a screenshot of &lt;em&gt;the last non-exclusive frame&lt;/em&gt;. Normally this is a nuisance, but today we can take advantage of it!&lt;/p&gt;
 
 &lt;p&gt;The test is as follows:&lt;/p&gt;
 
@@ -122,18 +123,18 @@ seo:
   &lt;li&gt;Once the game is back to its normal state, move the camera to a new location&lt;/li&gt;
   &lt;li&gt;Press your print screen shortcut
     &lt;ul&gt;
-      &lt;li&gt;It’s important that you use print screen–don’t take a screenshot with Steam for example, Steam can screenshot exclusive windows correctly.&lt;/li&gt;
+      &lt;li&gt;It’s important that you use print screen–don’t take a screenshot with Steam for example, Steam can screenshot exclusive windows correctly&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Check the resulting screenshot:
     &lt;ul&gt;
       &lt;li&gt;If the screen shot is up to date, you’re not exclusive.&lt;/li&gt;
-      &lt;li&gt;If the screenshot is of the area of the game you were in while the windows menu/such was present, you are! (the menu/window itself will not appear in the screenshot)&lt;/li&gt;
+      &lt;li&gt;If the screenshot is of the area of the game you were in while the windows menu/such was present, you’re in exclusive mode! (the menu/window itself will not appear in the screenshot)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;em&gt;Please note: I can’t promise Microsoft won’t fix this someday, you’ll have to test for yourself whether these results are reproducible on your version of Windows. If you’re never able to get an out of date screenshot, it’s either been fixed or you haven’t tested a truely fullscreen exclusive app yet.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: I can’t promise Microsoft won’t fix this someday, you’ll have to test for yourself whether these results are reproducible on your version of Windows. If you’re never able to get an out of date screenshot, it’s either been fixed or you haven’t tested a truely fullscreen exclusive app yet.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;testing-methods-of-gaining-fullscreen-exclusivity-in-opengl&quot;&gt;Testing Methods of Gaining Fullscreen Exclusivity in OpenGL&lt;/h1&gt;
 
@@ -144,7 +145,7 @@ seo:
   &lt;li&gt;I’ve never observed the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_CLIPCHILDREN&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_CLIPSIBLINGS&lt;/code&gt; window styles making a difference&lt;/li&gt;
   &lt;li&gt;I’ve never observed calling &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ChangeDisplaySettings&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CDS_FULLSCREEN&lt;/code&gt; making a difference
     &lt;ul&gt;
-      &lt;li&gt;This shouldn’t be too surprising–despite the weird name, according to &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-changedisplaysettingsa#CDS_FULLSCREEN&quot;&gt;the docs&lt;/a&gt; all it does is make the other settings changed by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ChangeDisplaySettings&lt;/code&gt; temporary. &lt;a href=&quot;https://devblogs.microsoft.com/oldnewthing/20080104-00/?p=23923&quot;&gt;See also Raymond Chen&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;This shouldn’t be too surprising–despite the name, according to &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-changedisplaysettingsa#CDS_FULLSCREEN&quot;&gt;the docs&lt;/a&gt; all it does is make the other settings changed by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ChangeDisplaySettings&lt;/code&gt; temporary. &lt;a href=&quot;https://devblogs.microsoft.com/oldnewthing/20080104-00/?p=23923&quot;&gt;See also Raymond Chen&lt;/a&gt;.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;On all 5 setups, I can gain exclusivity at any resolution without without calling &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ChangeDisplaySettings&lt;/code&gt;
@@ -161,7 +162,7 @@ seo:
 
 &lt;p&gt;Okay, so things are looking good for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_POPUP&lt;/code&gt; + DPI Awareness right? Well…&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_POPUP&lt;/code&gt; and DPI Awareness do appear to be &lt;em&gt;necessary&lt;/em&gt; for exclusivity, but they’re unfortunately not &lt;em&gt;sufficient&lt;/em&gt;! On the setup that I expect is most similar to most player’s setups (single monitor w/ an NVIDIA GPU) I wasn’t able to acquire fullscreen exclusivity at all, no matter what I did.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_POPUP&lt;/code&gt; and DPI Awareness do appear to be &lt;em&gt;necessary&lt;/em&gt; for exclusivity, but they’re unfortunately not &lt;em&gt;sufficient&lt;/em&gt;! On the setup that I expect is most similar to most player’s setups (single monitor w/ an NVIDIA GPU) I wasn’t able to figure out how to acquire fullscreen exclusivity at all.&lt;/p&gt;
 
 &lt;p&gt;Alright, this is kind of a mess! How the heck are other games doing it?&lt;/p&gt;
 

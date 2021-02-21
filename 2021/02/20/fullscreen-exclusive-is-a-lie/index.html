@@ -62,7 +62,8 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <!-- TODO: ... -->
+<!--
 seo:
   links:
     - https://www.gamasutra.com/blogs/MasonRemaley/20210111/376012/Setting_An_Executable_Icon_From_The_Command_Line_in_Windows.php
@@ -101,7 +102,7 @@ seo:
 
 <h1 id="defining-our-terms">Defining Our Terms</h1>
 
-<p>Today I’m specifically discussing Windows 10. I should probably define some terms before we start:</p>
+<p>Today I’m specifically discussing Windows 10. I’m using OpenGL and calling into win32 directly, but these results will likely be of interest regardless of your graphics API and windowing library. I should probably define some terms before we start:</p>
 
 <ul>
   <li>When I say fullscreen exclusive, I’m referring to a fullscreen window that bypasses the compositor.</li>
@@ -175,7 +176,7 @@ seo:
 
 <p>If we’re in fullscreen exclusive mode, we’re bypassing the compositor. This means that things like print screen will not behave correctly.</p>
 
-<p>In particular, if you have a fullscreen exclusive window, and you press the print screen shortcut, instead of getting a current screenshot you’ll get a screenshot of <em>the last non-exclusive frame</em>. Normally, this is a nuisance, but today we can take advantage of this!</p>
+<p>In particular, if you have a fullscreen exclusive window, and you press the print screen shortcut, instead of getting a current screenshot you’ll get a screenshot of <em>the last non-exclusive frame</em>. Normally this is a nuisance, but today we can take advantage of it!</p>
 
 <p>The test is as follows:</p>
 
@@ -186,18 +187,18 @@ seo:
   <li>Once the game is back to its normal state, move the camera to a new location</li>
   <li>Press your print screen shortcut
     <ul>
-      <li>It’s important that you use print screen–don’t take a screenshot with Steam for example, Steam can screenshot exclusive windows correctly.</li>
+      <li>It’s important that you use print screen–don’t take a screenshot with Steam for example, Steam can screenshot exclusive windows correctly</li>
     </ul>
   </li>
   <li>Check the resulting screenshot:
     <ul>
       <li>If the screen shot is up to date, you’re not exclusive.</li>
-      <li>If the screenshot is of the area of the game you were in while the windows menu/such was present, you are! (the menu/window itself will not appear in the screenshot)</li>
+      <li>If the screenshot is of the area of the game you were in while the windows menu/such was present, you’re in exclusive mode! (the menu/window itself will not appear in the screenshot)</li>
     </ul>
   </li>
 </ul>
 
-<p><em>Please note: I can’t promise Microsoft won’t fix this someday, you’ll have to test for yourself whether these results are reproducible on your version of Windows. If you’re never able to get an out of date screenshot, it’s either been fixed or you haven’t tested a truely fullscreen exclusive app yet.</em></p>
+<p><em>Note: I can’t promise Microsoft won’t fix this someday, you’ll have to test for yourself whether these results are reproducible on your version of Windows. If you’re never able to get an out of date screenshot, it’s either been fixed or you haven’t tested a truely fullscreen exclusive app yet.</em></p>
 
 <h1 id="testing-methods-of-gaining-fullscreen-exclusivity-in-opengl">Testing Methods of Gaining Fullscreen Exclusivity in OpenGL</h1>
 
@@ -208,7 +209,7 @@ seo:
   <li>I’ve never observed the <code class="language-plaintext highlighter-rouge">WS_CLIPCHILDREN</code> or <code class="language-plaintext highlighter-rouge">WS_CLIPSIBLINGS</code> window styles making a difference</li>
   <li>I’ve never observed calling <code class="language-plaintext highlighter-rouge">ChangeDisplaySettings</code> with <code class="language-plaintext highlighter-rouge">CDS_FULLSCREEN</code> making a difference
     <ul>
-      <li>This shouldn’t be too surprising–despite the weird name, according to <a href="https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-changedisplaysettingsa#CDS_FULLSCREEN">the docs</a> all it does is make the other settings changed by <code class="language-plaintext highlighter-rouge">ChangeDisplaySettings</code> temporary. <a href="https://devblogs.microsoft.com/oldnewthing/20080104-00/?p=23923">See also Raymond Chen</a>.</li>
+      <li>This shouldn’t be too surprising–despite the name, according to <a href="https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-changedisplaysettingsa#CDS_FULLSCREEN">the docs</a> all it does is make the other settings changed by <code class="language-plaintext highlighter-rouge">ChangeDisplaySettings</code> temporary. <a href="https://devblogs.microsoft.com/oldnewthing/20080104-00/?p=23923">See also Raymond Chen</a>.</li>
     </ul>
   </li>
   <li>On all 5 setups, I can gain exclusivity at any resolution without without calling <code class="language-plaintext highlighter-rouge">ChangeDisplaySettings</code>
@@ -225,7 +226,7 @@ seo:
 
 <p>Okay, so things are looking good for <code class="language-plaintext highlighter-rouge">WS_POPUP</code> + DPI Awareness right? Well…</p>
 
-<p><code class="language-plaintext highlighter-rouge">WS_POPUP</code> and DPI Awareness do appear to be <em>necessary</em> for exclusivity, but they’re unfortunately not <em>sufficient</em>! On the setup that I expect is most similar to most player’s setups (single monitor w/ an NVIDIA GPU) I wasn’t able to acquire fullscreen exclusivity at all, no matter what I did.</p>
+<p><code class="language-plaintext highlighter-rouge">WS_POPUP</code> and DPI Awareness do appear to be <em>necessary</em> for exclusivity, but they’re unfortunately not <em>sufficient</em>! On the setup that I expect is most similar to most player’s setups (single monitor w/ an NVIDIA GPU) I wasn’t able to figure out how to acquire fullscreen exclusivity at all.</p>
 
 <p>Alright, this is kind of a mess! How the heck are other games doing it?</p>
 
