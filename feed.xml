@@ -1,4 +1,266 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.anthropicstudios.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.anthropicstudios.com/" rel="alternate" type="text/html" /><updated>2021-02-09T21:33:56-05:00</updated><id>https://www.anthropicstudios.com/feed.xml</id><title type="html">Anthropic Studios</title><subtitle>An independent game company.</subtitle><author><name>AnthropicSt</name></author><entry><title type="html">Setting a Rust Executable’s Icon in Windows</title><link href="https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon/" rel="alternate" type="text/html" title="Setting a Rust Executable's Icon in Windows" /><published>2021-01-05T00:00:00-05:00</published><updated>2021-01-05T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon/">&lt;p&gt;This morning, I decided it was long overdue that &lt;a href=&quot;/way-of-rhea&quot;&gt;Way of Rhea&lt;/a&gt; get its own icon.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.anthropicstudios.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.anthropicstudios.com/" rel="alternate" type="text/html" /><updated>2021-02-20T19:01:20-05:00</updated><id>https://www.anthropicstudios.com/feed.xml</id><title type="html">Anthropic Studios</title><subtitle>An independent game company.</subtitle><author><name>AnthropicSt</name></author><entry><title type="html">Fullscreen Exclusive Is A Lie (…sort of)</title><link href="https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie/" rel="alternate" type="text/html" title="Fullscreen Exclusive Is A Lie (...sort of)" /><published>2021-02-20T00:00:00-05:00</published><updated>2021-02-20T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie/">&lt;!-- twitter: https://twitter.com/masonremaley/status/1346594278802399232
+reddit: https://www.reddit.com/r/rust_gamedev/comments/kraink/setting_a_rust_executables_icon_in_windows/
+seo:
+  links:
+    - https://www.gamasutra.com/blogs/MasonRemaley/20210111/376012/Setting_An_Executable_Icon_From_The_Command_Line_in_Windows.php
+--&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.png&quot; alt=&quot;way of rhea video settings&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;Fullscreen exclusive is a real thing your computer can decide to grant a window, but, as of yet I haven’t been able to find a single game where the fullscreen exclusive vs borderless window settings do what you’d expect them to.&lt;/p&gt;
+
+&lt;p&gt;If you’re an expert in this topic and believe this post is incorrect in any way, definitely &lt;a href=&quot;mailto:mason.remaley+pub@gmail.com&quot;&gt;email me&lt;/a&gt; or &lt;a href=&quot;https://twitter.com/masonremaley&quot;&gt;DM me on Twitter&lt;/a&gt; and I’ll issue a correction!&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in jumping to the conclusion, see &lt;a href=&quot;/2021/02/20/fullscreen-exclusive-is-a-lie/#testing-fullscreen-exclusivity-in-other-games&quot;&gt;Testing Fullscreen Exclusivity in Other Games&lt;/a&gt; and &lt;a href=&quot;/2021/02/20/fullscreen-exclusive-is-a-lie/#takeaways&quot;&gt;Takeaways&lt;/a&gt;. If you’re interested in my methodology, read on.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h1 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h1&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#table-of-contents&quot; id=&quot;markdown-toc-table-of-contents&quot;&gt;Table of Contents&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#defining-our-terms&quot; id=&quot;markdown-toc-defining-our-terms&quot;&gt;Defining Our Terms&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#resolutions--scaling&quot; id=&quot;markdown-toc-resolutions--scaling&quot;&gt;Resolutions &amp;amp; Scaling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#methods-of-enabling-fullscreen-exclusive-mode-in-opengl&quot; id=&quot;markdown-toc-methods-of-enabling-fullscreen-exclusive-mode-in-opengl&quot;&gt;Methods of Enabling Fullscreen Exclusive Mode in OpenGL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#testing-if-were-fullscreen-exclusive&quot; id=&quot;markdown-toc-testing-if-were-fullscreen-exclusive&quot;&gt;Testing If We’re Fullscreen Exclusive&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#tests-that-dont-work&quot; id=&quot;markdown-toc-tests-that-dont-work&quot;&gt;Tests That Don’t Work&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#volume-meter&quot; id=&quot;markdown-toc-volume-meter&quot;&gt;Volume Meter&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#windows-key&quot; id=&quot;markdown-toc-windows-key&quot;&gt;Windows Key&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#flashing&quot; id=&quot;markdown-toc-flashing&quot;&gt;Flashing&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#a-test-that-works&quot; id=&quot;markdown-toc-a-test-that-works&quot;&gt;A Test That Works&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#testing-methods-of-gaining-fullscreen-exclusivity-in-opengl&quot; id=&quot;markdown-toc-testing-methods-of-gaining-fullscreen-exclusivity-in-opengl&quot;&gt;Testing Methods of Gaining Fullscreen Exclusivity in OpenGL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#testing-fullscreen-exclusivity-in-other-games&quot; id=&quot;markdown-toc-testing-fullscreen-exclusivity-in-other-games&quot;&gt;Testing Fullscreen Exclusivity in Other Games&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#takeaways&quot; id=&quot;markdown-toc-takeaways&quot;&gt;Takeaways&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;defining-our-terms&quot;&gt;Defining Our Terms&lt;/h1&gt;
+
+&lt;p&gt;Today I’m specifically discussing Windows 10. I should probably define some terms before we start:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;When I say fullscren exclusive, I’m referring to a fullscreen window that bypasses the compositor.&lt;/li&gt;
+  &lt;li&gt;I’m aware that there’s technically a distinction between &lt;a href=&quot;https://devblogs.microsoft.com/directx/demystifying-full-screen-optimizations/&quot;&gt;full screen optimizations mode&lt;/a&gt; and fullscreen exclusive, but I’m not particularly concerned about that difference. I ran a number of these tests with FSO disabled and saw no discernible difference.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It’s also worth noting, most games that have a fullscreen exclusive option will mess with your display’s resolution when it’s enabled. Whether or not changing your display settings is &lt;em&gt;necessary&lt;/em&gt; for exclusivity, it’s certainly not &lt;em&gt;sufficient&lt;/em&gt;: again, our goal is to bypass the compositor.&lt;/p&gt;
+
+&lt;h1 id=&quot;resolutions--scaling&quot;&gt;Resolutions &amp;amp; Scaling&lt;/h1&gt;
+
+&lt;p&gt;A few days ago, I decided that it was time to finish setting up the video options for &lt;a href=&quot;/way-of-rhea&quot;&gt;Way of Rhea&lt;/a&gt;. I previously supported the following window modes (or, at least, I thought I did!):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Borderless window&lt;/li&gt;
+  &lt;li&gt;Windowed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- todo: mention that scaling multiples thing is incorrect? --&gt;
+&lt;p&gt;I didn’t properly lock the aspect ratio in either of these which could lead to UI and/or game elements being off screen on some setups, so my first goal was to fix that. In doing so, I realized that &lt;a href=&quot;https://twitter.com/masonremaley/status/1362331833237708806&quot;&gt;it’s kind of weird that most games only let you choose from a fixed set of resolutions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Traditionally this made sense–if you’re going to mess with the display settings to get the resolution you want, then you can only support resolutions the display supports! However, if you’re in borderless window mode which is becoming more and more common, you can set the resolution to anything you want since you’re just resizing a framebuffer.&lt;/p&gt;
+
+&lt;p&gt;I figured, if fullscreen exclusive support is gonna dictate which resolutions I can support, maybe I should knock that out first. How hard could that be?&lt;/p&gt;
+
+&lt;p&gt;Well, you’ve presumably already seen the title of this post and have a guess at what the answer to that question is. :)&lt;/p&gt;
+
+&lt;h1 id=&quot;methods-of-enabling-fullscreen-exclusive-mode-in-opengl&quot;&gt;Methods of Enabling Fullscreen Exclusive Mode in OpenGL&lt;/h1&gt;
+
+&lt;p&gt;Presumably DirectX has an API for this, but I’m targeting OpenGL.&lt;/p&gt;
+
+&lt;p&gt;The internet is full of hearsay about what you need to do to get fullscreen exclusive mode in OpenGL. Some say that you need to apply the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_POPUP&lt;/code&gt; window style, others say you need &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_POPUP | WS_CLIPCHILDREN | WS_CLIPSIBLINGS&lt;/code&gt;. Others claim you need to call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ChangeDisplaySettings&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CDS_FULLSCREEN&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;There’s a big issue with all of these claims: they’re not documented, and there’s no obvious way to test if they actually work!&lt;/p&gt;
+
+&lt;p&gt;If we’re serious about doing things right, we need to find a way to test for fullscreen exclusivity.&lt;/p&gt;
+
+&lt;h1 id=&quot;testing-if-were-fullscreen-exclusive&quot;&gt;Testing If We’re Fullscreen Exclusive&lt;/h1&gt;
+
+&lt;p&gt;I’d love to be wrong about this, but as far as I can tell, Microsoft/NVIDIA/etc do not provide a way to directly check if a window is fullscreen exclusive. If you search around online for ways to test for exclusivity, you’ll find more hearsay:&lt;/p&gt;
+
+&lt;h2 id=&quot;tests-that-dont-work&quot;&gt;Tests That Don’t Work&lt;/h2&gt;
+
+&lt;h3 id=&quot;volume-meter&quot;&gt;Volume Meter&lt;/h3&gt;
+
+&lt;p&gt;People often check for exclusivity by changing the computer volume via a hot key and observing whether or not the volume overlay shows up on top of the game.&lt;/p&gt;
+
+&lt;p&gt;We can use this to rule out exclusivity (the volume meter won’t show up if we’re exclusive since we’re bypassing the compositor), but we can’t use it to prove exclusivity–I’ve seen games that are clearly not exclusive manage to hide the volume meter anyway.&lt;/p&gt;
+
+&lt;p&gt;(I’m actually rather curious how they accomplished this, if you know how to do this &lt;a href=&quot;mason.remaley+pub@gmail.com&quot;&gt;I’d be interested in hearing from you&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;h3 id=&quot;windows-key&quot;&gt;Windows Key&lt;/h3&gt;
+
+&lt;p&gt;Another common suggestion is to check whether the Windows key works. I can see why people suggest this as a test–on some of my test machines, fullscreen exclusive windows &lt;em&gt;do&lt;/em&gt; obscure the windows menu. However, this is not true on all of them, and if you’re testing a game for which you don’t control the source it’s very likely that &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/dxtecharts/disabling-shortcut-keys-in-games&quot;&gt;the windows key was disabled manually by the game.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you try this test yourself, you may notice that even on setups for which the windows menu is not obscured, it causes the window to flash black as it loses exclusivity…&lt;/p&gt;
+
+&lt;h3 id=&quot;flashing&quot;&gt;Flashing&lt;/h3&gt;
+
+&lt;p&gt;The last common suggestion I’ve seen is to check whether the window/monitor flashes black when it loses focus. In my tests so far, fullscreen exclusive windows &lt;em&gt;will&lt;/em&gt; flash when they lose focus, however, there are other potential sources of flashes–&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ChangeDisplaySettings&lt;/code&gt; for example can cause the monitor to flash even if no settings are changed, and many games call it when gaining/losing focus.&lt;/p&gt;
+
+&lt;p&gt;I’ve managed to convince myself that can tell the difference between a flash due to losing exclusivity and a flash with another cause, but it’s very subtle and not something I would want to rely on to check whether or not my game is working correctly!&lt;/p&gt;
+
+&lt;h2 id=&quot;a-test-that-works&quot;&gt;A Test That Works&lt;/h2&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/windows-menu.png&quot; alt=&quot;way of rhea with the windows menu open&quot; /&gt;
+	&lt;figcaption&gt;It's not the classic windows key test–there's a little more to it.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Alright, we’ve listed a number of methods that &lt;em&gt;don’t&lt;/em&gt; work. So what do we do?&lt;/p&gt;
+
+&lt;p&gt;If we’re in fullscreen exclusive mode, we’re bypassing the compositor. This means that things like print screen will not behave correctly.&lt;/p&gt;
+
+&lt;p&gt;In particular, if you have a fullscreen exclusive window, and you press the print screen shortcut, instead of getting a current screenshot you’ll get a screenshot of &lt;em&gt;the last non-exclusive frame&lt;/em&gt;. Normally, this is a nuisance, but today we can take advantage of this!&lt;/p&gt;
+
+&lt;p&gt;The test is as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Launch the possibly-fullscreen-exclusive game&lt;/li&gt;
+  &lt;li&gt;Move the camera to somewhere memorable&lt;/li&gt;
+  &lt;li&gt;Temporarily prevent the app from being exclusive, e.g. by pressing the Windows key twice to toggle the Windows menu on and off or obscuring part of the game with another window&lt;/li&gt;
+  &lt;li&gt;Once the game is back to its normal state, move the camera to a new location&lt;/li&gt;
+  &lt;li&gt;Press your print screen shortcut
+    &lt;ul&gt;
+      &lt;li&gt;It’s important that you use print screen–don’t take a screenshot with Steam for example, Steam can screenshot exclusive windows correctly.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Check the resulting screenshot:
+    &lt;ul&gt;
+      &lt;li&gt;If the screen shot is up to date, you’re not exclusive.&lt;/li&gt;
+      &lt;li&gt;If the screenshot is of the area of the game you were in while the windows menu/such was present, you are! (the menu/window itself will not appear in the screenshot)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Please note: I can’t promise Microsoft won’t fix this someday, you’ll have to test for yourself whether these results are reproducible on your version of Windows. If you’re never able to get an out of date screenshot, it’s either been fixed or you haven’t tested a truely fullscreen exclusive app yet.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;testing-methods-of-gaining-fullscreen-exclusivity-in-opengl&quot;&gt;Testing Methods of Gaining Fullscreen Exclusivity in OpenGL&lt;/h1&gt;
+
+&lt;p&gt;I tested out the various methods of gaining fullscreen exclusivity in OpenGL suggested online on 5 different setups. Here’s what I found:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I’ve never successfully gained exclusivity without the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_POPUP&lt;/code&gt; window style&lt;/li&gt;
+  &lt;li&gt;I’ve never observed the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_CLIPCHILDREN&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_CLIPSIBLINGS&lt;/code&gt; window styles making a difference&lt;/li&gt;
+  &lt;li&gt;I’ve never observed calling &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ChangeDisplaySettings&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CDS_FULLSCREEN&lt;/code&gt; making a difference
+    &lt;ul&gt;
+      &lt;li&gt;This shouldn’t be too surprising–despite the weird name, according to &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-changedisplaysettingsa#CDS_FULLSCREEN&quot;&gt;the docs&lt;/a&gt; all it does is make the other settings changed by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ChangeDisplaySettings&lt;/code&gt; temporary. &lt;a href=&quot;https://devblogs.microsoft.com/oldnewthing/20080104-00/?p=23923&quot;&gt;See also Raymond Chen&lt;/a&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;On all 5 setups, I can gain exclusivity at any resolution without without calling &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ChangeDisplaySettings&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;I just render to a framebuffer and upscale to the native resolution, just like in borderless window mode. Nothing about this requires the compositor.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;On two of the five setups, I was unable to gain exclusivity without being &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/hidpi/setting-the-default-dpi-awareness-for-a-process&quot;&gt;DPI Aware&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Despite the overly confusing DPI Awareness API, this does make sense–if you render at the wrong DPI the compositor will need to scale your final result before it’s displayed. On the setups where I didn’t need to be DPI Aware, I had a “normal” DPI that required no scaling.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Okay, so things are looking good for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_POPUP&lt;/code&gt; + DPI Awareness right? Well…&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_POPUP&lt;/code&gt; and DPI Awareness do appear to be &lt;em&gt;necessary&lt;/em&gt; for exclusivity, but they’re unfortunately not &lt;em&gt;sufficient&lt;/em&gt;! On the setup that I expect is most similar to most player’s setups (single monitor w/ an NVIDIA GPU) I wasn’t able to acquire fullscreen exclusivity at all, no matter what I did.&lt;/p&gt;
+
+&lt;p&gt;Alright, this is kind of a mess! How the heck are other games doing it?&lt;/p&gt;
+
+&lt;h1 id=&quot;testing-fullscreen-exclusivity-in-other-games&quot;&gt;Testing Fullscreen Exclusivity in Other Games&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Alright, this is kind of a mess! How the heck are other games doing it?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;…well apparently, they’re not!&lt;/p&gt;
+
+&lt;p&gt;I’ve tested 6 games so far ranging from well received graphically intensive indie games to larger well received AAA games that you would expect to care about this sort of thing.&lt;/p&gt;
+
+&lt;p&gt;I won’t name the games as I don’t want to criticize them in particular, the issue appears to be universal. Here are the “anonymized” results–I tested on the setup that I found to be the most forgiving in terms of allowing exclusivity:&lt;/p&gt;
+
+&lt;table style=&quot;display: table; font-size: 80%&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Scale&lt;/th&gt;
+    &lt;th&gt;Release Year&lt;/th&gt;
+    &lt;th&gt;Graphics API&lt;/th&gt;
+    &lt;th&gt;Engine&lt;/th&gt;
+    &lt;th&gt;Fullscreen is exclusive&lt;/th&gt;
+    &lt;th&gt;Borderless Window is exclusive&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Indie FPS&lt;/td&gt;
+    &lt;td&gt;2020&lt;/td&gt;
+    &lt;td&gt;DirectX&lt;/td&gt;
+    &lt;td&gt;Unity&lt;/td&gt;
+    &lt;td&gt;No&lt;/td&gt;
+    &lt;td&gt;No&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;AAA TPS&lt;/td&gt;
+    &lt;td&gt;2020&lt;/td&gt;
+    &lt;td&gt;DirectX&lt;/td&gt;
+    &lt;td&gt;In House&lt;/td&gt;
+    &lt;td&gt;Yes&lt;/td&gt;
+    &lt;td&gt;Yes&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;AA TP&lt;/td&gt;
+    &lt;td&gt;2014, but kept up to date&lt;/td&gt;
+    &lt;td&gt;DirectX/Vulkan&lt;/td&gt;
+    &lt;td&gt;In House&lt;/td&gt;
+    &lt;td&gt;No&lt;/td&gt;
+    &lt;td&gt;No&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;AA FPS&lt;/td&gt;
+    &lt;td&gt;2020&lt;/td&gt;
+    &lt;td&gt;DirectX&lt;/td&gt;
+    &lt;td&gt;Unreal&lt;/td&gt;
+    &lt;td&gt;No&lt;/td&gt;
+    &lt;td&gt;No&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Indie FP&lt;/td&gt;
+    &lt;td&gt;2020&lt;/td&gt;
+    &lt;td&gt;DirectX&lt;/td&gt;
+    &lt;td&gt;In House&lt;/td&gt;
+    &lt;td&gt;Yes&lt;/td&gt;
+    &lt;td&gt;Yes&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;AAA TPS&lt;/td&gt;
+    &lt;td&gt;2020&lt;/td&gt;
+    &lt;td&gt;DirectX&lt;/td&gt;
+    &lt;td&gt;In House&lt;/td&gt;
+    &lt;td&gt;No&lt;/td&gt;
+    &lt;td&gt;No&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Of the 6 games tested, not a single one could reliably toggle fullscreen exclusivity. Four of the six never achieved exclusivity on my setup, and the remaining two were always exclusive when fullscreened–even when in borderless window mode.&lt;/p&gt;
+
+&lt;p&gt;Of note, this list contains a Unity game, an Unreal game, and four different proprietary engines.&lt;/p&gt;
+
+&lt;p&gt;The only thing the fullscreen exclusive option reliably does in the games listed is change your display resolution to match the game–and one of the six (AAA TPS 2020) didn’t even do that.&lt;/p&gt;
+
+&lt;h1 id=&quot;takeaways&quot;&gt;Takeaways&lt;/h1&gt;
+
+&lt;p&gt;If nobody else has found a way to offer a reliable fullscreen exclusivity toggle, I see little reason to pretend that I offer that mode either!&lt;/p&gt;
+
+&lt;p&gt;In addition, since upscaling from a framebuffer seems to have no effect on exclusivity (and no measurable perf effect as compared to changing the monitor resolution), I have no reason to limit the resolutions at which my game can render.&lt;/p&gt;
+
+&lt;p&gt;Taking these observations into account, my plan is as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Offer a borderless window mode&lt;/li&gt;
+  &lt;li&gt;Offer a windowed mode&lt;/li&gt;
+  &lt;li&gt;Offer a render scale option as a percent of the native resolution&lt;/li&gt;
+  &lt;li&gt;Offer the ability to resize the windowed mode window arbitrarily within the supported aspect ratios&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This will give technically adept players options without over promising, and should be less confusing than a large list of resolutions for everyone else.&lt;/p&gt;
+
+&lt;p&gt;I am conflicted as to whether or not I should use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_POPUP&lt;/code&gt; style in borderless window mode–on one hand, with it at least &lt;em&gt;some&lt;/em&gt; players will get fullscreen exclusivity, OTOH those players then won’t be able to use print screen. I’ll likely end up doing what I do with vsync–making a checkbox for it, but labeling it as a “hint” to acknowledge that I as the developer don’t actually have the final say as to whether or not the setting has any effect.&lt;/p&gt;</content><author><name>Mason Remaley</name></author><category term="way-of-rhea" /><category term="tech" /><summary type="html">Fullscreen exclusive is a real thing your computer can decide to grant a window, but, as of yet I haven’t been able to find a single game where the fullscreen exclusive vs borderless window settings do what you’d expect them to. If you’re an expert in this topic and believe this post is incorrect in any way, definitely email me or DM me on Twitter and I’ll issue a correction! If you’re interested in jumping to the conclusion, see Testing Fullscreen Exclusivity in Other Games and Takeaways. If you’re interested in my methodology, read on.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.anthropicstudios.com/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.png" /><media:content medium="image" url="https://www.anthropicstudios.com/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Setting a Rust Executable’s Icon in Windows</title><link href="https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon/" rel="alternate" type="text/html" title="Setting a Rust Executable's Icon in Windows" /><published>2021-01-05T00:00:00-05:00</published><updated>2021-01-05T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon/">&lt;p&gt;This morning, I decided it was long overdue that &lt;a href=&quot;/way-of-rhea&quot;&gt;Way of Rhea&lt;/a&gt; get its own icon.&lt;/p&gt;
 
 &lt;figure&gt;&lt;img src=&quot;/assets/monsters-and-sprites/setting-a-rust-windows-exe-icon/icon.png&quot; alt=&quot;way of rhea icon&quot; /&gt;&lt;/figure&gt;
 
