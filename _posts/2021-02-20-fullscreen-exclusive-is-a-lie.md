@@ -6,7 +6,7 @@ tags: way-of-rhea tech
 author: mason
 excerpt_separator: <!--more-->
 image: /assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.png
-description: Fullscreen exclusive is real, but I haven't been able to find a single game where the fullscreen exclusive vs borderless window settings do what you'd expect.
+description: Fullscreen exclusive is real, but I haven't been able to find a single game where the fullscreen exclusive vs borderless window settings consistently do what you'd expect.
 twitter: https://twitter.com/masonremaley/status/1363279139000770566
 reddit: https://www.reddit.com/r/rust_gamedev/comments/lokeml/fullscreen_exclusive_is_a_lie_sort_of/
 ---
@@ -19,7 +19,7 @@ seo:
 
 <figure><img src="/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.png" alt="way of rhea video settings"/></figure>
 
-Fullscreen exclusive is a real thing your computer can decide to grant a window, but, as of yet I haven't been able to find a single game where the fullscreen exclusive vs borderless window settings do what you'd expect them to.
+Fullscreen exclusive is a real thing your computer can decide to grant a window, but, as of yet I haven't been able to find a single game where the fullscreen exclusive vs borderless window settings consistently do what you'd expect them to.
 
 If you're an expert in this topic and believe this post is incorrect in any way, definitely [email me](mailto:mason.remaley+pub@gmail.com) or [DM me on Twitter](https://twitter.com/masonremaley) and I'll issue a correction!
 
