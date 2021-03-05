@@ -7,9 +7,8 @@ author: mason
 excerpt_separator: <!--more-->
 description: Can we avoid merge conflicts? Unfortunately, no, but we can decrease how often we get them and take steps to make them less painful when they do happen.
 image: /assets/posts/2021-03-05-merge-conflicts/conflict.jpg
+twitter: https://twitter.com/masonremaley/status/1367889259223515137
 ---
-<!-- TODO: ... -->
-<!-- twitter: https://twitter.com/masonremaley/status/1363279139000770566 -->
 
 <figure><img src="/assets/posts/2021-03-05-merge-conflicts/conflict.jpg"/></figure>
 

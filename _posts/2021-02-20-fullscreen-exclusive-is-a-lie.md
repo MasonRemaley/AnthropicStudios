@@ -9,13 +9,10 @@ image: /assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.jpg
 description: Fullscreen exclusive is real, but I haven't been able to find a single game where the fullscreen exclusive vs borderless window settings consistently do what you'd expect.
 twitter: https://twitter.com/masonremaley/status/1363279139000770566
 reddit: https://www.reddit.com/r/rust_gamedev/comments/lokeml/fullscreen_exclusive_is_a_lie_sort_of/
----
-<!-- TODO: ... -->
-<!--
 seo:
   links:
-    - https://www.gamasutra.com/blogs/MasonRemaley/20210111/376012/Setting_An_Executable_Icon_From_The_Command_Line_in_Windows.php
--->
+    - https://www.gamasutra.com/blogs/MasonRemaley/20210222/377715/Fullscreen_Exclusive_Is_A_Lie_sort_of.php
+---
 
 <figure><img src="/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.jpg" alt="way of rhea video settings"/></figure>
 
