@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.anthropicstudios.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.anthropicstudios.com/" rel="alternate" type="text/html" /><updated>2021-03-05T12:31:28-05:00</updated><id>https://www.anthropicstudios.com/feed.xml</id><title type="html">Anthropic Studios</title><subtitle>An independent game company.</subtitle><author><name>AnthropicSt</name></author><entry><title type="html">Merge Conflicts: Avoiding Them, Making Them Less Painful</title><link href="https://www.anthropicstudios.com/2021/03/05/merge-conflicts/" rel="alternate" type="text/html" title="Merge Conflicts: Avoiding Them, Making Them Less Painful" /><published>2021-03-05T00:00:00-05:00</published><updated>2021-03-05T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/03/05/merge-conflicts</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/03/05/merge-conflicts/">&lt;figure&gt;&lt;img src=&quot;/assets/posts/2021-03-05-merge-conflicts/conflict.jpg&quot; /&gt;&lt;/figure&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.anthropicstudios.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.anthropicstudios.com/" rel="alternate" type="text/html" /><updated>2021-03-05T15:03:22-05:00</updated><id>https://www.anthropicstudios.com/feed.xml</id><title type="html">Anthropic Studios</title><subtitle>An independent game company.</subtitle><author><name>AnthropicSt</name></author><entry><title type="html">Merge Conflicts: Avoiding Them, Making Them Less Painful</title><link href="https://www.anthropicstudios.com/2021/03/05/merge-conflicts/" rel="alternate" type="text/html" title="Merge Conflicts: Avoiding Them, Making Them Less Painful" /><published>2021-03-05T00:00:00-05:00</published><updated>2021-03-05T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/03/05/merge-conflicts</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/03/05/merge-conflicts/">&lt;figure&gt;&lt;img src=&quot;/assets/posts/2021-03-05-merge-conflicts/conflict.jpg&quot; alt=&quot;a merge conflict&quot; /&gt;&lt;/figure&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Hey Mason could you explain to me a safe way to use github with multiple users for a Unity project? I know a little about github, and I’ve set up the project with the Brackeys’ tutorial. That all went great. I even have the other people pulling the project onto their machines successfully. And I can successfully do a push from mine. My concern is what if they make changes, and want to push. Do I need to do a push first before they do or do they need to do a pull before they do a push? I’m a bit confused on the sequence, and in 120 the git got all screwed up and that has me concerned!&lt;/p&gt;
@@ -21,6 +21,20 @@
 &lt;hr /&gt;
 
 &lt;p&gt;Hey everyone! @Rob mentioned having issues with merge conflicts in git, and I realized I never talked about these. If you’re not using git, this may not be relevant to you, but if you are it’s probably worth reading on!&lt;/p&gt;
+
+&lt;h1 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h1&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#table-of-contents&quot; id=&quot;markdown-toc-table-of-contents&quot;&gt;Table of Contents&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#merge-conflicts&quot; id=&quot;markdown-toc-merge-conflicts&quot;&gt;Merge Conflicts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#resolving-merge-conflicts&quot; id=&quot;markdown-toc-resolving-merge-conflicts&quot;&gt;Resolving Merge Conflicts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#can-we-avoid-merge-conflicts&quot; id=&quot;markdown-toc-can-we-avoid-merge-conflicts&quot;&gt;Can We Avoid Merge Conflicts?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#minimizing-how-often-merge-conflicts-occur&quot; id=&quot;markdown-toc-minimizing-how-often-merge-conflicts-occur&quot;&gt;Minimizing How Often Merge Conflicts Occur&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#making-merge-conflicts-less-painful&quot; id=&quot;markdown-toc-making-merge-conflicts-less-painful&quot;&gt;Making Merge Conflicts Less Painful&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-diff3-conflict-style&quot; id=&quot;markdown-toc-the-diff3-conflict-style&quot;&gt;The Diff3 Conflict Style&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#lastly-dont-panic&quot; id=&quot;markdown-toc-lastly-dont-panic&quot;&gt;Lastly: Don’t Panic&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;merge-conflicts&quot;&gt;Merge Conflicts&lt;/h1&gt;
 
@@ -84,8 +98,45 @@ When you get to that last step, three things could occur:&lt;/p&gt;
   &lt;li&gt;Pull often. A smaller merge conflict is easier to resolve than a large one. The more often you pull, the more up to date the code you’re working on is. Same goes for pushing often, pushing often will help keep everyone else in sync–but don’t push before you’re ready for everyone else to be affected by what you’ve changed!&lt;/li&gt;
   &lt;li&gt;Write good commit messages. If you understand what the commit that caused the conflict was trying to do, it’ll be easier to merge it!&lt;/li&gt;
   &lt;li&gt;Enable text mode for scenes (Unity specific.) IIRC this is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Edit &amp;gt; Project Settings &amp;gt; Editor &amp;gt; Force Text&lt;/code&gt;. This will output text instead of binary for scene files, which git will understand better.&lt;/li&gt;
+  &lt;li&gt;Make smaller commits–the smaller your commits, the less complicated your merges will be. This will also let you push and pull more often.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-diff3-conflict-style&quot;&gt;Use the diff3 conflictstyle&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;It bears repeating, pull often!&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2 id=&quot;the-diff3-conflict-style&quot;&gt;The Diff3 Conflict Style&lt;/h2&gt;
+
+&lt;p&gt;Thanks to &lt;a href=&quot;https://twitter.com/andy_kelley/status/1367916737711067138?s=20&quot;&gt;@andy_kelley&lt;/a&gt; for this tip!&lt;/p&gt;
+
+&lt;p&gt;The default “conflict style” is a little confusing. If you’re working with the command line, you can enable a slightly friendlier one like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; merge.conflictstyle diff3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With this mode enabled, your merge conflicts will now look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;++&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HEAD&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// This is a comment&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;do_stuff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;do_other_stuff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;++|||||||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;merged&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;common&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ancestors&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;      &lt;span class=&quot;c1&quot;&gt;// This is a comment&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;      &lt;span class=&quot;n&quot;&gt;do_stuff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;      &lt;span class=&quot;n&quot;&gt;do_other_stuff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;++=======&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;// This is a comment&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;do_stuff_ex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;do_other_stuff_ex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;++&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The middle section is the most recent commit both branches share before the conflict. Being able to see the “original” code often makes it much easier to figure out how to merge the changes together!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: A lot of my students use GitHub Desktop, and there doesn’t appear to be an option in the GitHub Desktop UI for this. At some point I’ll hunt down the location of GitHub Desktop’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitconfig&lt;/code&gt; and update this post–if you happen to know where it is, feel free to let me know!&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;lastly-dont-panic&quot;&gt;Lastly: Don’t Panic&lt;/h1&gt;
 

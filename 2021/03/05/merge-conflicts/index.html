@@ -60,7 +60,7 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <figure><img src="/assets/posts/2021-03-05-merge-conflicts/conflict.jpg" /></figure>
+    <figure><img src="/assets/posts/2021-03-05-merge-conflicts/conflict.jpg" alt="a merge conflict" /></figure>
 
 <blockquote>
   <p>Hey Mason could you explain to me a safe way to use github with multiple users for a Unity project? I know a little about github, and I’ve set up the project with the Brackeys’ tutorial. That all went great. I even have the other people pulling the project onto their machines successfully. And I can successfully do a push from mine. My concern is what if they make changes, and want to push. Do I need to do a push first before they do or do they need to do a pull before they do a push? I’m a bit confused on the sequence, and in 120 the git got all screwed up and that has me concerned!</p>
@@ -83,6 +83,20 @@
 <hr />
 
 <p>Hey everyone! @Rob mentioned having issues with merge conflicts in git, and I realized I never talked about these. If you’re not using git, this may not be relevant to you, but if you are it’s probably worth reading on!</p>
+
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul id="markdown-toc">
+  <li><a href="#table-of-contents" id="markdown-toc-table-of-contents">Table of Contents</a></li>
+  <li><a href="#merge-conflicts" id="markdown-toc-merge-conflicts">Merge Conflicts</a></li>
+  <li><a href="#resolving-merge-conflicts" id="markdown-toc-resolving-merge-conflicts">Resolving Merge Conflicts</a></li>
+  <li><a href="#can-we-avoid-merge-conflicts" id="markdown-toc-can-we-avoid-merge-conflicts">Can We Avoid Merge Conflicts?</a></li>
+  <li><a href="#minimizing-how-often-merge-conflicts-occur" id="markdown-toc-minimizing-how-often-merge-conflicts-occur">Minimizing How Often Merge Conflicts Occur</a></li>
+  <li><a href="#making-merge-conflicts-less-painful" id="markdown-toc-making-merge-conflicts-less-painful">Making Merge Conflicts Less Painful</a>    <ul>
+      <li><a href="#the-diff3-conflict-style" id="markdown-toc-the-diff3-conflict-style">The Diff3 Conflict Style</a></li>
+    </ul>
+  </li>
+  <li><a href="#lastly-dont-panic" id="markdown-toc-lastly-dont-panic">Lastly: Don’t Panic</a></li>
+</ul>
 
 <h1 id="merge-conflicts">Merge Conflicts</h1>
 
@@ -146,8 +160,45 @@ When you get to that last step, three things could occur:</p>
   <li>Pull often. A smaller merge conflict is easier to resolve than a large one. The more often you pull, the more up to date the code you’re working on is. Same goes for pushing often, pushing often will help keep everyone else in sync–but don’t push before you’re ready for everyone else to be affected by what you’ve changed!</li>
   <li>Write good commit messages. If you understand what the commit that caused the conflict was trying to do, it’ll be easier to merge it!</li>
   <li>Enable text mode for scenes (Unity specific.) IIRC this is <code class="language-plaintext highlighter-rouge">Edit &gt; Project Settings &gt; Editor &gt; Force Text</code>. This will output text instead of binary for scene files, which git will understand better.</li>
+  <li>Make smaller commits–the smaller your commits, the less complicated your merges will be. This will also let you push and pull more often.</li>
+  <li><a href="#the-diff3-conflict-style">Use the diff3 conflictstyle</a></li>
   <li>It bears repeating, pull often!</li>
 </ul>
+
+<h2 id="the-diff3-conflict-style">The Diff3 Conflict Style</h2>
+
+<p>Thanks to <a href="https://twitter.com/andy_kelley/status/1367916737711067138?s=20">@andy_kelley</a> for this tip!</p>
+
+<p>The default “conflict style” is a little confusing. If you’re working with the command line, you can enable a slightly friendlier one like this:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> merge.conflictstyle diff3
+</code></pre></div></div>
+
+<p>With this mode enabled, your merge conflicts will now look like this:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="o">++&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> <span class="n">HEAD</span>
+ <span class="o">+</span>    <span class="c1">// This is a comment</span>
+ <span class="o">+</span>    <span class="n">do_stuff</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">);</span>
+ <span class="o">+</span>    <span class="n">do_other_stuff</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">);</span>
+ <span class="o">+</span>    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="o">++|||||||</span> <span class="n">merged</span> <span class="n">common</span> <span class="n">ancestors</span>
+<span class="o">++</span>      <span class="c1">// This is a comment</span>
+<span class="o">++</span>      <span class="n">do_stuff</span><span class="p">();</span>
+<span class="o">++</span>      <span class="n">do_other_stuff</span><span class="p">();</span>
+<span class="o">++</span>      <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="o">++=======</span>
+<span class="o">+</span>     <span class="c1">// This is a comment</span>
+<span class="o">+</span>     <span class="n">do_stuff_ex</span><span class="p">();</span>
+<span class="o">+</span>     <span class="n">do_other_stuff_ex</span><span class="p">();</span>
+<span class="o">+</span>     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="o">++&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="n">b2</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+
+<p>The middle section is the most recent commit both branches share before the conflict. Being able to see the “original” code often makes it much easier to figure out how to merge the changes together!</p>
+
+<p><em>Note: A lot of my students use GitHub Desktop, and there doesn’t appear to be an option in the GitHub Desktop UI for this. At some point I’ll hunt down the location of GitHub Desktop’s <code class="language-plaintext highlighter-rouge">.gitconfig</code> and update this post–if you happen to know where it is, feel free to let me know!</em></p>
 
 <h1 id="lastly-dont-panic">Lastly: Don’t Panic</h1>
 
