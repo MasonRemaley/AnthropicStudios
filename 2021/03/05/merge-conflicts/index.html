@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Merge Conflicts: Avoiding Them, Making Them Less Painful | Anthropic Studios</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Merge Conflicts: Avoiding Them, Making Them Less Painful" />
+<meta name="author" content="Mason Remaley" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Can we avoid merge conflicts? Unfortunately, no, but we can decrease how often we get them and take steps to make them less painful when they do happen." />
+<meta property="og:description" content="Can we avoid merge conflicts? Unfortunately, no, but we can decrease how often we get them and take steps to make them less painful when they do happen." />
+<link rel="canonical" href="https://www.anthropicstudios.com/2021/03/05/merge-conflicts/" />
+<meta property="og:url" content="https://www.anthropicstudios.com/2021/03/05/merge-conflicts/" />
+<meta property="og:site_name" content="Anthropic Studios" />
+<meta property="og:image" content="https://www.anthropicstudios.com/assets/posts/2021-03-05-merge-conflicts/conflict.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-05T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.anthropicstudios.com/assets/posts/2021-03-05-merge-conflicts/conflict.jpg" />
+<meta property="twitter:title" content="Merge Conflicts: Avoiding Them, Making Them Less Painful" />
+<meta name="twitter:site" content="@AnthropicSt" />
+<meta name="twitter:creator" content="@MasonRemaley" />
+<meta property="article:publisher" content="https://www.facebook.com/AnthropicStudios/" />
+<script type="application/ld+json">
+{"headline":"Merge Conflicts: Avoiding Them, Making Them Less Painful","dateModified":"2021-03-05T00:00:00-05:00","datePublished":"2021-03-05T00:00:00-05:00","url":"https://www.anthropicstudios.com/2021/03/05/merge-conflicts/","image":"https://www.anthropicstudios.com/assets/posts/2021-03-05-merge-conflicts/conflict.jpg","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.anthropicstudios.com/2021/03/05/merge-conflicts/"},"author":{"@type":"Person","name":"Mason Remaley"},"description":"Can we avoid merge conflicts? Unfortunately, no, but we can decrease how often we get them and take steps to make them less painful when they do happen.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.anthropicstudios.com/assets/logo.png"},"name":"Mason Remaley"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://www.anthropicstudios.com/feed.xml" title="Anthropic Studios" /><link rel="icon" href="assets/favicon.ico" />
+</head>
+<body><header class="site-header">
+  <div class="wrapper"><a class="site-title" rel="author" href="/"><img src="/assets/logo.png" alt="" height="50px"/> Anthropic Studios</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/press/">Press Kit</a><a class="page-link" href="/contact/">Contact Us</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Merge Conflicts: Avoiding Them, Making Them Less Painful</h1>
+    
+    <p class="post-meta">
+  <time class="dt-published" datetime="2021-03-05T00:00:00-05:00" itemprop="datePublished">Mar 5, 2021
+  </time>
+    • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="//twitter.com/MasonRemaley">Mason Remaley</a></span></span>&nbsp;•
+  
+    <a class="tag" href="/blog/tags/tech">tech</a>
+  
+</p>
+
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!-- TODO: ... -->
+<!-- twitter: https://twitter.com/masonremaley/status/1363279139000770566 -->
+
+<figure><img src="/assets/posts/2021-03-05-merge-conflicts/conflict.jpg" /></figure>
+
+<blockquote>
+  <p>Hey Mason could you explain to me a safe way to use github with multiple users for a Unity project? I know a little about github, and I’ve set up the project with the Brackeys’ tutorial. That all went great. I even have the other people pulling the project onto their machines successfully. And I can successfully do a push from mine. My concern is what if they make changes, and want to push. Do I need to do a push first before they do or do they need to do a pull before they do a push? I’m a bit confused on the sequence, and in 120 the git got all screwed up and that has me concerned!</p>
+</blockquote>
+
+<p>Normally, I reserve this blog for updates on <a href="/way-of-rhea">Way of Rhea</a>, or <a href="/2021/02/20/fullscreen-exclusive-is-a-lie/">low level engine work</a>. This post is a little different.</p>
+
+<p>Way of Rhea is entirely self funded. Some of that funding comes from savings from when I worked full time as a programmer, some of it comes from freelance work<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, and the rest comes from teaching grad and undergrad students game dev.</p>
+
+<p>Regardless of whether I’m currently teaching grad or undergrad, Unity or engine dev, general C++ or graphics programming, there’s one key programming skill that nobody seems to ever teach my students before they get to my class: version control.</p>
+
+<!--more-->
+
+<p>I’m not sure why this is. I suppose everyone hopes someone else will talk to them about it. Regardless, I always make a point to spend a little class time on version control, because I can’t in good conscience watch my students struggle through multi-week assignments without a VCS.</p>
+
+<p>Today, I got the really great question above from a student. I spent a few minutes writing up an answer, and then realized, I should probably <em>save</em> this answer somewhere so I can point future students to it.</p>
+
+<p>So, that’s what this post is! A public note to myself for later. My answer follows.</p>
+
+<hr />
+
+<p>Hey everyone! @Rob mentioned having issues with merge conflicts in git, and I realized I never talked about these. If you’re not using git, this may not be relevant to you, but if you are it’s probably worth reading on!</p>
+
+<h1 id="merge-conflicts">Merge Conflicts</h1>
+
+<p>A merge conflict occurs when two people edit the same file, and then try to push (upload) their changes to the git repo (e.g. GitHub.) So, for example, imagine this scenario:</p>
+<ul>
+  <li>You pull (download) the latest project files from GitHub</li>
+  <li>You make some changes, and commit them</li>
+  <li>You push (upload) your changes</li>
+</ul>
+
+<p><br />
+When you get to that last step, three things could occur:</p>
+<ol>
+  <li>Nobody else has edited the file you were editing, you’re good! It gets uploaded and you go about your day.</li>
+  <li>Someone else edited it, but they edited different parts of the file than you, and git manages to automatically merge their changes with yours. Awesome, you go about your day.</li>
+  <li>Someone else edited it, and git isn’t able to merge their changes with yours. Maybe you were working on the same lines. <strong>You get a merge conflict.</strong></li>
+</ol>
+
+<h1 id="resolving-merge-conflicts">Resolving Merge Conflicts</h1>
+
+<p>Merge conflicts are a fact of life working with git. How do we deal with them?</p>
+
+<p>How you resolve a merge conflict is going to depend on what tools you’re using. I don’t recall off the top of my head, but GitHub Desktop (for example) may provide a GUI that lets you choose which changes to which files to keep/how to merge them together. At the end of the day though, when git gets a merge conflict, it inserts stuff like this into your code/data files:</p>
+
+<div class="language-cs highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> <span class="n">HEAD</span>
+<span class="k">void</span> <span class="nf">FooBar</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">DoStuff</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="p">=======</span>
+<span class="k">void</span> <span class="nf">FooBarRenamed</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">DoStuff</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="p">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="n">branch_name</span>
+</code></pre></div></div>
+
+<p>What this is trying to tell you is “you both edited this function, and I don’t know which version you want to keep”. When this happens, you have to manually edit the file (or use your GUI tool) to pick the version of the snippet of code you want, or to merge the two together into one.</p>
+
+<h1 id="can-we-avoid-merge-conflicts">Can We Avoid Merge Conflicts?</h1>
+
+<p>Okay, this all seems pretty annoying. Can we avoid merge conflicts? Unfortunately, no–this is a fundamental issue with allowing multiple people to edit the same files at the same time. The only way to 100% avoid them would be to never edit files simultaneously.</p>
+
+<p>In some version control systems, you can “lock” a file to do just that–prevent anyone else from editing it while you’re working on it. Git does not have this feature, and it isn’t a perfect solution. (e.g. what if you forget to unlock a file before you leave for vacation? Your coworkers are going to need an escape hatch to override your lock, and you’re going to come back to a merge conflict.)</p>
+
+<p>We might not be able to avoid 100% of merge conflicts, but we can minimize how often they occur, and we can make them less painful when they do occur!</p>
+
+<h1 id="minimizing-how-often-merge-conflicts-occur">Minimizing How Often Merge Conflicts Occur</h1>
+
+<p>Here are some ways you can minimize how often merge conflicts occur:</p>
+
+<ul>
+  <li>Communicate what you’re working on with your team. If you know someone is working on <code class="language-plaintext highlighter-rouge">ZombieAttack.cs</code>, then you know if you edit that file you might get a merge conflict. (Or an automatic merge that doesn’t do what you would’ve wanted, it can’t always guess right!)</li>
+  <li>If you’re messing with a scene file to test out your code, instead of messing with the main scene file, make your own scene file for testing purposes. e.g. I might create “Mason’s AI Island.unity” and use that when testing an AI so as not to cause whoever’s building the real map merge conflicts.</li>
+  <li>If you’re making a sweeping change to the entire project, let everyone know–and give them a chance to push (upload) their changes before you do it. If they push their changes first, and then you make the change, they can pull (download) your sweeping change before they continue working and nobody will get a conflict.</li>
+</ul>
+
+<h1 id="making-merge-conflicts-less-painful">Making Merge Conflicts Less Painful</h1>
+
+<p>Sometimes, you really do need to edit code someone else is also editing. Here are some things you can do to make the resulting merge conflict less painful:</p>
+
+<ul>
+  <li>Pull often. A smaller merge conflict is easier to resolve than a large one. The more often you pull, the more up to date the code you’re working on is. Same goes for pushing often, pushing often will help keep everyone else in sync–but don’t push before you’re ready for everyone else to be affected by what you’ve changed!</li>
+  <li>Write good commit messages. If you understand what the commit that caused the conflict was trying to do, it’ll be easier to merge it!</li>
+  <li>Enable text mode for scenes (Unity specific.) IIRC this is <code class="language-plaintext highlighter-rouge">Edit &gt; Project Settings &gt; Editor &gt; Force Text</code>. This will output text instead of binary for scene files, which git will understand better.</li>
+  <li>It bears repeating, pull often!</li>
+</ul>
+
+<h1 id="lastly-dont-panic">Lastly: Don’t Panic</h1>
+
+<p>I’ve been using git as my primary VCS for a long time, but I definitely remember that early on, my first merge conflict scared me. There were all these <code class="language-plaintext highlighter-rouge">&gt;&gt;&gt;&gt;</code>s in my code! And nothing compiled! I must have done something terribly wrong!</p>
+
+<p>Don’t worry: this is normal and expected. Git has the full history of everything you’ve done to your project, you haven’t lost any of it. Yes, this current version, isn’t working, but it likely will with a few very small changes, and you also have all previous commits saved both on your computer and on the server you’re pushing to which you can always revert to.</p>
+
+<p>Merge conflicts are a normal part of working with git, if you’re super stuck on resolving yours shoot me a message and I can help walk you through it.<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Need someone to overhaul your shader compiler, build a reflection system for your engine, or improve your enemy AI? I do a lot of gamedev freelance–<a href="mailto:mason.remaley+pub@gmail.com">feel free to get in touch!</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>This offer was intended for my students. I’m always happy to help anyone with general gamedev questions, but if we’re strangers and you bring a very specific merge conflict problem to me don’t be surprised if I don’t have time to look at it in a lot of detail. :) <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+
+  <p>
+    Feel free to leave comments on
+
+    
+    
+
+    <a href="https://discord.gg/JGeVt5XwPP">Discord,</a> or <a href="mailto:anthropicstudios@gmail.com">send us an email!</a><p>
+  </p>
+
+  <div style="">
+    <style type="text/css">
+      #signup {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    
+<a href="/newsletter/signup/tech" class="signup">
+	<span>Newsletter Signup</span>
+</a>
+
+
+  </div>
+  <br>
+
+  <div>
+    
+      <a style="float:left" href="/2021/02/20/fullscreen-exclusive-is-a-lie/">&laquo; Fullscreen Exclusive Is A Lie (...sort of)</a>
+    
+    
+  </div><a class="u-url" href="/2021/03/05/merge-conflicts/" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1" style="width: 100%">
+        
+        <a class="u-email" href="mailto:anthropicstudios@gmail.com">anthropicstudios@gmail.com</a>
+        
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <!-- <p>An independent game company.</p> -->
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <ul class="social-media-list" style="width:100%; float: right">
+  <li><a href="https://discord.gg/JGeVt5XwPP"><img src="https://discord.com/api/guilds/787767251884310548/widget.png?style=shield"/></a></li>
+  
+  <li><a href="https://www.twitter.com/AnthropicSt"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">@Twitter</span></a></li>
+  <li><a href="https://instagram.com/AnthropicStudios"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg> <span class="username">@Instagram</span></a></li>
+  
+
+  <li><a href="https://www.facebook.com/AnthropicStudios"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">@Facebook</span></a></li>
+</ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

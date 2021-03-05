@@ -1,11 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.anthropicstudios.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.anthropicstudios.com/" rel="alternate" type="text/html" /><updated>2021-02-21T16:16:36-05:00</updated><id>https://www.anthropicstudios.com/feed.xml</id><title type="html">Anthropic Studios</title><subtitle>An independent game company.</subtitle><author><name>AnthropicSt</name></author><entry><title type="html">Fullscreen Exclusive Is A Lie (…sort of)</title><link href="https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie/" rel="alternate" type="text/html" title="Fullscreen Exclusive Is A Lie (...sort of)" /><published>2021-02-20T00:00:00-05:00</published><updated>2021-02-20T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie/">&lt;!-- TODO: ... --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.anthropicstudios.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.anthropicstudios.com/" rel="alternate" type="text/html" /><updated>2021-03-05T12:20:44-05:00</updated><id>https://www.anthropicstudios.com/feed.xml</id><title type="html">Anthropic Studios</title><subtitle>An independent game company.</subtitle><author><name>AnthropicSt</name></author><entry><title type="html">Merge Conflicts: Avoiding Them, Making Them Less Painful</title><link href="https://www.anthropicstudios.com/2021/03/05/merge-conflicts/" rel="alternate" type="text/html" title="Merge Conflicts: Avoiding Them, Making Them Less Painful" /><published>2021-03-05T00:00:00-05:00</published><updated>2021-03-05T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/03/05/merge-conflicts</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/03/05/merge-conflicts/">&lt;!-- TODO: ... --&gt;
+&lt;!-- twitter: https://twitter.com/masonremaley/status/1363279139000770566 --&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/assets/posts/2021-03-05-merge-conflicts/conflict.jpg&quot; /&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hey Mason could you explain to me a safe way to use github with multiple users for a Unity project? I know a little about github, and I’ve set up the project with the Brackeys’ tutorial. That all went great. I even have the other people pulling the project onto their machines successfully. And I can successfully do a push from mine. My concern is what if they make changes, and want to push. Do I need to do a push first before they do or do they need to do a pull before they do a push? I’m a bit confused on the sequence, and in 120 the git got all screwed up and that has me concerned!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Normally, I reserve this blog for updates on &lt;a href=&quot;/way-of-rhea&quot;&gt;Way of Rhea&lt;/a&gt;, or &lt;a href=&quot;/2021/02/20/fullscreen-exclusive-is-a-lie/&quot;&gt;low level engine work&lt;/a&gt;. This post is a little different.&lt;/p&gt;
+
+&lt;p&gt;Way of Rhea is entirely self funded. Some of that funding comes from savings from when I worked full time as a programmer, some of it comes from freelance work&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, and the rest comes from teaching grad and undergrad students game dev.&lt;/p&gt;
+
+&lt;p&gt;Regardless of whether I’m currently teaching grad or undergrad, Unity or engine dev, general C++ or graphics programming, there’s one key programming skill that nobody seems to ever teach my students before they get to my class: version control.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;I’m not sure why this is. I suppose everyone hopes someone else will talk to them about it. Regardless, I always make a point to spend a little class time on version control, because I can’t in good conscience watch my students struggle through multi-week assignments without a VCS.&lt;/p&gt;
+
+&lt;p&gt;Today, I got the really great question above from a student. I spent a few minutes writing up an answer, and then realized, I should probably &lt;em&gt;save&lt;/em&gt; this answer somewhere so I can point future students to it.&lt;/p&gt;
+
+&lt;p&gt;So, that’s what this post is! A public note to myself for later. My answer follows.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Hey everyone! @Rob mentioned having issues with merge conflicts in git, and I realized I never talked about these. If you’re not using git, this may not be relevant to you, but if you are it’s probably worth reading on!&lt;/p&gt;
+
+&lt;h1 id=&quot;merge-conflicts&quot;&gt;Merge Conflicts&lt;/h1&gt;
+
+&lt;p&gt;A merge conflict occurs when two people edit the same file, and then try to push (upload) their changes to the git repo (e.g. GitHub.) So, for example, imagine this scenario:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;You pull (download) the latest project files from GitHub&lt;/li&gt;
+  &lt;li&gt;You make some changes, and commit them&lt;/li&gt;
+  &lt;li&gt;You push (upload) your changes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+When you get to that last step, three things could occur:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Nobody else has edited the file you were editing, you’re good! It gets uploaded and you go about your day.&lt;/li&gt;
+  &lt;li&gt;Someone else edited it, but they edited different parts of the file than you, and git manages to automatically merge their changes with yours. Awesome, you go about your day.&lt;/li&gt;
+  &lt;li&gt;Someone else edited it, and git isn’t able to merge their changes with yours. Maybe you were working on the same lines. &lt;strong&gt;You get a merge conflict.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;resolving-merge-conflicts&quot;&gt;Resolving Merge Conflicts&lt;/h1&gt;
+
+&lt;p&gt;Merge conflicts are a fact of life working with git. How do we deal with them?&lt;/p&gt;
+
+&lt;p&gt;How you resolve a merge conflict is going to depend on what tools you’re using. I don’t recall off the top of my head, but GitHub Desktop (for example) may provide a GUI that lets you choose which changes to which files to keep/how to merge them together. At the end of the day though, when git gets a merge conflict, it inserts stuff like this into your code/data files:&lt;/p&gt;
+
+&lt;div class=&quot;language-cs highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HEAD&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;FooBar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;DoStuff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;=======&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;FooBarRenamed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;DoStuff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;branch_name&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;What this is trying to tell you is “you both edited this function, and I don’t know which version you want to keep”. When this happens, you have to manually edit the file (or use your GUI tool) to pick the version of the snippet of code you want, or to merge the two together into one.&lt;/p&gt;
+
+&lt;h1 id=&quot;can-we-avoid-merge-conflicts&quot;&gt;Can We Avoid Merge Conflicts?&lt;/h1&gt;
+
+&lt;p&gt;Okay, this all seems pretty annoying. Can we avoid merge conflicts? Unfortunately, no–this is a fundamental issue with allowing multiple people to edit the same files at the same time. The only way to 100% avoid them would be to never edit files simultaneously.&lt;/p&gt;
+
+&lt;p&gt;In some version control systems, you can “lock” a file to do just that–prevent anyone else from editing it while you’re working on it. Git does not have this feature, and it isn’t a perfect solution. (e.g. what if you forget to unlock a file before you leave for vacation? Your coworkers are going to need an escape hatch to override your lock, and you’re going to come back to a merge conflict.)&lt;/p&gt;
+
+&lt;p&gt;We might not be able to avoid 100% of merge conflicts, but we can minimize how often they occur, and we can make them less painful when they do occur!&lt;/p&gt;
+
+&lt;h1 id=&quot;minimizing-how-often-merge-conflicts-occur&quot;&gt;Minimizing How Often Merge Conflicts Occur&lt;/h1&gt;
+
+&lt;p&gt;Here are some ways you can minimize how often merge conflicts occur:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Communicate what you’re working on with your team. If you know someone is working on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ZombieAttack.cs&lt;/code&gt;, then you know if you edit that file you might get a merge conflict. (Or an automatic merge that doesn’t do what you would’ve wanted, it can’t always guess right!)&lt;/li&gt;
+  &lt;li&gt;If you’re messing with a scene file to test out your code, instead of messing with the main scene file, make your own scene file for testing purposes. e.g. I might create “Mason’s AI Island.unity” and use that when testing an AI so as not to cause whoever’s building the real map merge conflicts.&lt;/li&gt;
+  &lt;li&gt;If you’re making a sweeping change to the entire project, let everyone know–and give them a chance to push (upload) their changes before you do it. If they push their changes first, and then you make the change, they can pull (download) your sweeping change before they continue working and nobody will get a conflict.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;making-merge-conflicts-less-painful&quot;&gt;Making Merge Conflicts Less Painful&lt;/h1&gt;
+
+&lt;p&gt;Sometimes, you really do need to edit code someone else is also editing. Here are some things you can do to make the resulting merge conflict less painful:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pull often. A smaller merge conflict is easier to resolve than a large one. The more often you pull, the more up to date the code you’re working on is. Same goes for pushing often, pushing often will help keep everyone else in sync–but don’t push before you’re ready for everyone else to be affected by what you’ve changed!&lt;/li&gt;
+  &lt;li&gt;Write good commit messages. If you understand what the commit that caused the conflict was trying to do, it’ll be easier to merge it!&lt;/li&gt;
+  &lt;li&gt;Enable text mode for scenes (Unity specific.) IIRC this is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Edit &amp;gt; Project Settings &amp;gt; Editor &amp;gt; Force Text&lt;/code&gt;. This will output text instead of binary for scene files, which git will understand better.&lt;/li&gt;
+  &lt;li&gt;It bears repeating, pull often!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lastly-dont-panic&quot;&gt;Lastly: Don’t Panic&lt;/h1&gt;
+
+&lt;p&gt;I’ve been using git as my primary VCS for a long time, but I definitely remember that early on, my first merge conflict scared me. There were all these &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt;s in my code! And nothing compiled! I must have done something terribly wrong!&lt;/p&gt;
+
+&lt;p&gt;Don’t worry: this is normal and expected. Git has the full history of everything you’ve done to your project, you haven’t lost any of it. Yes, this current version, isn’t working, but it likely will with a few very small changes, and you also have all previous commits saved both on your computer and on the server you’re pushing to which you can always revert to.&lt;/p&gt;
+
+&lt;p&gt;Merge conflicts are a normal part of working with git, if you’re super stuck on resolving yours shoot me a message and I can help walk you through it.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Need someone to overhaul your shader compiler, build a reflection system for your engine, or improve your enemy AI? I do a lot of gamedev freelance–&lt;a href=&quot;mailto:mason.remaley+pub@gmail.com&quot;&gt;feel free to get in touch!&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;This offer was intended for my students. I’m always happy to help anyone with general gamedev questions, but if we’re strangers and you bring a very specific merge conflict problem to me don’t be surprised if I don’t have time to look at it in a lot of detail. :) &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Mason Remaley</name></author><category term="tech" /><summary type="html">Hey Mason could you explain to me a safe way to use github with multiple users for a Unity project? I know a little about github, and I’ve set up the project with the Brackeys’ tutorial. That all went great. I even have the other people pulling the project onto their machines successfully. And I can successfully do a push from mine. My concern is what if they make changes, and want to push. Do I need to do a push first before they do or do they need to do a pull before they do a push? I’m a bit confused on the sequence, and in 120 the git got all screwed up and that has me concerned! Normally, I reserve this blog for updates on Way of Rhea, or low level engine work. This post is a little different. Way of Rhea is entirely self funded. Some of that funding comes from savings from when I worked full time as a programmer, some of it comes from freelance work1, and the rest comes from teaching grad and undergrad students game dev. Regardless of whether I’m currently teaching grad or undergrad, Unity or engine dev, general C++ or graphics programming, there’s one key programming skill that nobody seems to ever teach my students before they get to my class: version control. Need someone to overhaul your shader compiler, build a reflection system for your engine, or improve your enemy AI? I do a lot of gamedev freelance–feel free to get in touch! &amp;#8617;</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.anthropicstudios.com/assets/posts/2021-03-05-merge-conflicts/conflict.jpg" /><media:content medium="image" url="https://www.anthropicstudios.com/assets/posts/2021-03-05-merge-conflicts/conflict.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Fullscreen Exclusive Is A Lie (…sort of)</title><link href="https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie/" rel="alternate" type="text/html" title="Fullscreen Exclusive Is A Lie (...sort of)" /><published>2021-02-20T00:00:00-05:00</published><updated>2021-02-20T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/02/20/fullscreen-exclusive-is-a-lie/">&lt;!-- TODO: ... --&gt;
 &lt;!--
 seo:
   links:
     - https://www.gamasutra.com/blogs/MasonRemaley/20210111/376012/Setting_An_Executable_Icon_From_The_Command_Line_in_Windows.php
 --&gt;
 
-&lt;figure&gt;&lt;img src=&quot;/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.png&quot; alt=&quot;way of rhea video settings&quot; /&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&quot;/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.jpg&quot; alt=&quot;way of rhea video settings&quot; /&gt;&lt;/figure&gt;
 
 &lt;p&gt;Fullscreen exclusive is a real thing your computer can decide to grant a window, but, as of yet I haven’t been able to find a single game where the fullscreen exclusive vs borderless window settings consistently do what you’d expect them to.&lt;/p&gt;
 
@@ -104,7 +213,7 @@ seo:
 &lt;h2 id=&quot;a-test-that-works&quot;&gt;A Test That Works&lt;/h2&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/windows-menu.png&quot; alt=&quot;way of rhea with the windows menu open&quot; /&gt;
+	&lt;img src=&quot;/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/windows-menu.jpg&quot; alt=&quot;way of rhea with the windows menu open&quot; /&gt;
 	&lt;figcaption&gt;It's not the classic windows key test–there's a little more to it.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -260,7 +369,7 @@ seo:
 
 &lt;p&gt;This will give technically adept players options without over promising, and should be less confusing than a large list of resolutions for everyone else.&lt;/p&gt;
 
-&lt;p&gt;I am conflicted as to whether or not I should use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_POPUP&lt;/code&gt; style in borderless window mode–on one hand, with it at least &lt;em&gt;some&lt;/em&gt; players will get fullscreen exclusivity, OTOH those players then won’t be able to use print screen. I’ll likely end up doing what I do with vsync–making a checkbox for it, but labeling it as a “hint” to acknowledge that I as the developer don’t actually have the final say as to whether or not the setting has any effect.&lt;/p&gt;</content><author><name>Mason Remaley</name></author><category term="way-of-rhea" /><category term="tech" /><summary type="html">Fullscreen exclusive is a real thing your computer can decide to grant a window, but, as of yet I haven’t been able to find a single game where the fullscreen exclusive vs borderless window settings consistently do what you’d expect them to. If you’re an expert in this topic and believe this post is incorrect in any way, definitely email me or DM me on Twitter and I’ll issue a correction! If you’re interested in jumping to the conclusion, see Testing Fullscreen Exclusivity in Other Games and Takeaways. If you’re interested in my methodology, read on.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.anthropicstudios.com/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.png" /><media:content medium="image" url="https://www.anthropicstudios.com/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Setting a Rust Executable’s Icon in Windows</title><link href="https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon/" rel="alternate" type="text/html" title="Setting a Rust Executable's Icon in Windows" /><published>2021-01-05T00:00:00-05:00</published><updated>2021-01-05T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon/">&lt;p&gt;This morning, I decided it was long overdue that &lt;a href=&quot;/way-of-rhea&quot;&gt;Way of Rhea&lt;/a&gt; get its own icon.&lt;/p&gt;
+&lt;p&gt;I am conflicted as to whether or not I should use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_POPUP&lt;/code&gt; style in borderless window mode–on one hand, with it at least &lt;em&gt;some&lt;/em&gt; players will get fullscreen exclusivity, OTOH those players then won’t be able to use print screen. I’ll likely end up doing what I do with vsync–making a checkbox for it, but labeling it as a “hint” to acknowledge that I as the developer don’t actually have the final say as to whether or not the setting has any effect.&lt;/p&gt;</content><author><name>Mason Remaley</name></author><category term="way-of-rhea" /><category term="tech" /><summary type="html">Fullscreen exclusive is a real thing your computer can decide to grant a window, but, as of yet I haven’t been able to find a single game where the fullscreen exclusive vs borderless window settings consistently do what you’d expect them to. If you’re an expert in this topic and believe this post is incorrect in any way, definitely email me or DM me on Twitter and I’ll issue a correction! If you’re interested in jumping to the conclusion, see Testing Fullscreen Exclusivity in Other Games and Takeaways. If you’re interested in my methodology, read on.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.anthropicstudios.com/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.jpg" /><media:content medium="image" url="https://www.anthropicstudios.com/assets/monsters-and-sprites/fullscreen-exclusive-is-a-lie/settings.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Setting a Rust Executable’s Icon in Windows</title><link href="https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon/" rel="alternate" type="text/html" title="Setting a Rust Executable's Icon in Windows" /><published>2021-01-05T00:00:00-05:00</published><updated>2021-01-05T00:00:00-05:00</updated><id>https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon</id><content type="html" xml:base="https://www.anthropicstudios.com/2021/01/05/setting-a-rust-windows-exe-icon/">&lt;p&gt;This morning, I decided it was long overdue that &lt;a href=&quot;/way-of-rhea&quot;&gt;Way of Rhea&lt;/a&gt; get its own icon.&lt;/p&gt;
 
 &lt;figure&gt;&lt;img src=&quot;/assets/monsters-and-sprites/setting-a-rust-windows-exe-icon/icon.png&quot; alt=&quot;way of rhea icon&quot; /&gt;&lt;/figure&gt;
 
