@@ -10,7 +10,7 @@ image: /assets/posts/2021-03-05-merge-conflicts/conflict.jpg
 twitter: https://twitter.com/masonremaley/status/1367889259223515137
 ---
 
-<figure><img src="/assets/posts/2021-03-05-merge-conflicts/conflict.jpg"/></figure>
+<figure><img src="/assets/posts/2021-03-05-merge-conflicts/conflict.jpg" alt="a merge conflict"/></figure>
 
 > Hey Mason could you explain to me a safe way to use github with multiple users for a Unity project? I know a little about github, and I’ve set up the project with the Brackeys’ tutorial. That all went great. I even have the other people pulling the project onto their machines successfully. And I can successfully do a push from mine. My concern is what if they make changes, and want to push. Do I need to do a push first before they do or do they need to do a pull before they do a push? I’m a bit confused on the sequence, and in 120 the git got all screwed up and that has me concerned!
 
@@ -31,6 +31,10 @@ So, that's what this post is! A public note to myself for later. My answer follo
 ---
 
 Hey everyone! @Rob mentioned having issues with merge conflicts in git, and I realized I never talked about these. If you're not using git, this may not be relevant to you, but if you are it's probably worth reading on!
+
+# Table of Contents
+* TOC
+{:toc}
 
 
 # Merge Conflicts
@@ -94,9 +98,46 @@ Sometimes, you really do need to edit code someone else is also editing. Here ar
 - Pull often. A smaller merge conflict is easier to resolve than a large one. The more often you pull, the more up to date the code you're working on is. Same goes for pushing often, pushing often will help keep everyone else in sync--but don't push before you're ready for everyone else to be affected by what you've changed!
 - Write good commit messages. If you understand what the commit that caused the conflict was trying to do, it'll be easier to merge it!
 - Enable text mode for scenes (Unity specific.) IIRC this is `Edit > Project Settings > Editor > Force Text`. This will output text instead of binary for scene files, which git will understand better.
+- Make smaller commits--the smaller your commits, the less complicated your merges will be. This will also let you push and pull more often.
+- [Use the diff3 conflictstyle](#the-diff3-conflict-style)
 - It bears repeating, pull often!
 
+## The Diff3 Conflict Style
 
+Thanks to [@andy_kelley](https://twitter.com/andy_kelley/status/1367916737711067138?s=20) for this tip!
+
+The default "conflict style" is a little confusing. If you're working with the command line, you can enable a slightly friendlier one like this:
+
+```bash
+git config --global merge.conflictstyle diff3
+```
+
+With this mode enabled, your merge conflicts will now look like this:
+
+```cpp
+  int main() {
+++<<<<<<< HEAD
+ +    // This is a comment
+ +    do_stuff(1.0, 2.0);
+ +    do_other_stuff(3.0, 4.0);
+ +    return 0;
+++||||||| merged common ancestors
+++      // This is a comment
+++      do_stuff();
+++      do_other_stuff();
+++      return 0;
+++=======
++     // This is a comment
++     do_stuff_ex();
++     do_other_stuff_ex();
++     return 0;
+++>>>>>>> b2
+  }
+```
+
+The middle section is the most recent commit both branches share before the conflict. Being able to see the "original" code often makes it much easier to figure out how to merge the changes together!
+
+*Note: A lot of my students use GitHub Desktop, and there doesn't appear to be an option in the GitHub Desktop UI for this. At some point I'll hunt down the location of GitHub Desktop's `.gitconfig` and update this post--if you happen to know where it is, feel free to let me know!*
 
 # Lastly: Don't Panic
 
